@@ -6,8 +6,8 @@
     --color-gray-dark-2: #737373;
     --color-gray-dark-3: #9a9a9a;
     --color-blue-dark-1: #00387f;
-    --color-tiffany: #00a6a6;
-    --profile-theme: #4682bf;
+    --color-tiffany: #1f6feb;
+    --profile-theme: #0d1117;
     --timeline-circle-theme: #14253e;
 
     --pgbar-length: 100%;
@@ -41,7 +41,7 @@ body {
 }
 
 .intro {
-    flex: 0 0 250px;
+    flex: 0 0 300px;
     background-color: var(--color-gray-light-1);
     box-shadow: 5px 0px 15px 0px #b3b3b3;
     z-index: 5;
@@ -80,11 +80,27 @@ body {
     margin-top: 1rem;
 }
 
+.bio .nick {
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--color-gray-light-1);
+    margin: 0;
+}
+
 .bio .profession {
     font-size: 1rem;
     text-align: center;
     color: var(--color-gray-light-1);
     margin: 0;
+    margin-top: 0.75rem;
+}
+
+.bio .location {
+    font-size: 0.75rem;
+    text-align: center;
+    color: var(--color-gray-light-1);
+    margin: 0;
+    margin-top: 0.75rem;
 }
 
 .intro-section {
@@ -93,6 +109,7 @@ body {
 }
 
 .intro-section .title {
+    text-align: center;
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -402,6 +419,62 @@ body {
 
 .favor-list>li>span {
     letter-spacing: 1px;
+}
+
+.follow .box {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.follow .box a {
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+.follow .box a:hover i {
+    background: var(--profile-theme);
+    border-radius: 5px;
+    transform: rotate(45deg) scale(0.8);
+}
+
+.follow .box a:hover i::before {
+    transform: rotate(-45deg) scale(1.5);
+}
+
+.follow .box .github i {
+    background: #000000;
+    color: white;
+}
+
+.follow .box .telegram i {
+    background: #23a9ea;
+    color: white;
+}
+
+.follow .box .linkedin i {
+    background: #0078b6;
+    color: white;
+}
+
+.follow .box i {
+    display: inline-block;
+    font-size: 30px;
+    background: var(--profile-theme);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    color: white;
+    margin: 0 4px 4px 4px;
+    transition-duration: 0.35s;
+}
+
+.follow .box i::before {
+    transition-duration: 0s;
+}
+
+.follow .box i.fa::before {
+    display: block;
 }
 
 @keyframes circle {

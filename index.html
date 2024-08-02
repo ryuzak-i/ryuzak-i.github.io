@@ -21,47 +21,23 @@
 				</div>
 				<div class="bio">
 					<h1 class="name" id="profile_bio_name"></h1>
+					<h2 class="nick" id="profile_bio_nick"></h2>
 					<p class="profession" id="profile_bio_profession"></p>
+					<div class="location">
+						<i class="fas fa-map-marker-alt"></i>
+						<span id="intro_about_location"></span>
+					</div>
 				</div>
 			</div>
 			<div class="intro-section about">
 				<h1 class="title" id="intro_about"></h1>
 				<p class="paragraph" id="intro_about_text"></p>
 			</div>
-			<div class="intro-section contact">
-				<h1 class="title" id="intro_contact"></h1>
-				<div class="info-section">
-					<i class="fas fa-phone"></i>
-					<span id="intro_contact_phone"></span>
-				</div>
-				<div class="info-section">
-					<i class="fas fa-map-marker-alt"></i>
-					<span id="intro_contact_location"></span>
-				</div>
-				<div class="info-section">
-					<i class="fas fa-envelope"></i>
-					<span id="intro_contact_mail"></span>
-				</div>
-			</div>
 			<div class="intro-section follow">
-				<h1 class="title" id="intro_social"></h1>
-				<div class="info-section link">
-					<i class="fab fa-github"></i>
-					<a target="_blank" rel="author" href="https://github.com/ryuzak-i">
-						<span id="intro_social_github"></span>
-					</a>
-				</div>
-				<div class="info-section link">
-					<i class="fab fa-linkedin-in"></i>
-					<a target="_blank" rel="author" href="https://www.linkedin.com/in/ryu-zaki/">
-						<span id="intro_social_linkedin"></span>
-					</a>
-				</div>
-				<div class="info-section link">
-					<i class="fab fa-telegram-plane"></i>
-					<a target="_blank" rel="author" href="https://www.telegram.me/ryu_zakl">
-						<span id="intro_social_telegram"></span>
-					</a>
+				<div class="box">
+					<a class="github" href="https://github.com/ryuzak-i" target="_blank"><i class="fab fa-github"></i></a>
+					<a class="telegram" href="https://t.me/ryu_zakl" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+					<a class="linkedin" href="https://www.linkedin.com/in/ryu-zaki/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 				</div>
 			</div>
 		</div>
@@ -69,7 +45,7 @@
 			<div class="detail-section edu">
 				<div class="detail-title">
 					<div class="title-icon">
-						<i class="fas fa-user-graduate"></i>
+						<i class="fas fa-file-certificate"></i>
 					</div>
 					<span id="detail_education"></span>
 				</div>
@@ -94,7 +70,7 @@
 			<div class="detail-section work">
 				<div class="detail-title">
 					<div class="title-icon">
-						<i class="fas fa-user-graduate"></i>
+						<i class="fas fa-briefcase"></i>
 					</div>
 					<span id="detail_work"></span>
 				</div>
@@ -246,9 +222,7 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- Run texts script -->
-	<script type="text/javascript" src="/res/scripts/texts.js" async="async"></script>
+	<script type="text/javascript" src="/res/scripts/texts.js"></script>
 </body>
 
 </html>

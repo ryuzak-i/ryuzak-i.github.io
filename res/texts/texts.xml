@@ -1,21 +1,13 @@
 <Texts>
     <Text Id="title" Value="Ryuzaki CV"/>
 
-    <Text Id="profile_bio_name" Value="Oleksandr «Ryuzaki» Danchenko"/>
-    <Text Id="profile_bio_profession" Value="Python Developer • Software Engineer"/>
-
+    <Text Id="profile_bio_name" Value="Oleksandr Danchenko"/>
+    <Text Id="profile_bio_nick" Value="aka «Ryuzaki»"/>
+    <Text Id="profile_bio_profession" Value="Python Developer | Software Engineer"/>
+    
     <Text Id="intro_about" Value="About me"/>
     <Text Id="intro_about_text" Value="Computer and mobile games developer."/>
-
-    <Text Id="intro_contact" Value="Contacts"/>
-    <Text Id="intro_contact_phone" Value="+380*********"/>
-    <Text Id="intro_contact_location" Value="Smila, Ukraine"/>
-    <Text Id="intro_contact_mail" Value="danchenko.oleksandr.yuriyovych@gmail.com"/>
-
-    <Text Id="intro_social" Value="Social networks"/>
-    <Text Id="intro_social_github" Value="GitHub@ryuzak-i"/>
-    <Text Id="intro_social_linkedin" Value="LinkedIn@ryu-zaki"/>
-    <Text Id="intro_social_telegram" Value="Telegram@ryu-zakl"/>
+    <Text Id="intro_about_location" Value="Smila, Ukraine"/>
 
     <Text Id="detail_education" Value="Education"/>
     <Text Id="detail_education_title_1" Value="Maintenance of programmed systems and complexes"/>
