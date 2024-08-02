@@ -1,7 +1,254 @@
 <!DOCTYPE html>
-<html>
-	<body>
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p>
-	</body>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title id="title"></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="prefetch stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="intro">
+			<div class="profile">
+				<div class="photo">
+					<img src="/res/img/avatar.jpg">
+				</div>
+				<div class="bio">
+					<h1 class="name" id="profile_bio_name"></h1>
+					<p class="profession" id="profile_bio_profession"></p>
+				</div>
+			</div>
+			<div class="intro-section about">
+				<h1 class="title" id="intro_about"></h1>
+				<p class="paragraph" id="intro_about_text"></p>
+			</div>
+			<div class="intro-section contact">
+				<h1 class="title" id="intro_contact"></h1>
+				<div class="info-section">
+					<i class="fas fa-phone"></i>
+					<span id="intro_contact_phone"></span>
+				</div>
+				<div class="info-section">
+					<i class="fas fa-map-marker-alt"></i>
+					<span id="intro_contact_location"></span>
+				</div>
+				<div class="info-section">
+					<i class="fas fa-envelope"></i>
+					<span id="intro_contact_mail"></span>
+				</div>
+			</div>
+			<div class="intro-section follow">
+				<h1 class="title" id="intro_social"></h1>
+				<div class="info-section link">
+					<i class="fab fa-github"></i>
+					<a target="_blank" rel="author" href="https://github.com/ryuzak-i">
+						<span id="intro_social_github"></span>
+					</a>
+				</div>
+				<div class="info-section link">
+					<i class="fab fa-linkedin-in"></i>
+					<a target="_blank" rel="author" href="https://www.linkedin.com/in/ryu-zaki/">
+						<span id="intro_social_linkedin"></span>
+					</a>
+				</div>
+				<div class="info-section link">
+					<i class="fab fa-telegram-plane"></i>
+					<a target="_blank" rel="author" href="https://www.telegram.me/ryu_zakl">
+						<span id="intro_social_telegram"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="detail">
+			<div class="detail-section edu">
+				<div class="detail-title">
+					<div class="title-icon">
+						<i class="fas fa-user-graduate"></i>
+					</div>
+					<span id="detail_education"></span>
+				</div>
+				<div class="detail-content">
+					<div class="timeline-block">
+						<h1 id="detail_education_title_1"></h1>
+						<p id="detail_education_subtitle_1"></p>
+						<time id="detail_education_time_1"></time>
+					</div>
+					<div class="timeline-block">
+						<h1 id="detail_education_title_2"></h1>
+						<p id="detail_education_subtitle_2"></p>
+						<time id="detail_education_time_2"></time>
+					</div>
+					<div class="timeline-block">
+						<h1 id="detail_education_title_3"></h1>
+						<p id="detail_education_subtitle_3"></p>
+						<time id="detail_education_time_3"></time>
+					</div>
+				</div>
+			</div>
+			<div class="detail-section work">
+				<div class="detail-title">
+					<div class="title-icon">
+						<i class="fas fa-user-graduate"></i>
+					</div>
+					<span id="detail_work"></span>
+				</div>
+				<div class="detail-content">
+					<div class="timeline-block">
+						<h1 id="detail_work_title_1"></h1>
+						<p id="detail_work_subtitle_1"></p>
+						<time id="detail_work_time_1"></time>
+					</div>
+					<div class="timeline-block">
+						<h1 id="detail_work_title_2"></h1>
+						<p id="detail_work_subtitle_2"></p>
+						<time id="detail_work_time_2"></time>
+					</div>
+				</div>
+			</div>
+			<div class="detail-section pg-skill">
+				<div class="detail-title">
+					<div class="title-icon">
+						<i class="fas fa-laptop-code"></i>
+					</div>
+					<span id="detail_skills"></span>
+				</div>
+				<div class="detail-content">
+					<ul class="pg-list">
+						<li>
+							<span id="detail_skills_html5"></span>
+							<div class="sb-skeleton">
+								<div class="skillbar" style="--pgbar-length: 90%"></div>
+							</div>
+						</li>
+						<li>
+							<span id="detail_skills_css3"></span>
+							<div class="sb-skeleton">
+								<div class="skillbar" style="--pgbar-length: 75%"></div>
+							</div>
+						</li>
+						<li>
+							<span id="detail_skills_js"></span>
+							<div class="sb-skeleton">
+								<div class="skillbar" style="--pgbar-length: 70%"></div>
+							</div>
+						</li>
+						<li>
+							<span id="detail_skills_jquery"></span>
+							<div class="sb-skeleton">
+								<div class="skillbar" style="--pgbar-length: 50%"></div>
+							</div>
+						</li>
+						<li>
+							<span id="detail_skills_nodejs"></span>
+							<div class="sb-skeleton">
+								<div class="skillbar" style="--pgbar-length: 70%"></div>
+							</div>
+						</li>
+						<li>
+							<span id="detail_skills_reactjs"></span>
+							<div class="sb-skeleton">
+								<div class="skillbar" style="--pgbar-length: 75%"></div>
+							</div>
+						</li>
+						<li>
+							<span id="detail_skills_vuejs"></span>
+							<div class="sb-skeleton">
+								<div class="skillbar" style="--pgbar-length: 40%"></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="detail-section tool-skill">
+				<div class="detail-title">
+					<div class="title-icon">
+						<i class="fas fa-tools"></i>
+					</div>
+					<span id="detail_tools"></span>
+				</div>
+				<div class="detail-content">
+					<ul class="tool-list">
+						<li>
+							<svg viewbox="0 0 100 100">
+								<circle cx="50" cy="50" r="45"></circle>
+								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.6"></circle>
+							</svg>
+							<span class="tl-name" id="detail_tools_photoshop"></span>
+							<span class="tl-exp" id="detail_tools_photoshop_perc"></span>
+						</li>
+						<li>
+							<svg viewbox="0 0 100 100">
+								<circle cx="50" cy="50" r="45"></circle>
+								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.8"></circle>
+							</svg>
+							<span class="tl-name" id="detail_tools_sublime"></span>
+							<span class="tl-exp" id="detail_tools_sublime_perc"></span>
+						</li>
+						<li>
+							<svg viewbox="0 0 100 100">
+								<circle cx="50" cy="50" r="45"></circle>
+								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.7"></circle>
+							</svg>
+							<span class="tl-name" id="detail_tools_git"></span>
+							<span class="tl-exp" id="detail_tools_git_perc"></span>
+						</li>
+						<li>
+							<svg viewbox="0 0 100 100">
+								<circle cx="50" cy="50" r="45"></circle>
+								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.74"></circle>
+							</svg>
+							<span class="tl-name" id="detail_tools_npm"></span>
+							<span class="tl-exp" id="detail_tools_npm_perc"></span>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="detail-section interests">
+				<div class="detail-title">
+					<div class="title-icon">
+						<i class="fas fa-heart"></i>
+					</div>
+					<span id="detail_interests"></span>
+				</div>
+				<div class="detail-content">
+					<div class="outer-frame">
+						<ul class="favor-list">
+							<li>
+								<i class="fas fa-gamepad"></i>
+								<span id="detail_interests_game"></span>
+							</li>
+							<li>
+								<i class="fas fa-paw"></i>
+								<span id="detail_interests_pet"></span>
+							</li>
+							<li>
+								<i class="far fa-headphones-alt"></i>
+								<span id="detail_interests_music"></span>
+							</li>
+							<li>
+								<i class="fas fa-book-spells"></i>
+								<span id="detail_interests_learning"></span>
+							</li>
+							<li>
+								<i class="fas fa-user-edit"></i>
+								<span id="detail_interests_blog"></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Run texts script -->
+	<script type="text/javascript" src="/res/scripts/texts.js" async="async"></script>
+</body>
+
 </html>

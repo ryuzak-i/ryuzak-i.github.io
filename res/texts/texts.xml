@@ -1,0 +1,64 @@
+<Texts>
+    <Text Id="title" Value="Ryuzaki CV"/>
+
+    <Text Id="profile_bio_name" Value="Oleksandr «Ryuzaki» Danchenko"/>
+    <Text Id="profile_bio_profession" Value="Python Developer • Software Engineer"/>
+
+    <Text Id="intro_about" Value="About me"/>
+    <Text Id="intro_about_text" Value="Computer and mobile games developer."/>
+
+    <Text Id="intro_contact" Value="Contacts"/>
+    <Text Id="intro_contact_phone" Value="+380*********"/>
+    <Text Id="intro_contact_location" Value="Smila, Ukraine"/>
+    <Text Id="intro_contact_mail" Value="danchenko.oleksandr.yuriyovych@gmail.com"/>
+
+    <Text Id="intro_social" Value="Social networks"/>
+    <Text Id="intro_social_github" Value="GitHub@ryuzak-i"/>
+    <Text Id="intro_social_linkedin" Value="LinkedIn@ryu-zaki"/>
+    <Text Id="intro_social_telegram" Value="Telegram@ryu-zakl"/>
+
+    <Text Id="detail_education" Value="Education"/>
+    <Text Id="detail_education_title_1" Value="Maintenance of programmed systems and complexes"/>
+    <Text Id="detail_education_subtitle_1" Value="Smila College of Food Technologies of National University of Food Technologies, Ukraine"/>
+    <Text Id="detail_education_time_1" Value="Sep. 2015 - Jun. 2019, Junior Specialist"/>
+    <Text Id="detail_education_title_2" Value="Computer Sciences"/>
+    <Text Id="detail_education_subtitle_2" Value="National University of Food Technologies, Ukraine"/>
+    <Text Id="detail_education_time_2" Value="Sep. 2019 - Jun. 2021, Bachelor"/>
+    <Text Id="detail_education_title_3" Value="Information Management Systems and Technologies"/>
+    <Text Id="detail_education_subtitle_3" Value="National University of Food Technologies, Ukraine"/>
+    <Text Id="detail_education_time_3" Value="Sep. 2021 - Feb. 2023, Master"/>
+
+    <Text Id="detail_work" Value="Work experience"/>
+    <Text Id="detail_work_title_1" Value="Gameplay Scripter"/>
+    <Text Id="detail_work_subtitle_1" Value="Wonderland Games"/>
+    <Text Id="detail_work_time_1" Value="Oct. 2020 - Oct. 2022"/>
+    <Text Id="detail_work_title_2" Value="Python Developer"/>
+    <Text Id="detail_work_subtitle_2" Value="Wonderland Games"/>
+    <Text Id="detail_work_time_2" Value="Oct. 2022 - Jul. 2024"/>
+
+    <Text Id="detail_skills" Value=""/>
+    <Text Id="detail_skills_html5" Value=""/>
+    <Text Id="detail_skills_css3" Value=""/>
+    <Text Id="detail_skills_js" Value=""/>
+    <Text Id="detail_skills_jquery" Value=""/>
+    <Text Id="detail_skills_nodejs" Value=""/>
+    <Text Id="detail_skills_reactjs" Value=""/>
+    <Text Id="detail_skills_vuejs" Value=""/>
+
+    <Text Id="detail_tools" Value=""/>
+    <Text Id="detail_tools_photoshop" Value=""/>
+    <Text Id="detail_tools_photoshop_perc" Value=""/>
+    <Text Id="detail_tools_sublime" Value=""/>
+    <Text Id="detail_tools_sublime_perc" Value=""/>
+    <Text Id="detail_tools_git" Value=""/>
+    <Text Id="detail_tools_git_perc" Value=""/>
+    <Text Id="detail_tools_npm" Value=""/>
+    <Text Id="detail_tools_npm_perc" Value=""/>
+
+    <Text Id="detail_interests" Value=""/>
+    <Text Id="detail_interests_game" Value=""/>
+    <Text Id="detail_interests_pet" Value=""/>
+    <Text Id="detail_interests_music" Value=""/>
+    <Text Id="detail_interests_learning" Value=""/>
+    <Text Id="detail_interests_blog" Value=""/>
+</Texts>
