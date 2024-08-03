@@ -5,11 +5,12 @@
 	<meta charset="UTF-8">
 	<title id="title"></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="/style.css">
 	<link rel="prefetch stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Caesar+Dressing">
+	<link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
@@ -25,19 +26,26 @@
 					<p class="profession" id="profile_bio_profession"></p>
 					<div class="location">
 						<i class="fas fa-map-marker-alt"></i>
-						<span id="intro_about_location"></span>
+						<span id="profile_bio_location"></span>
 					</div>
 				</div>
 			</div>
 			<div class="intro-section about">
 				<h1 class="title" id="intro_about"></h1>
 				<p class="paragraph" id="intro_about_text"></p>
+				<p class="quote" id="intro_about_quote"></p>
 			</div>
 			<div class="intro-section follow">
 				<div class="box">
-					<a class="github" href="https://github.com/ryuzak-i" target="_blank"><i class="fab fa-github"></i></a>
-					<a class="telegram" href="https://t.me/ryu_zakl" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-					<a class="linkedin" href="https://www.linkedin.com/in/ryu-zaki/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+					<a class="github" href="https://github.com/ryuzak-i" target="_blank">
+						<i class="fab fa-github"></i>
+					</a>
+					<a class="telegram" href="https://t.me/ryu_zakl" target="_blank">
+						<i class="fab fa-telegram-plane"></i>
+					</a>
+					<a class="linkedin" href="https://www.linkedin.com/in/ryu-zaki/" target="_blank">
+						<i class="fab fa-linkedin-in"></i>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -90,52 +98,52 @@
 			<div class="detail-section pg-skill">
 				<div class="detail-title">
 					<div class="title-icon">
-						<i class="fas fa-laptop-code"></i>
+						<i class="fas fa-code"></i>
 					</div>
 					<span id="detail_skills"></span>
 				</div>
 				<div class="detail-content">
 					<ul class="pg-list">
 						<li>
-							<span id="detail_skills_html5"></span>
+							<span id="detail_skills_python"></span>
 							<div class="sb-skeleton">
-								<div class="skillbar" style="--pgbar-length: 90%"></div>
+								<div class="skillbar" style="--pgbar-length: 80%"></div>
 							</div>
 						</li>
 						<li>
-							<span id="detail_skills_css3"></span>
+							<span id="detail_skills_javascript"></span>
 							<div class="sb-skeleton">
-								<div class="skillbar" style="--pgbar-length: 75%"></div>
+								<div class="skillbar" style="--pgbar-length: 60%"></div>
 							</div>
 						</li>
 						<li>
-							<span id="detail_skills_js"></span>
+							<span id="detail_skills_c#"></span>
 							<div class="sb-skeleton">
 								<div class="skillbar" style="--pgbar-length: 70%"></div>
 							</div>
 						</li>
 						<li>
-							<span id="detail_skills_jquery"></span>
+							<span id="detail_skills_c++"></span>
 							<div class="sb-skeleton">
 								<div class="skillbar" style="--pgbar-length: 50%"></div>
 							</div>
 						</li>
 						<li>
-							<span id="detail_skills_nodejs"></span>
+							<span id="detail_skills_html"></span>
 							<div class="sb-skeleton">
-								<div class="skillbar" style="--pgbar-length: 70%"></div>
+								<div class="skillbar" style="--pgbar-length: 65%"></div>
 							</div>
 						</li>
 						<li>
-							<span id="detail_skills_reactjs"></span>
-							<div class="sb-skeleton">
-								<div class="skillbar" style="--pgbar-length: 75%"></div>
-							</div>
-						</li>
-						<li>
-							<span id="detail_skills_vuejs"></span>
+							<span id="detail_skills_css"></span>
 							<div class="sb-skeleton">
 								<div class="skillbar" style="--pgbar-length: 40%"></div>
+							</div>
+						</li>
+						<li>
+							<span id="detail_skills_sql"></span>
+							<div class="sb-skeleton">
+								<div class="skillbar" style="--pgbar-length: 30%"></div>
 							</div>
 						</li>
 					</ul>
@@ -153,34 +161,66 @@
 						<li>
 							<svg viewbox="0 0 100 100">
 								<circle cx="50" cy="50" r="45"></circle>
-								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.6"></circle>
+								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.90"></circle>
+							</svg>
+							<span class="tl-name" id="detail_tools_github"></span>
+							<!-- <span class="tl-exp" id=""></span> -->
+						</li>
+						<li>
+							<svg viewbox="0 0 100 100">
+								<circle cx="50" cy="50" r="45"></circle>
+								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.85"></circle>
+							</svg>
+							<span class="tl-name" id="detail_tools_svn"></span>
+							<!-- <span class="tl-exp" id=""></span> -->
+						</li>
+						<li>
+							<svg viewbox="0 0 100 100">
+								<circle cx="50" cy="50" r="45"></circle>
+								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.85"></circle>
 							</svg>
 							<span class="tl-name" id="detail_tools_photoshop"></span>
-							<span class="tl-exp" id="detail_tools_photoshop_perc"></span>
+							<!-- <span class="tl-exp" id=""></span> -->
 						</li>
 						<li>
 							<svg viewbox="0 0 100 100">
 								<circle cx="50" cy="50" r="45"></circle>
-								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.8"></circle>
+								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.90"></circle>
 							</svg>
-							<span class="tl-name" id="detail_tools_sublime"></span>
-							<span class="tl-exp" id="detail_tools_sublime_perc"></span>
+							<span class="tl-name" id="detail_tools_aftereffects"></span>
+							<!-- <span class="tl-exp" id=""></span> -->
 						</li>
 						<li>
 							<svg viewbox="0 0 100 100">
 								<circle cx="50" cy="50" r="45"></circle>
-								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.7"></circle>
+								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.85"></circle>
 							</svg>
-							<span class="tl-name" id="detail_tools_git"></span>
-							<span class="tl-exp" id="detail_tools_git_perc"></span>
+							<span class="tl-name" id="detail_tools_jira"></span>
+							<!-- <span class="tl-exp" id=""></span> -->
 						</li>
 						<li>
 							<svg viewbox="0 0 100 100">
 								<circle cx="50" cy="50" r="45"></circle>
-								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.74"></circle>
+								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.80"></circle>
 							</svg>
-							<span class="tl-name" id="detail_tools_npm"></span>
-							<span class="tl-exp" id="detail_tools_npm_perc"></span>
+							<span class="tl-name" id="detail_tools_confluence"></span>
+							<!-- <span class="tl-exp" id=""></span> -->
+						</li>
+						<li>
+							<svg viewbox="0 0 100 100">
+								<circle cx="50" cy="50" r="45"></circle>
+								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.70"></circle>
+							</svg>
+							<span class="tl-name" id="detail_tools_jenkins"></span>
+							<!-- <span class="tl-exp" id=""></span> -->
+						</li>
+						<li>
+							<svg viewbox="0 0 100 100">
+								<circle cx="50" cy="50" r="45"></circle>
+								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.85"></circle>
+							</svg>
+							<span class="tl-name" id="detail_tools_playfab"></span>
+							<!-- <span class="tl-exp" id=""></span> -->
 						</li>
 					</ul>
 				</div>
@@ -197,24 +237,28 @@
 					<div class="outer-frame">
 						<ul class="favor-list">
 							<li>
-								<i class="fas fa-gamepad"></i>
-								<span id="detail_interests_game"></span>
+								<i class="fas fa-laptop-code"></i>
+								<span id="detail_interests_coding"></span>
 							</li>
 							<li>
-								<i class="fas fa-paw"></i>
-								<span id="detail_interests_pet"></span>
+								<i class="fas fa-gamepad-alt"></i>
+								<span id="detail_interests_games"></span>
 							</li>
 							<li>
-								<i class="far fa-headphones-alt"></i>
+								<i class="fas fa-film"></i>
+								<span id="detail_interests_movies"></span>
+							</li>
+							<li>
+								<i class="far fa-robot"></i>
+								<span id="detail_interests_technologies"></span>
+							</li>
+							<li>
+								<i class="fas fa-music"></i>
 								<span id="detail_interests_music"></span>
 							</li>
 							<li>
-								<i class="fas fa-book-spells"></i>
-								<span id="detail_interests_learning"></span>
-							</li>
-							<li>
-								<i class="fas fa-user-edit"></i>
-								<span id="detail_interests_blog"></span>
+								<i class="fas fa-palette"></i>
+								<span id="detail_interests_art"></span>
 							</li>
 						</ul>
 					</div>

@@ -6,9 +6,14 @@
     --color-gray-dark-2: #737373;
     --color-gray-dark-3: #9a9a9a;
     --color-blue-dark-1: #00387f;
-    --color-tiffany: #1f6feb;
-    --profile-theme: #0d1117;
+    --color-tiffany: #39d353;
+    --profile-theme: #181818;
     --timeline-circle-theme: #14253e;
+    --bg_shadow_color: #1f71ebc6;
+    --avatar_shadow_color: rgba(0, 0, 0, 0.5);
+    --github_color: #000000;
+    --telegram_color: #23a9ea;
+    --linkedin_color: #0078b6;
 
     --pgbar-length: 100%;
 
@@ -19,6 +24,7 @@
 html {
     font-size: 100%;
     font-family: 'PT Sans', sans-serif;
+    /* font-family: 'Ubuntu', '微軟正黑體'; */
 }
 
 * {
@@ -29,7 +35,7 @@ body {
     margin: 0;
     padding: 3rem 1rem;
     min-height: 100vh;
-    background-color: var(--color-gray-light-3);
+    background-color: #010409;
 }
 
 .wrapper {
@@ -37,13 +43,14 @@ body {
     max-width: 70rem;
     background-color: var(--color-gray-light-2);
     display: flex;
-    box-shadow: 0px 0px 15px 4px #b3b3b3;
+    /* box-shadow: 0px 0px 250px 0px var(--bg_shadow_color); */
+    animation: bg_anim 5s ease-in-out infinite alternate;
 }
 
 .intro {
-    flex: 0 0 300px;
+    flex: 0 0 30%;
     background-color: var(--color-gray-light-1);
-    box-shadow: 5px 0px 15px 0px #b3b3b3;
+    /* box-shadow: 5px 0px 15px 0px #b3b3b3; */
     z-index: 5;
 }
 
@@ -68,12 +75,13 @@ body {
 }
 
 .photo img {
-    width: 80%;
+    width: 100%;
     border-radius: 50%;
+    box-shadow: 0px 0px 15px 10px var(--avatar_shadow_color);
 }
 
 .bio .name {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-align: center;
     color: var(--color-gray-light-1);
     margin: 0;
@@ -81,14 +89,14 @@ body {
 }
 
 .bio .nick {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     text-align: center;
     color: var(--color-gray-light-1);
     margin: 0;
 }
 
 .bio .profession {
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
     color: var(--color-gray-light-1);
     margin: 0;
@@ -96,7 +104,7 @@ body {
 }
 
 .bio .location {
-    font-size: 0.75rem;
+    font-size: 1.25rem;
     text-align: center;
     color: var(--color-gray-light-1);
     margin: 0;
@@ -105,19 +113,30 @@ body {
 
 .intro-section {
     padding: 0 1rem;
-    color: var(--color-gray-dark-1);
+    color: var(--profile-theme);
 }
 
 .intro-section .title {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.75rem;
     font-weight: bold;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 1px;
 }
 
 .about .paragraph {
     text-align: justify;
+    font-size: 1.5rem;
+}
+
+.about .quote {
+    font-family: "Caesar Dressing", cursive;
+    text-align: center;
+    font-size: 1.95rem;
+    color: rgba(66, 0, 0, 0.75);
+    line-height: 1.35em;
+    text-transform: uppercase;
+    animation: burn 0.6s ease-in-out infinite alternate;
 }
 
 .info-section {
@@ -196,6 +215,10 @@ body {
     padding-left: calc(1.5rem + 10px);
 }
 
+.detail-section .detail-title span {
+    font-size: 2.5rem;
+}
+
 .title-icon+span {
     font-size: 1.5rem;
     transition: all 0.3s;
@@ -241,18 +264,18 @@ body {
 }
 
 .timeline-block h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 5px 0;
     transition: all 0.3s;
 }
 
 .timeline-block p {
-    font-size: 0.8rem;
+    font-size: 1.25rem;
     margin: 5px 0;
 }
 
 .timeline-block time {
-    font-size: 0.8rem;
+    font-size: 1.25rem;
     color: var(--color-gray-dark-2);
 }
 
@@ -309,6 +332,9 @@ body {
 
 .pg-list>li>span {
     flex: 0 0 100px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 .sb-skeleton>.skillbar {
@@ -324,12 +350,14 @@ body {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .tool-list>li {
     position: relative;
     text-align: center;
     flex: 0 0 25%;
+    /* flex: 0 0 33.33%; */
 }
 
 .tool-list>li>svg {
@@ -350,7 +378,7 @@ body {
     stroke-linecap: round;
     stroke-dashoffset: 0;
     stroke-dasharray: calc(var(--MATH-PI) * 45 * 2);
-    transition: all 0.8s;
+    transition: all 0.3s;
     transition-timing-function: cubic-bezier(.64, .51, .16, .86);
 }
 
@@ -364,12 +392,14 @@ body {
 .tool-list>li>.tl-exp {
     position: absolute;
     left: 50%;
-    color: var(--color-gray-dark-1);
+    color: var(--profile-theme);
 }
 
 .tool-list>li>.tl-name {
     top: 50%;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
     transform: translate(-50%, -50%);
 }
 
@@ -381,7 +411,7 @@ body {
 
 /* Interests Section */
 .outer-frame {
-    border: 1px solid var(--color-gray-dark-3);
+    border: 0px solid var(--color-gray-dark-3);
     border-radius: 5px;
 }
 
@@ -418,7 +448,10 @@ body {
 }
 
 .favor-list>li>span {
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--profile-theme);
 }
 
 .follow .box {
@@ -433,6 +466,7 @@ body {
 
 .follow .box a:hover i {
     background: var(--profile-theme);
+    box-shadow: 0px 0px 2px 1px var(--profile-theme);
     border-radius: 5px;
     transform: rotate(45deg) scale(0.8);
 }
@@ -442,18 +476,21 @@ body {
 }
 
 .follow .box .github i {
-    background: #000000;
+    background: var(--github_color);
     color: white;
+    box-shadow: 0px 0px 2px 1px var(--github_color);
 }
 
 .follow .box .telegram i {
-    background: #23a9ea;
+    background: var(--telegram_color);
     color: white;
+    box-shadow: 0px 0px 2px 1px var(--telegram_color);
 }
 
 .follow .box .linkedin i {
-    background: #0078b6;
+    background: var(--linkedin_color);
     color: white;
+    box-shadow: 0px 0px 2px 1px var(--linkedin_color);
 }
 
 .follow .box i {
@@ -466,7 +503,7 @@ body {
     line-height: 60px;
     color: white;
     margin: 0 4px 4px 4px;
-    transition-duration: 0.35s;
+    transition-duration: 0.3s;
 }
 
 .follow .box i::before {
@@ -475,6 +512,37 @@ body {
 
 .follow .box i.fa::before {
     display: block;
+}
+
+@keyframes bg_anim {
+    0% {
+        box-shadow: 0px 0px 100px 0px var(--bg_shadow_color);
+    }
+    100% {
+        box-shadow: 0px 0px 250px 0px var(--bg_shadow_color);
+    }
+}
+
+@keyframes burn {
+    0% {
+        text-shadow: 0 0 10px #fefcc9,
+            2.5px -2.5px 7.5px #feec85,
+            -5px -3.5px 10px #ffae34,
+            5px -5px 12.5px #ec760c,
+            -5px -7px 10px #cd4606,
+            0 -4px 12.5px #973716,
+            2.5px -6px 13px #451b0e;
+    }
+
+    100% {
+        text-shadow: 0 0 7px #fefcc9,
+            2.5px -3.5px 8.5px #fefcc9,
+            -5px -4.5px 11px #feec85,
+            6px -6px 10px #ffae34,
+            -6px -8px 12.5px #ec760c,
+            0 -2px 13px #cd4606,
+            2.5px -4px 15px #973716;
+    }
 }
 
 @keyframes circle {
@@ -523,14 +591,6 @@ body {
 @media (max-width: 768px) {
     html {
         font-size: 80%;
-    }
-
-    .tool-list {
-        flex-wrap: wrap;
-    }
-
-    .tool-list>li {
-        flex: 0 0 33.33%;
     }
 
     .favor-list>li {

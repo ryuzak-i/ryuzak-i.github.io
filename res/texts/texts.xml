@@ -2,12 +2,13 @@
     <Text Id="title" Value="Ryuzaki CV"/>
 
     <Text Id="profile_bio_name" Value="Oleksandr Danchenko"/>
-    <Text Id="profile_bio_nick" Value="aka «Ryuzaki»"/>
-    <Text Id="profile_bio_profession" Value="Python Developer | Software Engineer"/>
+    <Text Id="profile_bio_nick" Value="aka «Ryuzaki» 👾"/>
+    <Text Id="profile_bio_profession" Value="Software Engineer"/>
+    <Text Id="profile_bio_location" Value="Smila, Ukraine"/>
     
-    <Text Id="intro_about" Value="About me"/>
-    <Text Id="intro_about_text" Value="Computer and mobile games developer."/>
-    <Text Id="intro_about_location" Value="Smila, Ukraine"/>
+    <Text Id="intro_about" Value="Briefly about me"/>
+    <Text Id="intro_about_text" Value="Hello there! I'm a 24 y.o. enthusiast developer with a passion for computer games.  I'm improving my GameDev skills and dreaming of creating my own game."/>
+    <Text Id="intro_about_quote" Value="“This sword Is the proof that I have lived„ - Guts, Berserk"/>
 
     <Text Id="detail_education" Value="Education"/>
     <Text Id="detail_education_title_1" Value="Maintenance of programmed systems and complexes"/>
@@ -28,29 +29,30 @@
     <Text Id="detail_work_subtitle_2" Value="Wonderland Games"/>
     <Text Id="detail_work_time_2" Value="Oct. 2022 - Jul. 2024"/>
 
-    <Text Id="detail_skills" Value=""/>
-    <Text Id="detail_skills_html5" Value=""/>
-    <Text Id="detail_skills_css3" Value=""/>
-    <Text Id="detail_skills_js" Value=""/>
-    <Text Id="detail_skills_jquery" Value=""/>
-    <Text Id="detail_skills_nodejs" Value=""/>
-    <Text Id="detail_skills_reactjs" Value=""/>
-    <Text Id="detail_skills_vuejs" Value=""/>
+    <Text Id="detail_skills" Value="Programming languages"/>
+    <Text Id="detail_skills_python" Value="Python"/>
+    <Text Id="detail_skills_javascript" Value="JavaScript"/>
+    <Text Id="detail_skills_c#" Value="C#"/>
+    <Text Id="detail_skills_c++" Value="C++"/>
+    <Text Id="detail_skills_html" Value="HTML"/>
+    <Text Id="detail_skills_css" Value="CSS"/>
+    <Text Id="detail_skills_sql" Value="SQL"/>
 
-    <Text Id="detail_tools" Value=""/>
-    <Text Id="detail_tools_photoshop" Value=""/>
-    <Text Id="detail_tools_photoshop_perc" Value=""/>
-    <Text Id="detail_tools_sublime" Value=""/>
-    <Text Id="detail_tools_sublime_perc" Value=""/>
-    <Text Id="detail_tools_git" Value=""/>
-    <Text Id="detail_tools_git_perc" Value=""/>
-    <Text Id="detail_tools_npm" Value=""/>
-    <Text Id="detail_tools_npm_perc" Value=""/>
+    <Text Id="detail_tools" Value="Development tools"/>
+    <Text Id="detail_tools_github" Value="GitHub"/>
+    <Text Id="detail_tools_svn" Value="SVN"/>
+    <Text Id="detail_tools_photoshop" Value="Photoshop"/>
+    <Text Id="detail_tools_aftereffects" Value="After Effects"/>
+    <Text Id="detail_tools_jira" Value="Jira"/>
+    <Text Id="detail_tools_confluence" Value="Confluence"/>
+    <Text Id="detail_tools_jenkins" Value="Jenkins"/>
+    <Text Id="detail_tools_playfab" Value="PlayFab"/>
 
-    <Text Id="detail_interests" Value=""/>
-    <Text Id="detail_interests_game" Value=""/>
-    <Text Id="detail_interests_pet" Value=""/>
-    <Text Id="detail_interests_music" Value=""/>
-    <Text Id="detail_interests_learning" Value=""/>
-    <Text Id="detail_interests_blog" Value=""/>
+    <Text Id="detail_interests" Value="Interests"/>
+    <Text Id="detail_interests_coding" Value="Programming"/>
+    <Text Id="detail_interests_games" Value="Games"/>
+    <Text Id="detail_interests_movies" Value="Movies"/>
+    <Text Id="detail_interests_technologies" Value="Technologies"/>
+    <Text Id="detail_interests_music" Value="Music"/>
+    <Text Id="detail_interests_art" Value="Art"/>
 </Texts>

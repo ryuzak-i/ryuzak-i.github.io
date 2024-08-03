@@ -1,6 +1,6 @@
 {
     "TEXTS": {
-        "XML_DOCUMENT_PATH": "res/texts/texts.xml",
+        "XML_DOCUMENT_PATH": "/res/texts/texts.xml",
         "XML_TAG_NAME": "Text",
         "XML_ATTRIBUTE_ID_NAME": "Id",
         "XML_ATTRIBUTE_VALUE_NAME": "Value"
