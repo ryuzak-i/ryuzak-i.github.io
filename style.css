@@ -44,7 +44,7 @@ body {
     background-color: var(--color-gray-light-2);
     display: flex;
     /* box-shadow: 0px 0px 250px 0px var(--bg_shadow_color); */
-    animation: bg_anim 5s ease-in-out infinite alternate;
+    animation: bg_anim 10s ease-in-out infinite alternate;
 }
 
 .intro {
@@ -133,7 +133,7 @@ body {
     font-family: "Caesar Dressing", cursive;
     text-align: center;
     font-size: 1.95rem;
-    color: rgba(66, 0, 0, 0.75);
+    color: rgba(100, 0, 0, 0.75);
     line-height: 1.35em;
     text-transform: uppercase;
     animation: burn 0.6s ease-in-out infinite alternate;
@@ -397,9 +397,9 @@ body {
 
 .tool-list>li>.tl-name {
     top: 50%;
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-weight: bold;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.25px;
     transform: translate(-50%, -50%);
 }
 
@@ -514,12 +514,18 @@ body {
     display: block;
 }
 
+.clickable {
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+}
+
 @keyframes bg_anim {
     0% {
-        box-shadow: 0px 0px 100px 0px var(--bg_shadow_color);
+        box-shadow: 0px 0px 50px 0px var(--bg_shadow_color);
     }
     100% {
-        box-shadow: 0px 0px 250px 0px var(--bg_shadow_color);
+        box-shadow: 0px 0px 150px 0px var(--bg_shadow_color);
     }
 }
 
