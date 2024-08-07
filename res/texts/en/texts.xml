@@ -49,10 +49,10 @@
     <Text Id="detail_tools_playfab" Value="PlayFab"/>
 
     <Text Id="detail_interests" Value="Interests"/>
-    <Text Id="detail_interests_coding" Value="Programming"/>
+    <Text Id="detail_interests_coding" Value="Coding"/>
     <Text Id="detail_interests_games" Value="Games"/>
     <Text Id="detail_interests_movies" Value="Movies"/>
-    <Text Id="detail_interests_technologies" Value="Technologies"/>
+    <Text Id="detail_interests_technologies" Value="Automation"/>
     <Text Id="detail_interests_music" Value="Music"/>
     <Text Id="detail_interests_art" Value="Art"/>
 </Texts>

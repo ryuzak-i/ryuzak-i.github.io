@@ -626,6 +626,11 @@ body {
         font-size: 1.5rem;
         letter-spacing: 0px;
     }
+
+    .favor-list>li>span {
+        letter-spacing: 0.5px;
+        font-size: 1.15rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -645,6 +650,11 @@ body {
         font-size: 1.15rem;
         letter-spacing: 0px;
     }
+
+    .favor-list>li>span {
+        letter-spacing: 0.5px;
+        font-size: 1.15rem;
+    }
 }
 
 @media (max-width: 500px) {
@@ -659,5 +669,10 @@ body {
     .tool-list>li>.tl-name {
         font-size: 0.9rem;
         letter-spacing: 0px;
+    }
+
+    .favor-list>li>span {
+        letter-spacing: 0px;
+        font-size: 1rem;
     }
 }

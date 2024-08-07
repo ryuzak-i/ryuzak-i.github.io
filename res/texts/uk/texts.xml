@@ -32,7 +32,7 @@
     <Text Id="detail_interests_coding" Value="Кодування"/>
     <Text Id="detail_interests_games" Value="Ігри"/>
     <Text Id="detail_interests_movies" Value="Фільми"/>
-    <Text Id="detail_interests_technologies" Value="Технології"/>
+    <Text Id="detail_interests_technologies" Value="Автоматизація"/>
     <Text Id="detail_interests_music" Value="Музика"/>
     <Text Id="detail_interests_art" Value="Мистецтво"/>
 </Texts>
