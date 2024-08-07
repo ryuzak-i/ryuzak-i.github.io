@@ -40,7 +40,7 @@ body {
 
 .wrapper {
     margin: 0 auto;
-    max-width: 70rem;
+    max-width: 90%;
     background-color: var(--color-gray-light-2);
     display: flex;
     /* box-shadow: 0px 0px 250px 0px var(--bg_shadow_color); */
@@ -48,7 +48,7 @@ body {
 }
 
 .intro {
-    flex: 0 0 30%;
+    flex: 0 0 35%;
     background-color: var(--color-gray-light-1);
     /* box-shadow: 5px 0px 15px 0px #b3b3b3; */
     z-index: 5;
@@ -57,7 +57,7 @@ body {
 .profile {
     position: relative;
     background-color: var(--profile-theme);
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     margin-bottom: 50px;
     text-align: center;
     user-select: none;
@@ -71,7 +71,7 @@ body {
     width: 100%;
     height: 30px;
     background-color: var(--profile-theme);
-    transform: skewY(-5deg);
+    transform: skewY(-3deg);
 }
 
 .photo img {
@@ -81,22 +81,22 @@ body {
 }
 
 .bio .name {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
     text-align: center;
     color: var(--color-gray-light-1);
     margin: 0;
-    margin-top: 1rem;
+    margin-top: 0.75rem;
 }
 
 .bio .nick {
-    font-size: 1.75rem;
+    font-size: 2rem;
     text-align: center;
     color: var(--color-gray-light-1);
     margin: 0;
 }
 
 .bio .profession {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-align: center;
     color: var(--color-gray-light-1);
     margin: 0;
@@ -104,11 +104,33 @@ body {
 }
 
 .bio .location {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     text-align: center;
     color: var(--color-gray-light-1);
     margin: 0;
     margin-top: 0.75rem;
+}
+
+.languages button {
+    cursor: pointer;
+    border: none;
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: var(--profile-theme);
+    padding: 21px 28px;
+    text-align: center;
+    display: inline-block;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin: 0.5rem;
+    margin-top: 0.75rem;
+    transition-duration: 0.3s;
+}
+
+.languages button:hover {
+    background-size: 90%;
 }
 
 .intro-section {
@@ -118,7 +140,7 @@ body {
 
 .intro-section .title {
     text-align: center;
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: bold;
     /* text-transform: uppercase; */
     letter-spacing: 1px;
@@ -126,14 +148,16 @@ body {
 
 .about .paragraph {
     text-align: justify;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 .about .quote {
-    font-family: "Caesar Dressing", cursive;
+    font-family: "Caesar Dressing", "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
     text-align: center;
-    font-size: 1.95rem;
-    color: rgba(100, 0, 0, 0.75);
+    font-size: 1.8rem;
+    color: rgba(125, 0, 0, 0.85);
     line-height: 1.35em;
     text-transform: uppercase;
     animation: burn 0.6s ease-in-out infinite alternate;

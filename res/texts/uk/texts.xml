@@ -1,0 +1,38 @@
+<Texts>
+    <Text Id="profile_bio_name" Value="Олександр Данченко"/>
+    <Text Id="profile_bio_nick" Value="відомий як «Ryuzaki» 👾"/>
+    <Text Id="profile_bio_profession" Value="Інженер-програміст"/>
+    <Text Id="profile_bio_location" Value="Сміла, Україна"/>
+    
+    <Text Id="intro_about" Value="Коротко про мене"/>
+    <Text Id="intro_about_text" Value="Вітаю! Я 24-річний розробник з пристрастю до комп'ютерних ігор. Я вдосконалюю свої навички розробки ігор та мрію створити власну гру."/>
+    <Text Id="intro_about_quote" Value="“Цей меч є доказом того, що я жив„ - Ґатс, Берсерк"/>
+
+    <Text Id="detail_education" Value="Освіта"/>
+    <Text Id="detail_education_title_1" Value="Обслуговування програмних систем і комплексів"/>
+    <Text Id="detail_education_subtitle_1" Value="Смілянський коледж харчових технологій Національного університету харчових технологій, Україна"/>
+    <Text Id="detail_education_time_1" Value="Вересень 2015 - Червень 2019, Молодший спеціаліст"/>
+    <Text Id="detail_education_title_2" Value="Комп'ютерні науки"/>
+    <Text Id="detail_education_subtitle_2" Value="Національний університет харчових технологій, Україна"/>
+    <Text Id="detail_education_time_2" Value="Вересень 2019 - Червень 2021, Бакалавр"/>
+    <Text Id="detail_education_title_3" Value="Інформаційні управляючі системи та технології"/>
+    <Text Id="detail_education_subtitle_3" Value="Національний університет харчових технологій, Україна"/>
+    <Text Id="detail_education_time_3" Value="Вересень 2021 - Лютий 2023, Магістр"/>
+
+    <Text Id="detail_work" Value="Досвід роботи"/>
+    <Text Id="detail_work_title_1" Value="Скриптувальник ігрового процесу"/>
+    <Text Id="detail_work_time_1" Value="Жовтень 2020 - Жовтень 2022"/>
+    <Text Id="detail_work_title_2" Value="Python розробник"/>
+    <Text Id="detail_work_time_2" Value="Жовтень. 2022 - Липень 2024"/>
+
+    <Text Id="detail_skills" Value="Мови програмування"/>
+    <Text Id="detail_tools" Value="Засоби розробки"/>
+
+    <Text Id="detail_interests" Value="Інтереси"/>
+    <Text Id="detail_interests_coding" Value="Кодування"/>
+    <Text Id="detail_interests_games" Value="Ігри"/>
+    <Text Id="detail_interests_movies" Value="Фільми"/>
+    <Text Id="detail_interests_technologies" Value="Технології"/>
+    <Text Id="detail_interests_music" Value="Музика"/>
+    <Text Id="detail_interests_art" Value="Мистецтво"/>
+</Texts>
