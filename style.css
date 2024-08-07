@@ -14,6 +14,7 @@
     --github_color: #000000;
     --telegram_color: #23a9ea;
     --linkedin_color: #0078b6;
+    --page_bg_color: white;
 
     --pgbar-length: 100%;
 
@@ -49,7 +50,7 @@ body {
 
 .intro {
     flex: 0 0 35%;
-    background-color: var(--color-gray-light-1);
+    background-color: var(--page_bg_color);
     /* box-shadow: 5px 0px 15px 0px #b3b3b3; */
     z-index: 5;
 }
@@ -208,7 +209,7 @@ body {
 /* Detail section overall setting*/
 .detail {
     flex: 1 0 0;
-    background-color: white;
+    background-color: var(--page_bg_color);
     padding: 2rem;
 }
 
@@ -421,7 +422,7 @@ body {
 
 .tool-list>li>.tl-name {
     top: 50%;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: bold;
     letter-spacing: 0.25px;
     transform: translate(-50%, -50%);
@@ -594,6 +595,10 @@ body {
         flex-direction: column;
     }
 
+    .intro {
+        background-color: var(--page_bg_color);
+    }
+    
     .intro,
     .detail {
         flex: 0 0 100%;
@@ -616,6 +621,11 @@ body {
         width: 100px;
         height: 100px;
     }
+
+    .tool-list>li>.tl-name {
+        font-size: 1.5rem;
+        letter-spacing: 0px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -626,10 +636,28 @@ body {
     .favor-list>li {
         flex: 0 0 33.3333%;
     }
+
+    .intro {
+        background-color: var(--page_bg_color);
+    }
+
+    .tool-list>li>.tl-name {
+        font-size: 1.15rem;
+        letter-spacing: 0px;
+    }
 }
 
 @media (max-width: 500px) {
     html {
         font-size: 70%;
+    }
+
+    .intro {
+        background-color: var(--page_bg_color);
+    }
+
+    .tool-list>li>.tl-name {
+        font-size: 0.9rem;
+        letter-spacing: 0px;
     }
 }
