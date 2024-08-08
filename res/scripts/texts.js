@@ -3,30 +3,45 @@ function loadConfig(config_path) {
         function (u) { return u.json(); }
     ).then(
         function (config) {
-            let default_language_id = config.TEXTS.DEFAULT_LANGUAGE;
-            loadTexts(config, default_language_id);
+            let default_language_code = config.TEXTS.DEFAULT_LANGUAGE;
+            loadTexts(config, default_language_code);
 
-            for (let language_id in config.TEXTS.LANGUAGES) {
-                lang_button = document.getElementById("language_" + language_id);
+            let start_language_code = null;
+            let user_language_code = navigator.language || navigator.userLanguage;
 
-                if (lang_button === null) { continue; }
+            for (let language_code in config.TEXTS.LANGUAGES) {
+                lang_button = document.getElementById("language_" + language_code);
+
+                if (lang_button === null) {
+                    continue;
+                };
 
                 lang_button.addEventListener("click", function () {
-                    loadTexts(config, language_id);
+                    loadTexts(config, language_code);
                 });
-            }
+
+                if (start_language_code === null) {
+                    if (language_code === user_language_code) {
+                        start_language_code = user_language_code;
+                    };
+                };
+            };
+
+            if (start_language_code != null && start_language_code !== default_language_code) {
+                loadTexts(config, start_language_code);
+            };
         }
     )
 }
 
-function loadTexts(config, language_id) {
-    if (current_language_id === language_id) {
+function loadTexts(config, language_code) {
+    if (current_language_code === language_code) {
         return;
     }
 
-    current_language_id = language_id;
+    current_language_code = language_code;
 
-    let xml_path = config.TEXTS.LANGUAGES[language_id].XML_DOCUMENT_PATH;
+    let xml_path = config.TEXTS.LANGUAGES[language_code].XML_DOCUMENT_PATH;
     fetch(xml_path)
         .then((response) => response.text())
         .then((xml_string) => {
@@ -46,6 +61,6 @@ function loadTexts(config, language_id) {
         });
 }
 
-let current_language_id;
+let current_language_code;
 let config_path = "config.json";
 loadConfig(config_path);
