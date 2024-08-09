@@ -26,6 +26,7 @@ html {
     font-size: 100%;
     font-family: 'PT Sans', sans-serif;
     /* font-family: 'Ubuntu', '微軟正黑體'; */
+    cursor: default;
 }
 
 * {
@@ -45,7 +46,7 @@ body {
     background-color: var(--color-gray-light-2);
     display: flex;
     /* box-shadow: 0px 0px 250px 0px var(--bg_shadow_color); */
-    animation: bg_anim 10s ease-in-out infinite alternate;
+    animation: bg_anim 7s ease-in-out infinite alternate;
 }
 
 .intro {
@@ -147,6 +148,32 @@ body {
     letter-spacing: 1px;
 }
 
+.intro-section.soft_skills .list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    justify-content:space-evenly;
+    text-align: center;
+}
+
+.intro-section.soft_skills .list>li {
+    list-style: none;
+    list-style-type: none;
+    position: relative;
+    display: contents;
+    
+    font-size: 1.8rem;
+    transition: all 0.3s;
+}
+
+.intro-section.soft_skills .list>li:hover {
+    font-weight: bold;
+    font-size: 1.9rem;
+    transition: all 0.15s;
+    color: var(--color-tiffany);
+}
+
 .about .paragraph {
     text-align: justify;
     font-size: 1.75rem;
@@ -237,6 +264,22 @@ body {
 }
 
 .detail-section.edu>.detail-content {
+    padding-left: calc(1.5rem + 10px);
+}
+
+.detail-section.work>.detail-content {
+    padding-left: calc(1.5rem + 10px);
+}
+
+.detail-section.pg-skill>.detail-content {
+    padding-left: calc(1.5rem + 10px);
+}
+
+.detail-section.tool-skill>.detail-content {
+    padding-left: calc(1.5rem + 10px);
+}
+
+.detail-section.interests>.detail-content {
     padding-left: calc(1.5rem + 10px);
 }
 

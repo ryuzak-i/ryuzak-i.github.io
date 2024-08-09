@@ -21,6 +21,6 @@ var audio = document.getElementById("ambient");
 var can_play_ogg = !!audio.canPlayType && audio.canPlayType('audio/ogg; codecs="vorbis"') != "";
 var audio_state = can_play_ogg;
 
-if (can_play_ogg === true) {
+if (can_play_ogg === true && audio != null) {
     audio.parentNode.addEventListener("click", runState);
 };

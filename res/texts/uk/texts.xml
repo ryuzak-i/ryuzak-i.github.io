@@ -6,7 +6,22 @@
     
     <Text Id="intro_about" Value="Коротко про мене"/>
     <Text Id="intro_about_text" Value="Вітаю! Я 24-річний розробник з пристрастю до комп'ютерних ігор. Я вдосконалюю свої навички розробки ігор та мрію створити власну гру."/>
-    <Text Id="intro_about_quote" Value="“Цей меч є доказом того, що я жив„ - Ґатс, Берсерк"/>
+    
+    <Text Id="intro_soft_skills" Value="Особисті якості"/>
+    <Text Id="intro_soft_skill_1" Value="Винахідливий"/>
+    <Text Id="intro_soft_skill_2" Value="Самостійний"/>
+    <Text Id="intro_soft_skill_3" Value="Вмотивований"/>
+    <Text Id="intro_soft_skill_4" Value="Розумний"/>
+    <Text Id="intro_soft_skill_5" Value="Стриманий"/>
+    <Text Id="intro_soft_skill_6" Value="Цілеспрямований"/>
+    <Text Id="intro_soft_skill_7" Value="Уважний"/>
+    <Text Id="intro_soft_skill_8" Value="Вправний"/>
+    <Text Id="intro_soft_skill_9" Value="Стійкий"/>
+    <Text Id="intro_soft_skill_10" Value="Відповідальний"/> 
+
+    <Text Id="intro_follow" Value="Соціальні мережі"/>
+
+    <Text Id="intro_quote" Value="“Цей меч є доказом того, що я жив„ - Ґатс, Берсерк"/>
 
     <Text Id="detail_education" Value="Освіта"/>
     <Text Id="detail_education_title_1" Value="Обслуговування програмних систем і комплексів"/>
