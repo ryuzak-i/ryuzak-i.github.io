@@ -242,9 +242,10 @@ body {
     padding: 2rem;
 }
 
-.detail:hover>.detail-section:not(:hover) {
+/* Fade other elements effect */
+/* .detail:hover>.detail-section:not(:hover) {
     opacity: 0.3;
-}
+} */
 
 .detail-section {
     transition: all 0.3s;
