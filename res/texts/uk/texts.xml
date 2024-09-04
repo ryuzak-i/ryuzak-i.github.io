@@ -24,21 +24,58 @@
     <Text Id="intro_quote" Value="“Цей меч є доказом того, що я жив„ - Ґатс, Берсерк"/>
 
     <Text Id="detail_education" Value="Освіта"/>
-    <Text Id="detail_education_title_1" Value="Обслуговування програмних систем і комплексів"/>
-    <Text Id="detail_education_subtitle_1" Value="Смілянський коледж харчових технологій Національного університету харчових технологій, Україна"/>
-    <Text Id="detail_education_time_1" Value="Вересень 2015 - Червень 2019, Молодший спеціаліст"/>
-    <Text Id="detail_education_title_2" Value="Комп'ютерні науки"/>
-    <Text Id="detail_education_subtitle_2" Value="Національний університет харчових технологій, Україна"/>
-    <Text Id="detail_education_time_2" Value="Вересень 2019 - Червень 2021, Бакалавр"/>
-    <Text Id="detail_education_title_3" Value="Інформаційні управляючі системи та технології"/>
-    <Text Id="detail_education_subtitle_3" Value="Національний університет харчових технологій, Україна"/>
-    <Text Id="detail_education_time_3" Value="Вересень 2021 - Лютий 2023, Магістр"/>
 
+    <Text Id="detail_education_1_time" Value="Вересень 2015 - Червень 2019"/>
+    <Text Id="detail_education_1_title" Value="Молодший спеціаліст, Обслуговування програмних систем і комплексів"/>
+    <Text Id="detail_education_1_subtitle_1" Value="Смілянський коледж харчових технологій Національного університету харчових технологій, Україна"/>
+    <Text Id="detail_education_1_subtitle_2" Value="Набуті знання та вміння"/>
+    <Text Id="detail_education_1_skill_1" Value="ООП"/>
+    <Text Id="detail_education_1_skill_11" Value="Алгоритмізація"/>
+    
+    <Text Id="detail_education_2_time" Value="Вересень 2019 - Червень 2021"/>
+    <Text Id="detail_education_2_title" Value="Бакалавр, Комп'ютерні науки"/>
+    <Text Id="detail_education_2_subtitle_1" Value="Національний університет харчових технологій, Україна"/>
+    <Text Id="detail_education_2_subtitle_2" Value="Набуті знання та вміння"/>
+    <Text Id="detail_education_2_skill_4" Value="Управління проєктами"/>
+    <Text Id="detail_education_2_skill_5" Value="Крос-платформне програмування"/>
+    <Text Id="detail_education_2_skill_6" Value="Паралельні обчислення"/>
+    <Text Id="detail_education_2_skill_7" Value="Інформаційні системи"/>
+    <Text Id="detail_education_2_skill_8" Value="Веб-технології"/>
+    
+    <Text Id="detail_education_3_time" Value="Вересень 2021 - Лютий 2023"/>
+    <Text Id="detail_education_3_title" Value="Магістр, Інформаційні управляючі системи та технології"/>
+    <Text Id="detail_education_3_subtitle_1" Value="Національний університет харчових технологій, Україна"/>
+    <Text Id="detail_education_3_subtitle_2" Value="Набуті знання та вміння"/>
+    <Text Id="detail_education_3_skill_1" Value="Клієнт–сервер"/>
+    <Text Id="detail_education_3_skill_2" Value="Хмарні технології"/>
+    <Text Id="detail_education_3_skill_3" Value="Інноваційні проекти"/>
+    <Text Id="detail_education_3_skill_4" Value="Моделювання систем"/>
+    <Text Id="detail_education_3_skill_5" Value="Бізнес процеси"/>
+    <Text Id="detail_education_3_skill_6" Value="Командоутворення"/>
+    <Text Id="detail_education_3_skill_7" Value="Професійне спілкування"/>
+    
     <Text Id="detail_work" Value="Досвід роботи"/>
-    <Text Id="detail_work_title_1" Value="Скриптувальник ігрового процесу"/>
-    <Text Id="detail_work_time_1" Value="Жовтень 2020 - Жовтень 2022"/>
-    <Text Id="detail_work_title_2" Value="Python розробник"/>
-    <Text Id="detail_work_time_2" Value="Жовтень. 2022 - Липень 2024"/>
+
+    <Text Id="detail_work_1_time" Value="Жовтень 2020 - Жовтень 2022"/>
+    <Text Id="detail_work_1_title" Value="Скриптувальник ігрового процесу"/>
+    <Text Id="detail_work_1_subtitle_2" Value="Завдання та обов'язки"/>
+    <Text Id="detail_work_1_about" Value="Основним завданням скриптувальника було написання логіки послідовності взаємодії гравця з елементами гри та проходження гравцем гри за сценарієм. Отримавши певний досвід, додатковими завданнями були: формування частини технічного завдання для аніматорів та художників, підготовка артів в Photoshop, базова анімація в After Effects, пошук звукових ефектів для гри."/>
+    <Text Id="detail_work_1_subtitle_3" Value="Набуті знання та вміння"/>
+    <Text Id="detail_work_1_skill_2" Value="Скриптування сценарію"/>
+    <Text Id="detail_work_1_skill_12" Value="Ручне тестування"/>
+    <Text Id="detail_work_1_skill_13" Value="Керівництво командою"/>
+
+    <Text Id="detail_work_2_time" Value="Жовтень. 2022 - Липень 2024"/>
+    <Text Id="detail_work_2_title" Value="Python розробник"/>
+    <Text Id="detail_work_2_subtitle_2" Value="Завдання та обов'язки"/>
+    <Text Id="detail_work_2_about" Value="В обов'язки програмістів входить підтримка актуальних проектів, програмування логіки ігрових механік мовою програмування Python, підтримка та покращення старого коду, робота з системою керування версійності файлів Git/Github. Отримавши більше досвіду, я додатково вивчав програмування функцій серверної логіки мобільних ігор в PlayFab мовою програмування JavaScript та налаштовував мобільні ігри в Google Play Console."/>
+    <Text Id="detail_work_2_subtitle_3" Value="Набуті знання та вміння"/>
+    <Text Id="detail_work_2_skill_8" Value="Успадкований код"/>
+    <Text Id="detail_work_2_skill_11" Value="Локалізація"/>
+    <Text Id="detail_work_2_skill_12" Value="Програмування UI"/>
+    <Text Id="detail_work_2_skill_13" Value="Перевірка коду"/>
+    <Text Id="detail_work_2_skill_17" Value="Ігрові механіка"/>
+    <Text Id="detail_work_2_skill_18" Value="Розробка гри"/>
 
     <Text Id="detail_skills" Value="Мови програмування"/>
     <Text Id="detail_tools" Value="Засоби розробки"/>

@@ -10,6 +10,7 @@
     --profile-theme: #181818;
     --timeline-circle-theme: #14253e;
     --bg_shadow_color: #1f71ebc6;
+    --mouse_over_color: #1f71eb;
     --avatar_shadow_color: rgba(0, 0, 0, 0.5);
     --github_color: #000000;
     --telegram_color: #23a9ea;
@@ -173,11 +174,11 @@ body {
     font-weight: bold;
     font-size: 1.9rem;
     transition: all 0.15s;
-    color: var(--color-tiffany);
+    color: var(--mouse_over_color);
 }
 
 .about .paragraph {
-    text-align: justify;
+    text-align: center;
     font-size: 1.75rem;
 }
 
@@ -335,13 +336,13 @@ body {
 }
 
 .timeline-block h1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     margin: 5px 0;
     transition: all 0.3s;
 }
 
 .timeline-block p {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     margin: 5px 0;
 }
 
@@ -370,7 +371,7 @@ body {
 }
 
 .timeline-block time {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     color: var(--color-gray-dark-2);
 }
 
@@ -396,12 +397,54 @@ body {
     top: 13px;
 }
 
-.timeline-block:hover h1 {
-    color: var(--color-tiffany);
-}
+/* .timeline-block:hover h1 {
+    color: var(--mouse_over_color);
+} */
 
 .timeline-block:hover::before {
     animation: circle 1.2s infinite;
+    border-color: var(--mouse_over_color);
+}
+
+.timeline-block .list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+    text-align: justify;
+}
+
+.timeline-block .list>li {
+    list-style: none;
+    list-style-type: none;
+    position: relative;
+    display: contents;
+
+    font-size: 1.35rem;
+    transition: all 0.3s;
+}
+
+.timeline-block .list>li:hover {
+    font-weight: bold;
+    font-size: 1.45rem;
+    transition: all 0.15s;
+    color: var(--mouse_over_color);
+}
+
+.timeline-block .mid {
+    /* text-align: center; */
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+
+.timeline-block .mida {
+    /* text-align: center; */
+    text-align: justify;
+    font-size: 1.35rem;
+    transition: all 0.3s;
 }
 
 /* Programming skills section */
@@ -479,7 +522,7 @@ body {
 
 .tool-list>li:hover>svg>circle.cbar {
     stroke-width: 4px;
-    stroke: var(--color-tiffany);
+    stroke: var(--mouse_over_color);
     stroke-dashoffset: calc(var(--MATH-PI) * 45 * 2 * (1 - var(--percent)));
 }
 
@@ -539,7 +582,7 @@ body {
 
 .favor-list>li:hover {
     transform: scale(1.2);
-    color: var(--color-tiffany);
+    color: var(--mouse_over_color);
 }
 
 .favor-list>li>span {
@@ -560,8 +603,8 @@ body {
 }
 
 .follow .box a:hover i {
-    background: var(--profile-theme);
-    box-shadow: 0px 0px 2px 1px var(--profile-theme);
+    /* background: var(--profile-theme); */
+    /* box-shadow: 0px 0px 2px 1px var(--profile-theme); */
     border-radius: 5px;
     transform: rotate(45deg) scale(0.8);
 }
@@ -573,19 +616,19 @@ body {
 .follow .box .github i {
     background: var(--github_color);
     color: white;
-    box-shadow: 0px 0px 2px 1px var(--github_color);
+    /* box-shadow: 0px 0px 2px 1px var(--github_color); */
 }
 
 .follow .box .telegram i {
     background: var(--telegram_color);
     color: white;
-    box-shadow: 0px 0px 2px 1px var(--telegram_color);
+    /* box-shadow: 0px 0px 2px 1px var(--telegram_color); */
 }
 
 .follow .box .linkedin i {
     background: var(--linkedin_color);
     color: white;
-    box-shadow: 0px 0px 2px 1px var(--linkedin_color);
+    /* box-shadow: 0px 0px 2px 1px var(--linkedin_color); */
 }
 
 .follow .box i {

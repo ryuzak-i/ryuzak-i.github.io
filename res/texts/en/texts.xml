@@ -26,23 +26,101 @@
     <Text Id="intro_quote" Value="“This sword Is the proof that I have lived„ - Guts, Berserk"/>
 
     <Text Id="detail_education" Value="Education"/>
-    <Text Id="detail_education_title_1" Value="Maintenance of programmed systems and complexes"/>
-    <Text Id="detail_education_subtitle_1" Value="Smila College of Food Technologies of National University of Food Technologies, Ukraine"/>
-    <Text Id="detail_education_time_1" Value="Sep. 2015 - Jun. 2019, Junior Specialist"/>
-    <Text Id="detail_education_title_2" Value="Computer Sciences"/>
-    <Text Id="detail_education_subtitle_2" Value="National University of Food Technologies, Ukraine"/>
-    <Text Id="detail_education_time_2" Value="Sep. 2019 - Jun. 2021, Bachelor"/>
-    <Text Id="detail_education_title_3" Value="Information Management Systems and Technologies"/>
-    <Text Id="detail_education_subtitle_3" Value="National University of Food Technologies, Ukraine"/>
-    <Text Id="detail_education_time_3" Value="Sep. 2021 - Feb. 2023, Master"/>
+
+    <Text Id="detail_education_1_time" Value="Sep. 2015 - Jun. 2019"/>
+    <Text Id="detail_education_1_title" Value="Junior Specialist, Maintenance of programmed systems and complexes"/>
+    <Text Id="detail_education_1_subtitle_1" Value="Smila College of Food Technologies of National University of Food Technologies, Ukraine"/>
+    <Text Id="detail_education_1_subtitle_2" Value="Acquired knowledge and skills"/>
+    <Text Id="detail_education_1_skill_1" Value="OOP"/>
+    <Text Id="detail_education_1_skill_2" Value="Pascal"/>
+    <Text Id="detail_education_1_skill_3" Value="C"/>
+    <Text Id="detail_education_1_skill_4" Value="C++"/>
+    <Text Id="detail_education_1_skill_5" Value="SQL"/>
+    <Text Id="detail_education_1_skill_6" Value="HTML"/>
+    <Text Id="detail_education_1_skill_7" Value="Delphi"/>
+    <Text Id="detail_education_1_skill_8" Value="Windows"/>
+    <Text Id="detail_education_1_skill_9" Value="Linux"/>
+    <Text Id="detail_education_1_skill_10" Value="VirtualBox"/>
+    <Text Id="detail_education_1_skill_11" Value="Algorithmization"/>
+    <Text Id="detail_education_1_skill_12" Value="Photoshop"/>
+    <Text Id="detail_education_1_skill_13" Value="Flash"/>
+    <Text Id="detail_education_1_skill_14" Value="Word"/>
+    <Text Id="detail_education_1_skill_15" Value="Excel"/>
+    <Text Id="detail_education_1_skill_16" Value="Access"/>
+    <Text Id="detail_education_1_skill_17" Value="CorelDraw"/>
+
+    <Text Id="detail_education_2_time" Value="Sep. 2019 - Jun. 2021"/>
+    <Text Id="detail_education_2_title" Value="Bachelor, Computer Sciences"/>
+    <Text Id="detail_education_2_subtitle_1" Value="National University of Food Technologies, Ukraine"/>
+    <Text Id="detail_education_2_subtitle_2" Value="Acquired knowledge and skills"/>
+    <Text Id="detail_education_2_skill_1" Value="C#"/>
+    <Text Id="detail_education_2_skill_2" Value="CSS"/>
+    <Text Id="detail_education_2_skill_3" Value="Visual Studio"/>
+    <Text Id="detail_education_2_skill_4" Value="Project management"/>
+    <Text Id="detail_education_2_skill_5" Value="Cross-platform programming"/>
+    <Text Id="detail_education_2_skill_6" Value="Parallel computing"/>
+    <Text Id="detail_education_2_skill_7" Value="Information systems"/>
+    <Text Id="detail_education_2_skill_8" Value="Web technologies"/>
+    
+    <Text Id="detail_education_3_time" Value="Sep. 2021 - Feb. 2023"/>
+    <Text Id="detail_education_3_title" Value="Master, Information Management Systems and Technologies"/>
+    <Text Id="detail_education_3_subtitle_1" Value="National University of Food Technologies, Ukraine"/>
+    <Text Id="detail_education_3_subtitle_2" Value="Acquired knowledge and skills"/>
+    <Text Id="detail_education_3_skill_1" Value="Client–server"/>
+    <Text Id="detail_education_3_skill_2" Value="Cloud technologies"/>
+    <Text Id="detail_education_3_skill_3" Value="Innovative projects"/>
+    <Text Id="detail_education_3_skill_4" Value="Systems modeling"/>
+    <Text Id="detail_education_3_skill_5" Value="Business processes"/>
+    <Text Id="detail_education_3_skill_6" Value="Team building"/>
+    <Text Id="detail_education_3_skill_7" Value="Professional communication"/>
 
     <Text Id="detail_work" Value="Work experience"/>
-    <Text Id="detail_work_title_1" Value="Gameplay Scripter"/>
-    <Text Id="detail_work_subtitle_1" Value="Wonderland Games"/>
-    <Text Id="detail_work_time_1" Value="Oct. 2020 - Oct. 2022"/>
-    <Text Id="detail_work_title_2" Value="Python Developer"/>
-    <Text Id="detail_work_subtitle_2" Value="Wonderland Games"/>
-    <Text Id="detail_work_time_2" Value="Oct. 2022 - Jul. 2024"/>
+
+    <Text Id="detail_work_1_time" Value="Oct. 2020 - Oct. 2022"/>
+    <Text Id="detail_work_1_title" Value="Gameplay Scripter"/>
+    <Text Id="detail_work_1_subtitle_1" Value="Wonderland Games"/>
+    <Text Id="detail_work_1_subtitle_2" Value="Tasks and responsibilities"/>
+    <Text Id="detail_work_1_about" Value="The main task of the scripter was to write the logic of the sequence of the player's interaction with the elements of the game and the player's passage through the game according to the scenario. After gaining some experience, additional tasks were: forming part of the technical task for animators and artists, preparing art in Photoshop, basic animation in After Effects, finding sound effects for the game."/>
+    <Text Id="detail_work_1_subtitle_3" Value="Acquired knowledge and skills"/>
+    <Text Id="detail_work_1_skill_1" Value="SVN"/>
+    <Text Id="detail_work_1_skill_2" Value="Scenario scripting"/>
+    <Text Id="detail_work_1_skill_3" Value="Trello"/>
+    <Text Id="detail_work_1_skill_4" Value="Jira"/>
+    <Text Id="detail_work_1_skill_5" Value="Confluence"/>
+    <Text Id="detail_work_1_skill_6" Value="Jenkins"/>
+    <Text Id="detail_work_1_skill_7" Value="Particles"/>
+    <Text Id="detail_work_1_skill_8" Value="After Effects"/>
+    <Text Id="detail_work_1_skill_9" Value="Media Encoder"/>
+    <Text Id="detail_work_1_skill_10" Value="SFX"/>
+    <Text Id="detail_work_1_skill_11" Value="Notepad++"/>
+    <Text Id="detail_work_1_skill_12" Value="Manual testing"/>
+    <Text Id="detail_work_1_skill_13" Value="Team leading"/>
+
+    <Text Id="detail_work_2_time" Value="Oct. 2022 - Jul. 2024"/>
+    <Text Id="detail_work_2_title" Value="Python Developer"/>
+    <Text Id="detail_work_2_subtitle_1" Value="Wonderland Games"/>
+    <Text Id="detail_work_2_subtitle_2" Value="Tasks and responsibilities"/>
+    <Text Id="detail_work_2_about" Value="The responsibilities of programmers include the support of current projects, programming the logic of game mechanics in the Python programming language, maintaining and improving old code, working with the version control system of Git/Github files. As I gained more experience, I further learned how to program the server logic functions of mobile games in PlayFab in the JavaScript programming language and configure mobile games in Google Play Console."/>
+    <Text Id="detail_work_2_subtitle_3" Value="Acquired knowledge and skills"/>
+    <Text Id="detail_work_2_skill_1" Value="Python"/>
+    <Text Id="detail_work_2_skill_2" Value="Pycharm"/>
+    <Text Id="detail_work_2_skill_3" Value="JavaScript"/>
+    <Text Id="detail_work_2_skill_4" Value="Github"/>
+    <Text Id="detail_work_2_skill_5" Value="Git LFS"/>
+    <Text Id="detail_work_2_skill_6" Value="Fork"/>
+    <Text Id="detail_work_2_skill_7" Value="Unity"/>
+    <Text Id="detail_work_2_skill_8" Value="Legacy code"/>
+    <Text Id="detail_work_2_skill_9" Value="MVC"/>
+    <Text Id="detail_work_2_skill_10" Value="API"/>
+    <Text Id="detail_work_2_skill_11" Value="Localisation"/>
+    <Text Id="detail_work_2_skill_12" Value="UI programming"/>
+    <Text Id="detail_work_2_skill_13" Value="Code review"/>
+    <Text Id="detail_work_2_skill_14" Value="PlayFab"/>
+    <Text Id="detail_work_2_skill_15" Value="ChatGPT"/>
+    <Text Id="detail_work_2_skill_16" Value="Midjourney"/>
+    <Text Id="detail_work_2_skill_17" Value="Game mechanics"/>
+    <Text Id="detail_work_2_skill_18" Value="Game development"/>
+    <Text Id="detail_work_2_skill_19" Value="Google Play Console"/>
 
     <Text Id="detail_skills" Value="Programming languages"/>
     <Text Id="detail_skills_python" Value="Python"/>
