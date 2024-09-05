@@ -9,6 +9,8 @@
     <Text Id="intro_about" Value="Briefly about me"/>
     <Text Id="intro_about_text" Value="Hello there! I'm a 24 y.o. enthusiast developer with a passion for computer games.  I'm improving my game development skills and dreaming of creating my own game."/>
     
+    <Text Id="intro_quote" Value="“This sword Is the proof that I have lived„ - Guts, Berserk"/>
+    
     <Text Id="intro_soft_skills" Value="Personal qualities"/>
     <Text Id="intro_soft_skill_1" Value="Inventive"/>
     <Text Id="intro_soft_skill_2" Value="Independent"/>
@@ -19,11 +21,10 @@
     <Text Id="intro_soft_skill_7" Value="Attentive"/>
     <Text Id="intro_soft_skill_8" Value="Skillful"/>
     <Text Id="intro_soft_skill_9" Value="Persistant"/>
-    <Text Id="intro_soft_skill_10" Value="Responsible"/>    
+    <Text Id="intro_soft_skill_10" Value="Responsible"/>
 
     <Text Id="intro_follow" Value="Social media"/>
-
-    <Text Id="intro_quote" Value="“This sword Is the proof that I have lived„ - Guts, Berserk"/>
+    <Text Id="intro_tech_stack" Value="Technology stack"/>
 
     <Text Id="detail_education" Value="Education"/>
 
@@ -58,9 +59,10 @@
     <Text Id="detail_education_2_skill_3" Value="Visual Studio"/>
     <Text Id="detail_education_2_skill_4" Value="Project management"/>
     <Text Id="detail_education_2_skill_5" Value="Cross-platform programming"/>
-    <Text Id="detail_education_2_skill_6" Value="Parallel computing"/>
-    <Text Id="detail_education_2_skill_7" Value="Information systems"/>
-    <Text Id="detail_education_2_skill_8" Value="Web technologies"/>
+    <Text Id="detail_education_2_skill_6" Value="Arduino"/>
+    <Text Id="detail_education_2_skill_7" Value="Parallel computing"/>
+    <Text Id="detail_education_2_skill_8" Value="Information systems"/>
+    <Text Id="detail_education_2_skill_9" Value="Web technologies"/>
     
     <Text Id="detail_education_3_time" Value="Sep. 2021 - Feb. 2023"/>
     <Text Id="detail_education_3_title" Value="Master, Information Management Systems and Technologies"/>
