@@ -863,14 +863,14 @@ body {
         border-radius: 25%;
         width: 70px;
         height: auto;
-        margin: 5px;
+        margin: 3.5px;
         padding: 0;
         transition: all 0.15s;
     }
 
     .timeline-block .p_list img:hover {
         border-radius: 30%;
-        width: 80px;
+        width: 77px;
         height: auto;
         margin: 0px;
         padding: 0;
@@ -901,14 +901,14 @@ body {
         border-radius: 25%;
         width: 54px;
         height: auto;
-        margin: 5px;
+        margin: 2.5px;
         padding: 0;
         transition: all 0.15s;
     }
 
     .timeline-block .p_list img:hover {
         border-radius: 30%;
-        width: 64px;
+        width: 59px;
         height: auto;
         margin: 0px;
         padding: 0;
