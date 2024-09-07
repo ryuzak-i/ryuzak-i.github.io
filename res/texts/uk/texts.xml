@@ -65,6 +65,7 @@
     <Text Id="detail_work_1_skill_2" Value="Скриптування сценарію"/>
     <Text Id="detail_work_1_skill_12" Value="Ручне тестування"/>
     <Text Id="detail_work_1_skill_13" Value="Керівництво командою"/>
+    <Text Id="detail_work_1_subtitle_4" Value="Участь в розробці проєктів"/>
 
     <Text Id="detail_work_2_time" Value="Жовтень. 2022 - Липень 2024"/>
     <Text Id="detail_work_2_title" Value="Python розробник"/>
@@ -77,6 +78,7 @@
     <Text Id="detail_work_2_skill_13" Value="Перевірка коду"/>
     <Text Id="detail_work_2_skill_17" Value="Ігрові механіки"/>
     <Text Id="detail_work_2_skill_18" Value="Розробка гри"/>
+    <Text Id="detail_work_2_subtitle_4" Value="Участь в розробці проєктів"/>
 
     <Text Id="detail_skills" Value="Мови програмування"/>
     <Text Id="detail_tools" Value="Засоби розробки"/>

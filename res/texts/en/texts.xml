@@ -97,6 +97,7 @@
     <Text Id="detail_work_1_skill_11" Value="Notepad++"/>
     <Text Id="detail_work_1_skill_12" Value="Manual testing"/>
     <Text Id="detail_work_1_skill_13" Value="Team leading"/>
+    <Text Id="detail_work_1_subtitle_4" Value="Participating in projects development"/>
 
     <Text Id="detail_work_2_time" Value="Oct. 2022 - Jul. 2024"/>
     <Text Id="detail_work_2_title" Value="Python Developer"/>
@@ -123,6 +124,7 @@
     <Text Id="detail_work_2_skill_17" Value="Game mechanics"/>
     <Text Id="detail_work_2_skill_18" Value="Game development"/>
     <Text Id="detail_work_2_skill_19" Value="Google Play Console"/>
+    <Text Id="detail_work_2_subtitle_4" Value="Participating in projects development"/>
 
     <Text Id="detail_skills" Value="Programming languages"/>
     <Text Id="detail_skills_python" Value="Python"/>

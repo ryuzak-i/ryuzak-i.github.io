@@ -45,7 +45,7 @@ body {
 
 .wrapper {
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 95%;
     background-color: var(--color-gray-light-2);
     display: flex;
     /* box-shadow: 0px 0px 250px 0px var(--bg_shadow_color); */
@@ -182,7 +182,7 @@ body {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    justify-content:center;
+    justify-content: center;
 }
 
 .intro-section.tech_stack .list>li {
@@ -193,6 +193,7 @@ body {
 }
 
 .intro-section.tech_stack .list>li>img {
+    border-radius: 25%;
     height: 60px;
     width: auto;
     transition: all 0.15s;
@@ -203,6 +204,7 @@ body {
 }
 
 .intro-section.tech_stack .list>li>img:hover {
+    border-radius: 30%;
     height: 65px;
     width: auto;
     transition: all 0.15s;
@@ -480,6 +482,39 @@ body {
     text-align: justify;
     font-size: 1.5rem;
     transition: all 0.3s;
+}
+
+.timeline-block .p_list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    justify-content: left;
+}
+
+.timeline-block .p_list>li {
+    list-style: none;
+    list-style-type: none;
+    position: relative;
+    display: contents;
+}
+
+.timeline-block .p_list img {
+    border-radius: 25%;
+    width: 96px;
+    height: auto;
+    margin: 5px;
+    padding: 0;
+    transition: all 0.15s;
+}
+
+.timeline-block .p_list img:hover {
+    border-radius: 30%;
+    width: 106px;
+    height: auto;
+    margin: 0px;
+    padding: 0;
+    transition: all 0.15s;
 }
 
 /* Programming skills section */
@@ -781,6 +816,24 @@ body {
         letter-spacing: 0.5px;
         font-size: 1.15rem;
     }
+
+    .timeline-block .p_list img {
+        border-radius: 25%;
+        width: 80px;
+        height: auto;
+        margin: 5px;
+        padding: 0;
+        transition: all 0.15s;
+    }
+
+    .timeline-block .p_list img:hover {
+        border-radius: 30%;
+        width: 90px;
+        height: auto;
+        margin: 0px;
+        padding: 0;
+        transition: all 0.15s;
+    }
 }
 
 @media (max-width: 768px) {
@@ -805,6 +858,24 @@ body {
         letter-spacing: 0.5px;
         font-size: 1.15rem;
     }
+
+    .timeline-block .p_list img {
+        border-radius: 25%;
+        width: 70px;
+        height: auto;
+        margin: 5px;
+        padding: 0;
+        transition: all 0.15s;
+    }
+
+    .timeline-block .p_list img:hover {
+        border-radius: 30%;
+        width: 80px;
+        height: auto;
+        margin: 0px;
+        padding: 0;
+        transition: all 0.15s;
+    }
 }
 
 @media (max-width: 500px) {
@@ -824,5 +895,23 @@ body {
     .favor-list>li>span {
         letter-spacing: 0px;
         font-size: 1rem;
+    }
+
+    .timeline-block .p_list img {
+        border-radius: 25%;
+        width: 54px;
+        height: auto;
+        margin: 5px;
+        padding: 0;
+        transition: all 0.15s;
+    }
+
+    .timeline-block .p_list img:hover {
+        border-radius: 30%;
+        width: 64px;
+        height: auto;
+        margin: 0px;
+        padding: 0;
+        transition: all 0.15s;
     }
 }
