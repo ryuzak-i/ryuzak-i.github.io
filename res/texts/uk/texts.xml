@@ -21,7 +21,7 @@
     <Text Id="intro_soft_skill_9" Value="Стійкий"/>
     <Text Id="intro_soft_skill_10" Value="Відповідальний"/> 
 
-    <Text Id="intro_follow" Value="Соціальні мережі"/>
+    <Text Id="intro_follow" Value="Контакти"/>
     <Text Id="intro_tech_stack" Value="Стек технологій"/>
 
     <Text Id="detail_education" Value="Освіта"/>

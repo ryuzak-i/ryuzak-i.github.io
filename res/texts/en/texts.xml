@@ -23,7 +23,7 @@
     <Text Id="intro_soft_skill_9" Value="Persistant"/>
     <Text Id="intro_soft_skill_10" Value="Responsible"/>
 
-    <Text Id="intro_follow" Value="Social media"/>
+    <Text Id="intro_follow" Value="Contacts"/>
     <Text Id="intro_tech_stack" Value="Technology stack"/>
 
     <Text Id="detail_education" Value="Education"/>

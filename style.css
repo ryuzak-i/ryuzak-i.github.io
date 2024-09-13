@@ -15,6 +15,7 @@
     --github_color: #000000;
     --telegram_color: #23a9ea;
     --linkedin_color: #0078b6;
+    --mail_color: #a47b57;
     --page_bg_color: white;
     --link_color: var(--profile-theme);
     --link_hover_color: #0057b8;
@@ -698,6 +699,12 @@ body {
 
 .follow .box .linkedin i {
     background: var(--linkedin_color);
+    color: white;
+    /* box-shadow: 0px 0px 2px 1px var(--linkedin_color); */
+}
+
+.follow .box .mail i {
+    background: var(--mail_color);
     color: white;
     /* box-shadow: 0px 0px 2px 1px var(--linkedin_color); */
 }
