@@ -67,7 +67,7 @@
     <Text Id="detail_work_1_skill_13" Value="Керівництво командою"/>
     <Text Id="detail_work_1_subtitle_4" Value="Участь в розробці проєктів"/>
 
-    <Text Id="detail_work_2_time" Value="Жовтень. 2022 - Липень 2024"/>
+    <Text Id="detail_work_2_time" Value="Жовтень 2022 - Липень 2024"/>
     <Text Id="detail_work_2_title" Value="Python розробник"/>
     <Text Id="detail_work_2_subtitle_2" Value="Завдання та обов'язки"/>
     <Text Id="detail_work_2_about" Value="В обов'язки програмістів входить підтримка актуальних проектів, програмування логіки ігрових механік мовою програмування Python, підтримка та покращення старого коду, робота з системою керування версійності файлів Git/Github. Отримавши більше досвіду, я додатково вивчав програмування функцій серверної логіки мобільних ігор в PlayFab мовою програмування JavaScript та налаштовував мобільні ігри в Google Play Console."/>
