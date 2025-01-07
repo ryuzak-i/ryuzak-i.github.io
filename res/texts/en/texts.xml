@@ -126,6 +126,12 @@
     <Text Id="detail_work_2_skill_19" Value="Google Play Console"/>
     <Text Id="detail_work_2_subtitle_4" Value="Participating in projects development"/>
 
+    <Text Id="detail_projects" Value="My projects"/>
+    <Text Id="detail_projects_1_title" Value="Labyrinth"/>
+    <Text Id="detail_projects_1_descr" Value="A labyrinth game with elements of blocked paths and escape from the AI enemy."/>
+    <Text Id="detail_projects_2_title" Value="Tic-tac-toe"/>
+    <Text Id="detail_projects_2_descr" Value="A tic-tac-toe game with a choice of grid size and number of winning symbols."/>
+
     <Text Id="detail_skills" Value="Programming languages"/>
     <Text Id="detail_skills_python" Value="Python"/>
     <Text Id="detail_skills_javascript" Value="JavaScript"/>

@@ -80,6 +80,12 @@
     <Text Id="detail_work_2_skill_18" Value="Розробка гри"/>
     <Text Id="detail_work_2_subtitle_4" Value="Участь в розробці проєктів"/>
 
+    <Text Id="detail_projects" Value="Мої проєкти"/>
+    <Text Id="detail_projects_1_title" Value="Лабіринт"/>
+    <Text Id="detail_projects_1_descr" Value="Гра-лабіринт з елементами заблокованих шляхів та втечами від ШІ-ворога."/>
+    <Text Id="detail_projects_2_title" Value="Хрестики-нулики"/>
+    <Text Id="detail_projects_2_descr" Value="Гра в хрестики-нулики з вибором розміру сітки та кількості символів, які виграють."/>
+
     <Text Id="detail_skills" Value="Мови програмування"/>
     <Text Id="detail_tools" Value="Засоби розробки"/>
 

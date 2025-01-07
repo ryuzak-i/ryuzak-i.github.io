@@ -313,6 +313,10 @@ body {
     padding-left: calc(1.5rem + 10px);
 }
 
+.detail-section.my_projects>.detail-content {
+    padding-left: calc(1.5rem + 10px);
+}
+
 .detail-section.pg-skill>.detail-content {
     padding-left: calc(1.5rem + 10px);
 }
@@ -515,6 +519,57 @@ body {
     height: auto;
     margin: 0px;
     padding: 0;
+    transition: all 0.15s;
+}
+
+/* My projects section */
+/* .detail-section.my_projects table, th, td {
+    border: 1px solid black;
+} */
+
+.detail-section.my_projects table {
+    border-spacing: 5px;
+}
+
+.detail-section.my_projects table img {
+    border-radius: 25%;
+    width: 96px;
+    height: auto;
+    margin: 5px;
+    padding: 0;
+    transition: all 0.15s;
+}
+
+.detail-section.my_projects table .project_title {
+    height: 100%;
+}
+
+.detail-section.my_projects table .project_title {
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    transition: all 0.15s;
+}
+
+.detail-section.my_projects table .project_description {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: left;
+}
+
+.detail-section.my_projects .project:hover img {
+    border-radius: 30%;
+    width: 106px;
+    height: auto;
+    margin: 0px;
+    padding: 0;
+    transition: all 0.15s;
+}
+
+.detail-section.my_projects .project:hover .project_title {
+    font-size: 2.15rem;
+    color: var(--color-tiffany);
     transition: all 0.15s;
 }
 
@@ -841,6 +896,24 @@ body {
         padding: 0;
         transition: all 0.15s;
     }
+
+    .detail-section.my_projects table img {
+        border-radius: 25%;
+        width: 80px;
+        height: auto;
+        margin: 5px;
+        padding: 0;
+        transition: all 0.15s;
+    }
+
+    .detail-section.my_projects .project:hover img {
+        border-radius: 30%;
+        width: 90px;
+        height: auto;
+        margin: 0px;
+        padding: 0;
+        transition: all 0.15s;
+    }
 }
 
 @media (max-width: 768px) {
@@ -876,6 +949,24 @@ body {
     }
 
     .timeline-block .p_list img:hover {
+        border-radius: 30%;
+        width: 70px;
+        height: auto;
+        margin: 0px;
+        padding: 0;
+        transition: all 0.15s;
+    }
+
+    .detail-section.my_projects table img {
+        border-radius: 25%;
+        width: 65px;
+        height: auto;
+        margin: 2.5px;
+        padding: 0;
+        transition: all 0.15s;
+    }
+
+    .detail-section.my_projects .project:hover img {
         border-radius: 30%;
         width: 70px;
         height: auto;
@@ -932,6 +1023,24 @@ body {
     }
 
     .timeline-block .p_list img:hover {
+        border-radius: 30%;
+        width: 53px;
+        height: auto;
+        margin: 0px;
+        padding: 0;
+        transition: all 0.15s;
+    }
+
+    .detail-section.my_projects table img {
+        border-radius: 25%;
+        width: 50px;
+        height: auto;
+        margin: 1.5px;
+        padding: 0;
+        transition: all 0.15s;
+    }
+
+    .detail-section.my_projects .project:hover img {
         border-radius: 30%;
         width: 53px;
         height: auto;
