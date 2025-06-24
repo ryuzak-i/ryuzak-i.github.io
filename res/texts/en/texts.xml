@@ -2,7 +2,7 @@
     <Text Id="title" Value="Ryuzaki's CV"/>
 
     <Text Id="profile_bio_name" Value="Oleksandr Danchenko"/>
-    <Text Id="profile_bio_nick" Value="aka «Ryuzaki» 👾"/>
+    <Text Id="profile_bio_nick" Value="«Ryuzaki» 👾"/>
     <Text Id="profile_bio_profession" Value="Software Engineer"/>
     <Text Id="profile_bio_location" Value="Smila, Ukraine"/>
     
@@ -23,7 +23,7 @@
     <Text Id="intro_soft_skill_9" Value="Persistant"/>
     <Text Id="intro_soft_skill_10" Value="Responsible"/>
 
-    <Text Id="intro_follow" Value="Contacts"/>
+    <Text Id="intro_follow" Value="Contact me"/>
     <Text Id="intro_tech_stack" Value="Technology stack"/>
 
     <Text Id="detail_education" Value="Education"/>
@@ -76,7 +76,7 @@
     <Text Id="detail_education_3_skill_6" Value="Team building"/>
     <Text Id="detail_education_3_skill_7" Value="Professional communication"/>
 
-    <Text Id="detail_work" Value="Work experience"/>
+    <Text Id="detail_work" Value="Experience in IT"/>
 
     <Text Id="detail_work_1_time" Value="Oct. 2020 - Oct. 2022"/>
     <Text Id="detail_work_1_title" Value="Gameplay Scripter"/>

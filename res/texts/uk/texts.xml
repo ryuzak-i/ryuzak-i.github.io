@@ -1,6 +1,6 @@
 <Texts>
     <Text Id="profile_bio_name" Value="Олександр Данченко"/>
-    <Text Id="profile_bio_nick" Value="відомий як «Ryuzaki» 👾"/>
+    <Text Id="profile_bio_nick" Value="«Ryuzaki» 👾"/>
     <Text Id="profile_bio_profession" Value="Інженер-програміст"/>
     <Text Id="profile_bio_location" Value="Сміла, Україна"/>
     
@@ -21,7 +21,7 @@
     <Text Id="intro_soft_skill_9" Value="Стійкий"/>
     <Text Id="intro_soft_skill_10" Value="Відповідальний"/> 
 
-    <Text Id="intro_follow" Value="Контакти"/>
+    <Text Id="intro_follow" Value="Зв'язок зі мною"/>
     <Text Id="intro_tech_stack" Value="Стек технологій"/>
 
     <Text Id="detail_education" Value="Освіта"/>
@@ -55,7 +55,7 @@
     <Text Id="detail_education_3_skill_6" Value="Командоутворення"/>
     <Text Id="detail_education_3_skill_7" Value="Професійне спілкування"/>
     
-    <Text Id="detail_work" Value="Досвід роботи"/>
+    <Text Id="detail_work" Value="Досвід в ІТ"/>
 
     <Text Id="detail_work_1_time" Value="Жовтень 2020 - Жовтень 2022"/>
     <Text Id="detail_work_1_title" Value="Скриптувальник ігрового процесу"/>
@@ -64,7 +64,7 @@
     <Text Id="detail_work_1_subtitle_3" Value="Набуті знання та вміння"/>
     <Text Id="detail_work_1_skill_2" Value="Скриптування сценарію"/>
     <Text Id="detail_work_1_skill_12" Value="Ручне тестування"/>
-    <Text Id="detail_work_1_skill_13" Value="Керівництво командою"/>
+    <Text Id="detail_work_1_skill_13" Value="Керування командою"/>
     <Text Id="detail_work_1_subtitle_4" Value="Участь в розробці проєктів"/>
 
     <Text Id="detail_work_2_time" Value="Жовтень 2022 - Липень 2024"/>
