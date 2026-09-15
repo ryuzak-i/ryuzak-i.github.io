@@ -12,19 +12,19 @@
     <Text Id="intro_quote" Value="“This sword Is the proof that I have lived„ - Guts, Berserk"/>
     
     <Text Id="intro_soft_skills" Value="Personal qualities"/>
-    <Text Id="intro_soft_skill_1" Value="Inventive"/>
-    <Text Id="intro_soft_skill_2" Value="Independent"/>
-    <Text Id="intro_soft_skill_3" Value="Motivated"/>
-    <Text Id="intro_soft_skill_4" Value="Intelligent"/>
-    <Text Id="intro_soft_skill_5" Value="Restrained"/>
-    <Text Id="intro_soft_skill_6" Value="Purposeful"/>
-    <Text Id="intro_soft_skill_7" Value="Attentive"/>
-    <Text Id="intro_soft_skill_8" Value="Skillful"/>
-    <Text Id="intro_soft_skill_9" Value="Persistant"/>
-    <Text Id="intro_soft_skill_10" Value="Responsible"/>
+    <Text Id="intro_soft_skill_1" Value="Resourcefulness"/>
+    <Text Id="intro_soft_skill_2" Value="Independence"/>
+    <Text Id="intro_soft_skill_3" Value="Motivation"/>
+    <Text Id="intro_soft_skill_4" Value="Analytical thinking"/>
+    <Text Id="intro_soft_skill_5" Value="Composure"/>
+    <Text Id="intro_soft_skill_6" Value="Goal orientation"/>
+    <Text Id="intro_soft_skill_7" Value="Attention to detail"/>
+    <Text Id="intro_soft_skill_8" Value="Adaptability"/>
+    <Text Id="intro_soft_skill_9" Value="Resilience"/>
+    <Text Id="intro_soft_skill_10" Value="Responsibility"/>
 
     <Text Id="intro_follow" Value="Contact me"/>
-    <Text Id="intro_tech_stack" Value="Technology stack"/>
+    <Text Id="intro_tech_stack" Value="Technologies and tools"/>
 
     <Text Id="detail_education" Value="Education"/>
 
@@ -81,9 +81,9 @@
     <Text Id="detail_work_1_time" Value="Oct. 2020 - Oct. 2022"/>
     <Text Id="detail_work_1_title" Value="Gameplay Scripter"/>
     <Text Id="detail_work_1_subtitle_1" Value="Wonderland Games"/>
-    <Text Id="detail_work_1_subtitle_2" Value="Tasks and responsibilities"/>
-    <Text Id="detail_work_1_about" Value="The main task of the scripter was to write the logic of the sequence of the player's interaction with the elements of the game and the player's passage through the game according to the scenario. After gaining some experience, additional tasks were: forming part of the technical task for animators and artists, preparing art in Photoshop, basic animation in After Effects, finding sound effects for the game."/>
-    <Text Id="detail_work_1_subtitle_3" Value="Acquired knowledge and skills"/>
+    <Text Id="detail_work_1_subtitle_2" Value="Key responsibilities"/>
+    <Text Id="detail_work_1_about" Value="Implemented scenario logic for player interactions and game progression. Prepared technical tasks for artists and animators, processed graphics in Photoshop, created basic animations in After Effects, and selected sound effects."/>
+    <Text Id="detail_work_1_subtitle_3" Value="Technologies and skills"/>
     <Text Id="detail_work_1_skill_1" Value="SVN"/>
     <Text Id="detail_work_1_skill_2" Value="Scenario scripting"/>
     <Text Id="detail_work_1_skill_3" Value="Trello"/>
@@ -97,14 +97,14 @@
     <Text Id="detail_work_1_skill_11" Value="Notepad++"/>
     <Text Id="detail_work_1_skill_12" Value="Manual testing"/>
     <Text Id="detail_work_1_skill_13" Value="Team leading"/>
-    <Text Id="detail_work_1_subtitle_4" Value="Participating in projects development"/>
+    <Text Id="detail_work_1_subtitle_4" Value="Projects"/>
 
     <Text Id="detail_work_2_time" Value="Oct. 2022 - Present"/>
     <Text Id="detail_work_2_title" Value="Python Developer"/>
     <Text Id="detail_work_2_subtitle_1" Value="Wonderland Games"/>
-    <Text Id="detail_work_2_subtitle_2" Value="Tasks and responsibilities"/>
-    <Text Id="detail_work_2_about" Value="The responsibilities of programmers include the support of current projects, programming the logic of game mechanics in the Python programming language, maintaining and improving old code, working with the version control system of Git/Github files. As I gained more experience, I further learned how to program the server logic functions of mobile games in PlayFab in the JavaScript programming language and configure mobile games in Google Play Console."/>
-    <Text Id="detail_work_2_subtitle_3" Value="Acquired knowledge and skills"/>
+    <Text Id="detail_work_2_subtitle_2" Value="Key responsibilities"/>
+    <Text Id="detail_work_2_about" Value="Develop and maintain game mechanics in Python, improve legacy code, and participate in code review. I also implement server-side logic for mobile games in PlayFab using JavaScript and configure projects in Google Play Console."/>
+    <Text Id="detail_work_2_subtitle_3" Value="Technologies and skills"/>
     <Text Id="detail_work_2_skill_1" Value="Python"/>
     <Text Id="detail_work_2_skill_2" Value="Pycharm"/>
     <Text Id="detail_work_2_skill_3" Value="JavaScript"/>
@@ -124,22 +124,20 @@
     <Text Id="detail_work_2_skill_17" Value="Game mechanics"/>
     <Text Id="detail_work_2_skill_18" Value="Game development"/>
     <Text Id="detail_work_2_skill_19" Value="Google Play Console"/>
-    <Text Id="detail_work_2_subtitle_4" Value="Participating in projects development"/>
+    <Text Id="detail_work_2_skill_20" Value="Codex"/>
+    <Text Id="detail_work_2_skill_21" Value="Visual Studio Code"/>
+    <Text Id="detail_work_2_subtitle_4" Value="Projects"/>
 
     <Text Id="detail_projects" Value="My projects"/>
     <Text Id="detail_projects_1_title" Value="Labyrinth"/>
-    <Text Id="detail_projects_1_descr" Value="A labyrinth game with elements of blocked paths and escape from the AI enemy."/>
+    <Text Id="detail_projects_1_descr" Value="A maze-game prototype featuring blocked routes, chase mechanics, and AI enemy behavior."/>
+    <Text Id="detail_projects_1_engine" Value="Unreal Engine 5"/>
+    <Text Id="detail_projects_1_source" Value="GitHub"/>
     <Text Id="detail_projects_2_title" Value="Tic-tac-toe"/>
-    <Text Id="detail_projects_2_descr" Value="A tic-tac-toe game with a choice of grid size and number of winning symbols."/>
+    <Text Id="detail_projects_2_descr" Value="A flexible tic-tac-toe implementation with configurable grid size and win conditions."/>
+    <Text Id="detail_projects_2_engine" Value="Unreal Engine 5"/>
+    <Text Id="detail_projects_2_source" Value="GitHub"/>
 
-    <Text Id="detail_skills" Value="Programming languages"/>
-    <Text Id="detail_skills_python" Value="Python"/>
-    <Text Id="detail_skills_javascript" Value="JavaScript"/>
-    <Text Id="detail_skills_c#" Value="C#"/>
-    <Text Id="detail_skills_c++" Value="C++"/>
-    <Text Id="detail_skills_html" Value="HTML"/>
-    <Text Id="detail_skills_css" Value="CSS"/>
-    <Text Id="detail_skills_sql" Value="SQL"/>
 
     <Text Id="detail_tools" Value="Development tools"/>
     <Text Id="detail_tools_github" Value="GitHub"/>
@@ -151,7 +149,7 @@
     <Text Id="detail_tools_jenkins" Value="Jenkins"/>
     <Text Id="detail_tools_playfab" Value="PlayFab"/>
 
-    <Text Id="detail_interests" Value="Interests"/>
+    <Text Id="detail_interests" Value="Personal interests"/>
     <Text Id="detail_interests_coding" Value="Coding"/>
     <Text Id="detail_interests_games" Value="Games"/>
     <Text Id="detail_interests_movies" Value="Movies"/>

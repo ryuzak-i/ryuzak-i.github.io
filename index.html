@@ -7,11 +7,12 @@
 	<link rel="icon" type="image/png" href="/res/img/icon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Portfolio and CV of Oleksandr Danchenko, a software engineer and game developer.">
+	<meta name="theme-color" content="#0b1220">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Caesar+Dressing">
 	<link rel="stylesheet" type="text/css"
 		href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght,BNCE,INFM,SPAC@0,500,-100..100,0..100,0..100;1,500,-100..100,0..100,0..100&display=swap">
@@ -41,6 +42,29 @@
 					<button type="button" class="fib fi-gb" id="language_en" data-language="en"
 						aria-label="English" aria-pressed="false" title="English"></button>
 				</div>
+				<nav class="hero-contact" id="contact" aria-labelledby="intro_follow">
+					<h2 class="title" id="intro_follow"></h2>
+					<div class="box">
+						<a class="github" href="https://github.com/ryuzak-i" target="_blank"
+							rel="noopener noreferrer" aria-label="GitHub">
+							<i class="fab fa-github" aria-hidden="true"></i>
+						</a>
+						<a class="telegram" href="https://t.me/ryu_zakl" target="_blank"
+							rel="noopener noreferrer" aria-label="Telegram">
+							<i class="fab fa-telegram-plane" aria-hidden="true"></i>
+						</a>
+						<a class="linkedin" href="https://www.linkedin.com/in/ryu-zaki/" target="_blank"
+							rel="noopener noreferrer" aria-label="LinkedIn">
+							<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+						</a>
+						<!-- https://www.mikemustaine.com/mmtools/files/mailTo.html -->
+						<a class="mail"
+							href="&#77;&#97;&#73;&#108;&#84;&#111;&#58;&#100;&#97;&#110;&#99;&#104;&#101;&#110;&#107;&#111;&#46;&#111;&#108;&#101;&#107;&#115;&#97;&#110;&#100;&#114;&#46;&#121;&#117;&#114;&#105;&#121;&#111;&#118;&#121;&#99;&#104;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"
+							aria-label="Email">
+							<i class="fas fa-envelope" aria-hidden="true"></i>
+						</a>
+					</div>
+				</nav>
 			</header>
 			<div class="intro-section about">
 				<h2 class="title" id="intro_about"></h2>
@@ -90,31 +114,77 @@
 					<li id="intro_soft_skill_10"></li>
 				</ul>
 			</div>
-			<div class="intro-section follow">
-				<h2 class="title" id="intro_follow"></h2>
-				<div class="box">
-					<a class="github" href="https://github.com/ryuzak-i" target="_blank"
-						rel="noopener noreferrer" aria-label="GitHub">
-						<i class="fab fa-github" aria-hidden="true"></i>
-					</a>
-					<a class="telegram" href="https://t.me/ryu_zakl" target="_blank"
-						rel="noopener noreferrer" aria-label="Telegram">
-						<i class="fab fa-telegram-plane" aria-hidden="true"></i>
-					</a>
-					<a class="linkedin" href="https://www.linkedin.com/in/ryu-zaki/" target="_blank"
-						rel="noopener noreferrer" aria-label="LinkedIn">
-						<i class="fab fa-linkedin-in" aria-hidden="true"></i>
-					</a>
-					<!-- https://www.mikemustaine.com/mmtools/files/mailTo.html -->
-					<a class="mail"
-						href="&#77;&#97;&#73;&#108;&#84;&#111;&#58;&#100;&#97;&#110;&#99;&#104;&#101;&#110;&#107;&#111;&#46;&#111;&#108;&#101;&#107;&#115;&#97;&#110;&#100;&#114;&#46;&#121;&#117;&#114;&#105;&#121;&#111;&#118;&#121;&#99;&#104;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"
-						aria-label="Email">
-						<i class="fas fa-envelope" aria-hidden="true"></i>
-					</a>
-				</div>
+			<div class="intro-section interests">
+				<h2 class="title" id="detail_interests"></h2>
+				<ul class="favor-list">
+					<li>
+						<i class="fas fa-gamepad-alt" aria-hidden="true"></i>
+						<span id="detail_interests_games"></span>
+					</li>
+					<li>
+						<i class="fas fa-laptop-code" aria-hidden="true"></i>
+						<span id="detail_interests_coding"></span>
+					</li>
+					<li>
+						<i class="fas fa-film" aria-hidden="true"></i>
+						<span id="detail_interests_movies"></span>
+					</li>
+					<li>
+						<i class="far fa-robot" aria-hidden="true"></i>
+						<span id="detail_interests_technologies"></span>
+					</li>
+					<li>
+						<i class="fas fa-music" aria-hidden="true"></i>
+						<span id="detail_interests_music"></span>
+					</li>
+					<li>
+						<i class="fas fa-palette" aria-hidden="true"></i>
+						<span id="detail_interests_art"></span>
+					</li>
+				</ul>
 			</div>
 		</aside>
 		<main class="detail">
+			<section class="detail-section my_projects" aria-labelledby="detail_projects">
+				<div class="detail-title">
+					<div class="title-icon">
+						<i class="fas fa-star" aria-hidden="true"></i>
+					</div>
+					<h2 id="detail_projects"></h2>
+				</div>
+				<div class="detail-content project-grid">
+					<article class="project">
+						<a class="project-card" href="https://github.com/ryuzak-i/UE5_Labyrinth" target="_blank"
+							rel="noopener noreferrer" aria-label="Labyrinth on GitHub">
+							<div class="project-visual">
+								<img src="/res/img/projects/other/unreal_engine.png" alt="" width="256"
+									height="256" decoding="async">
+							</div>
+							<div class="project-content">
+								<span class="project-stack" id="detail_projects_1_engine"></span>
+								<h3 class="project-title" id="detail_projects_1_title"></h3>
+								<p class="project-description" id="detail_projects_1_descr"></p>
+								<span class="project-cta"><span id="detail_projects_1_source"></span> <i class="fas fa-external-link-alt" aria-hidden="true"></i></span>
+							</div>
+						</a>
+					</article>
+					<article class="project">
+						<a class="project-card" href="https://github.com/ryuzak-i/UE5_TicTacToe" target="_blank"
+							rel="noopener noreferrer" aria-label="Tic-tac-toe on GitHub">
+							<div class="project-visual">
+								<img src="/res/img/projects/other/unreal_engine.png" alt="" width="256"
+									height="256" loading="lazy" decoding="async">
+							</div>
+							<div class="project-content">
+								<span class="project-stack" id="detail_projects_2_engine"></span>
+								<h3 class="project-title" id="detail_projects_2_title"></h3>
+								<p class="project-description" id="detail_projects_2_descr"></p>
+								<span class="project-cta"><span id="detail_projects_2_source"></span> <i class="fas fa-external-link-alt" aria-hidden="true"></i></span>
+							</div>
+						</a>
+					</article>
+				</div>
+			</section>
 			<div class="detail-section work">
 				<div class="detail-title">
 					<div class="title-icon">
@@ -152,6 +222,8 @@
 							<li id="detail_work_2_skill_17"></li>
 							<li id="detail_work_2_skill_18"></li>
 							<li id="detail_work_2_skill_19"></li>
+							<li id="detail_work_2_skill_20"></li>
+							<li id="detail_work_2_skill_21"></li>
 						</ul>
 						<p class="mid" id="detail_work_2_subtitle_4"></p>
 						<ul class="p_list">
@@ -324,92 +396,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="detail-section my_projects">
-				<div class="detail-title">
-					<div class="title-icon">
-						<i class="fas fa-star" aria-hidden="true"></i>
-					</div>
-					<h2 id="detail_projects"></h2>
-				</div>
-				<div class="detail-content">
-					<article class="project">
-						<a class="project_image" href="https://github.com/ryuzak-i/UE5_Labyrinth" target="_blank"
-							rel="noopener noreferrer">
-							<img src="/res/img/projects/other/unreal_engine.png" alt="Labyrinth" width="256"
-								height="256" loading="lazy" decoding="async">
-						</a>
-						<div class="project_content">
-							<h3 class="project_title" id="detail_projects_1_title"></h3>
-							<p class="project_description" id="detail_projects_1_descr"></p>
-						</div>
-					</article>
-					<article class="project">
-						<a class="project_image" href="https://github.com/ryuzak-i/UE5_TicTacToe" target="_blank"
-							rel="noopener noreferrer">
-							<img src="/res/img/projects/other/unreal_engine.png" alt="Tic-tac-toe" width="256"
-								height="256" loading="lazy" decoding="async">
-						</a>
-						<div class="project_content">
-							<h3 class="project_title" id="detail_projects_2_title"></h3>
-							<p class="project_description" id="detail_projects_2_descr"></p>
-						</div>
-					</article>
-				</div>
-			</div>
-			<div class="detail-section pg-skill">
-				<div class="detail-title">
-					<div class="title-icon">
-						<i class="fas fa-code" aria-hidden="true"></i>
-					</div>
-					<h2 id="detail_skills"></h2>
-				</div>
-				<div class="detail-content">
-					<ul class="pg-list">
-						<li>
-							<span id="detail_skills_python"></span>
-							<div class="sb-skeleton">
-								<div class="skillbar" style="--pgbar-length: 80%"></div>
-							</div>
-						</li>
-						<li>
-							<span id="detail_skills_javascript"></span>
-							<div class="sb-skeleton">
-								<div class="skillbar" style="--pgbar-length: 60%"></div>
-							</div>
-						</li>
-						<li>
-							<span id="detail_skills_c#"></span>
-							<div class="sb-skeleton">
-								<div class="skillbar" style="--pgbar-length: 70%"></div>
-							</div>
-						</li>
-						<li>
-							<span id="detail_skills_c++"></span>
-							<div class="sb-skeleton">
-								<div class="skillbar" style="--pgbar-length: 50%"></div>
-							</div>
-						</li>
-						<li>
-							<span id="detail_skills_html"></span>
-							<div class="sb-skeleton">
-								<div class="skillbar" style="--pgbar-length: 65%"></div>
-							</div>
-						</li>
-						<li>
-							<span id="detail_skills_css"></span>
-							<div class="sb-skeleton">
-								<div class="skillbar" style="--pgbar-length: 40%"></div>
-							</div>
-						</li>
-						<li>
-							<span id="detail_skills_sql"></span>
-							<div class="sb-skeleton">
-								<div class="skillbar" style="--pgbar-length: 30%"></div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
 			<!-- <div class="detail-section tool-skill">
 				<div class="detail-title">
 					<div class="title-icon">
@@ -478,44 +464,6 @@
 					</ul>
 				</div>
 			</div> -->
-			<div class="detail-section interests">
-				<div class="detail-title">
-					<div class="title-icon">
-						<i class="fas fa-heart" aria-hidden="true"></i>
-					</div>
-					<h2 id="detail_interests"></h2>
-				</div>
-				<div class="detail-content">
-					<div class="outer-frame">
-						<ul class="favor-list">
-							<li>
-								<i class="fas fa-gamepad-alt" aria-hidden="true"></i>
-								<span id="detail_interests_games"></span>
-							</li>
-							<li>
-								<i class="fas fa-laptop-code" aria-hidden="true"></i>
-								<span id="detail_interests_coding"></span>
-							</li>
-							<li>
-								<i class="fas fa-film" aria-hidden="true"></i>
-								<span id="detail_interests_movies"></span>
-							</li>
-							<li>
-								<i class="far fa-robot" aria-hidden="true"></i>
-								<span id="detail_interests_technologies"></span>
-							</li>
-							<li>
-								<i class="fas fa-music" aria-hidden="true"></i>
-								<span id="detail_interests_music"></span>
-							</li>
-							<li>
-								<i class="fas fa-palette" aria-hidden="true"></i>
-								<span id="detail_interests_art"></span>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
 		</main>
 	</div>
 	<script type="text/javascript" src="/res/scripts/texts.js"></script>

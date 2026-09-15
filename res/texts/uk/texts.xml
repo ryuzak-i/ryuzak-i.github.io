@@ -12,19 +12,19 @@
     <Text Id="intro_quote" Value="“Цей меч є доказом того, що я жив„ - Ґатс, Берсерк"/>
     
     <Text Id="intro_soft_skills" Value="Особисті якості"/>
-    <Text Id="intro_soft_skill_1" Value="Винахідливий"/>
-    <Text Id="intro_soft_skill_2" Value="Самостійний"/>
-    <Text Id="intro_soft_skill_3" Value="Вмотивований"/>
-    <Text Id="intro_soft_skill_4" Value="Розумний"/>
-    <Text Id="intro_soft_skill_5" Value="Стриманий"/>
-    <Text Id="intro_soft_skill_6" Value="Цілеспрямований"/>
-    <Text Id="intro_soft_skill_7" Value="Уважний"/>
-    <Text Id="intro_soft_skill_8" Value="Вправний"/>
-    <Text Id="intro_soft_skill_9" Value="Стійкий"/>
-    <Text Id="intro_soft_skill_10" Value="Відповідальний"/> 
+    <Text Id="intro_soft_skill_1" Value="Винахідливість"/>
+    <Text Id="intro_soft_skill_2" Value="Самостійність"/>
+    <Text Id="intro_soft_skill_3" Value="Мотивація"/>
+    <Text Id="intro_soft_skill_4" Value="Аналітичне мислення"/>
+    <Text Id="intro_soft_skill_5" Value="Виваженість"/>
+    <Text Id="intro_soft_skill_6" Value="Цілеспрямованість"/>
+    <Text Id="intro_soft_skill_7" Value="Уважність до деталей"/>
+    <Text Id="intro_soft_skill_8" Value="Адаптивність"/>
+    <Text Id="intro_soft_skill_9" Value="Стресостійкість"/>
+    <Text Id="intro_soft_skill_10" Value="Відповідальність"/>
 
     <Text Id="intro_follow" Value="Зв'язок зі мною"/>
-    <Text Id="intro_tech_stack" Value="Стек технологій"/>
+    <Text Id="intro_tech_stack" Value="Технології та інструменти"/>
 
     <Text Id="detail_education" Value="Освіта"/>
 
@@ -61,37 +61,42 @@
 
     <Text Id="detail_work_1_time" Value="Жовтень 2020 - Жовтень 2022"/>
     <Text Id="detail_work_1_title" Value="Скриптувальник ігрового процесу"/>
-    <Text Id="detail_work_1_subtitle_2" Value="Завдання та обов'язки"/>
-    <Text Id="detail_work_1_about" Value="Основним завданням скриптувальника було написання логіки послідовності взаємодії гравця з елементами гри та проходження гравцем гри за сценарієм. Отримавши певний досвід, додатковими завданнями були: формування частини технічного завдання для аніматорів та художників, підготовка артів в Photoshop, базова анімація в After Effects, пошук звукових ефектів для гри."/>
-    <Text Id="detail_work_1_subtitle_3" Value="Набуті знання та вміння"/>
+    <Text Id="detail_work_1_subtitle_2" Value="Основні завдання"/>
+    <Text Id="detail_work_1_about" Value="Реалізовував сценарну логіку взаємодії гравця з ігровими об'єктами та послідовність проходження гри. Готував технічні завдання для художників і аніматорів, опрацьовував графіку в Photoshop, створював базові анімації в After Effects та добирав звукові ефекти."/>
+    <Text Id="detail_work_1_subtitle_3" Value="Технології та навички"/>
     <Text Id="detail_work_1_skill_2" Value="Скриптування сценарію"/>
     <Text Id="detail_work_1_skill_12" Value="Ручне тестування"/>
     <Text Id="detail_work_1_skill_13" Value="Керування командою"/>
-    <Text Id="detail_work_1_subtitle_4" Value="Участь в розробці проєктів"/>
+    <Text Id="detail_work_1_subtitle_4" Value="Проєкти"/>
 
     <Text Id="detail_work_2_time" Value="Жовтень 2022 - Дотепер"/>
     <Text Id="detail_work_2_title" Value="Python розробник"/>
-    <Text Id="detail_work_2_subtitle_2" Value="Завдання та обов'язки"/>
-    <Text Id="detail_work_2_about" Value="В обов'язки програмістів входить підтримка актуальних проектів, програмування логіки ігрових механік мовою програмування Python, підтримка та покращення старого коду, робота з системою керування версійності файлів Git/Github. Отримавши більше досвіду, я додатково вивчав програмування функцій серверної логіки мобільних ігор в PlayFab мовою програмування JavaScript та налаштовував мобільні ігри в Google Play Console."/>
-    <Text Id="detail_work_2_subtitle_3" Value="Набуті знання та вміння"/>
+    <Text Id="detail_work_2_subtitle_2" Value="Основні завдання"/>
+    <Text Id="detail_work_2_about" Value="Розробляю та підтримую ігрові механіки на Python, покращую успадкований код і беру участь у перевірці змін. Також реалізую серверну логіку мобільних ігор у PlayFab на JavaScript та налаштовую проєкти в Google Play Console."/>
+    <Text Id="detail_work_2_subtitle_3" Value="Технології та навички"/>
     <Text Id="detail_work_2_skill_8" Value="Успадкований код"/>
     <Text Id="detail_work_2_skill_11" Value="Локалізація"/>
     <Text Id="detail_work_2_skill_12" Value="Програмування UI"/>
     <Text Id="detail_work_2_skill_13" Value="Перевірка коду"/>
     <Text Id="detail_work_2_skill_17" Value="Ігрові механіки"/>
     <Text Id="detail_work_2_skill_18" Value="Розробка гри"/>
-    <Text Id="detail_work_2_subtitle_4" Value="Участь в розробці проєктів"/>
+    <Text Id="detail_work_2_skill_20" Value="Codex"/>
+    <Text Id="detail_work_2_skill_21" Value="Visual Studio Code"/>
+    <Text Id="detail_work_2_subtitle_4" Value="Проєкти"/>
 
     <Text Id="detail_projects" Value="Мої проєкти"/>
     <Text Id="detail_projects_1_title" Value="Лабіринт"/>
-    <Text Id="detail_projects_1_descr" Value="Гра-лабіринт з елементами заблокованих шляхів та втечами від ШІ-ворога."/>
+    <Text Id="detail_projects_1_descr" Value="Прототип гри-лабіринту із заблокованими маршрутами, переслідуванням і поведінкою ШІ-ворога."/>
+    <Text Id="detail_projects_1_engine" Value="Unreal Engine 5"/>
+    <Text Id="detail_projects_1_source" Value="GitHub"/>
     <Text Id="detail_projects_2_title" Value="Хрестики-нулики"/>
-    <Text Id="detail_projects_2_descr" Value="Гра в хрестики-нулики з вибором розміру сітки та кількості символів, які виграють."/>
+    <Text Id="detail_projects_2_descr" Value="Гнучка реалізація хрестиків-нуликів із налаштовуваним розміром поля та умовою перемоги."/>
+    <Text Id="detail_projects_2_engine" Value="Unreal Engine 5"/>
+    <Text Id="detail_projects_2_source" Value="GitHub"/>
 
-    <Text Id="detail_skills" Value="Мови програмування"/>
     <Text Id="detail_tools" Value="Засоби розробки"/>
 
-    <Text Id="detail_interests" Value="Інтереси"/>
+    <Text Id="detail_interests" Value="Особисті інтереси"/>
     <Text Id="detail_interests_coding" Value="Кодування"/>
     <Text Id="detail_interests_games" Value="Ігри"/>
     <Text Id="detail_interests_movies" Value="Фільми"/>
