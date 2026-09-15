@@ -37,6 +37,16 @@ html {
     box-sizing: border-box;
 }
 
+[hidden] {
+    display: none !important;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--mouse_over_color);
+    outline-offset: 4px;
+}
+
 body {
     margin: 0;
     padding: 3rem 1rem;
@@ -81,7 +91,11 @@ body {
 }
 
 .photo img {
+    display: block;
     width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 50%;
     box-shadow: 0px 0px 15px 10px var(--avatar_shadow_color);
 }
@@ -118,6 +132,7 @@ body {
 }
 
 .languages button {
+    position: relative;
     cursor: pointer;
     border: none;
     background-size: contain;
@@ -132,11 +147,30 @@ body {
     align-content: center;
     margin: 0.5rem;
     margin-top: 0.75rem;
-    transition-duration: 0.3s;
+    vertical-align: middle;
+    opacity: 0.58;
+    filter: saturate(0.65);
+    transform: scale(0.94);
+    transform-origin: center;
+    transition: opacity 0.3s ease, filter 0.3s ease, transform 0.3s ease, background-size 0.3s ease;
 }
 
 .languages button:hover {
     background-size: 90%;
+    opacity: 0.82;
+    filter: saturate(0.85);
+}
+
+.languages button.is-active {
+    background-size: contain;
+    opacity: 1;
+    filter: none;
+    transform: scale(1.04);
+}
+
+.languages button:disabled {
+    cursor: wait;
+    opacity: 0.65;
 }
 
 .intro-section {
@@ -229,6 +263,25 @@ body {
     color: rgba(125, 0, 0, 0.85);
     line-height: 1.35em;
     text-transform: uppercase;
+}
+
+.about .quote {
+    margin: 1rem 0;
+}
+
+.quote-trigger {
+    appearance: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    font: inherit;
+    line-height: inherit;
+    text-align: inherit;
+    text-transform: inherit;
     animation: burn 0.6s ease-in-out infinite alternate;
 }
 
@@ -302,7 +355,6 @@ body {
 .detail-section>.detail-content {
     padding: 1.5rem;
     padding-left: 2rem;
-    user-select: none;
 }
 
 .detail-section.edu>.detail-content {
@@ -329,11 +381,12 @@ body {
     padding-left: calc(1.5rem + 10px);
 }
 
-.detail-section .detail-title span {
+.detail-section .detail-title h2 {
     font-size: 2.5rem;
+    margin: 0;
 }
 
-.title-icon+span {
+.title-icon+h2 {
     font-size: 1.5rem;
     transition: all 0.3s;
 }
@@ -363,7 +416,7 @@ body {
     margin-right: 1.5rem;
 }
 
-.detail-section:hover .title-icon+span {
+.detail-section:hover .title-icon+h2 {
     letter-spacing: 1.5px;
 }
 
@@ -377,7 +430,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.timeline-block h1 {
+.timeline-block h3 {
     font-size: 2rem;
     margin: 5px 0;
     transition: all 0.3s;
@@ -439,7 +492,7 @@ body {
     top: 13px;
 }
 
-.timeline-block:hover h1 {
+.timeline-block:hover h3 {
     color: var(--color-tiffany);
 }
 
@@ -523,15 +576,14 @@ body {
 }
 
 /* My projects section */
-/* .detail-section.my_projects table, th, td {
-    border: 1px solid black;
-} */
-
-.detail-section.my_projects table {
-    border-spacing: 5px;
+.detail-section.my_projects .project {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
 }
 
-.detail-section.my_projects table img {
+.detail-section.my_projects .project img {
     border-radius: 25%;
     width: 96px;
     height: auto;
@@ -540,22 +592,20 @@ body {
     transition: all 0.15s;
 }
 
-.detail-section.my_projects table .project_title {
-    height: 100%;
-}
-
-.detail-section.my_projects table .project_title {
+.detail-section.my_projects .project_title {
     font-size: 2rem;
     font-weight: bold;
     width: 100%;
     text-align: left;
+    margin: 0 0 5px;
     transition: all 0.15s;
 }
 
-.detail-section.my_projects table .project_description {
+.detail-section.my_projects .project_description {
     font-size: 1.5rem;
     width: 100%;
     text-align: left;
+    margin: 0;
 }
 
 .detail-section.my_projects .project:hover img {
@@ -785,12 +835,6 @@ body {
     display: block;
 }
 
-.clickable {
-    cursor: pointer;
-    font-size: 30px;
-    color: white;
-}
-
 @keyframes bg_anim {
     0% {
         box-shadow: 0px 0px 50px 0px var(--bg_shadow_color);
@@ -897,7 +941,7 @@ body {
         transition: all 0.15s;
     }
 
-    .detail-section.my_projects table img {
+    .detail-section.my_projects .project img {
         border-radius: 25%;
         width: 80px;
         height: auto;
@@ -957,7 +1001,7 @@ body {
         transition: all 0.15s;
     }
 
-    .detail-section.my_projects table img {
+    .detail-section.my_projects .project img {
         border-radius: 25%;
         width: 65px;
         height: auto;
@@ -1031,7 +1075,7 @@ body {
         transition: all 0.15s;
     }
 
-    .detail-section.my_projects table img {
+    .detail-section.my_projects .project img {
         border-radius: 25%;
         width: 50px;
         height: auto;

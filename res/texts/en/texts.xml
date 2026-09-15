@@ -1,5 +1,5 @@
 <Texts>
-    <Text Id="title" Value="Ryuzaki's CV"/>
+    <Text Id="title" Value="Ryuzaki — Software Engineer"/>
 
     <Text Id="profile_bio_name" Value="Oleksandr Danchenko"/>
     <Text Id="profile_bio_nick" Value="«Ryuzaki» 👾"/>
@@ -7,7 +7,7 @@
     <Text Id="profile_bio_location" Value="Smila, Ukraine"/>
     
     <Text Id="intro_about" Value="Briefly about me"/>
-    <Text Id="intro_about_text" Value="Hello there! I'm a 24 y.o. enthusiast developer with a passion for computer games.  I'm improving my game development skills and dreaming of creating my own game."/>
+    <Text Id="intro_about_text" Value="Hello there! I'm a developer with a passion for video games, continually improving my game development skills and working toward creating a game of my own."/>
     
     <Text Id="intro_quote" Value="“This sword Is the proof that I have lived„ - Guts, Berserk"/>
     

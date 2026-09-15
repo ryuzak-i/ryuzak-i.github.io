@@ -3,15 +3,15 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title id="title"></title>
+	<title id="title">Ryuzaki — Software Engineer</title>
 	<link rel="icon" type="image/png" href="/res/img/icon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="/style.css">
+	<meta name="description" content="Portfolio and CV of Oleksandr Danchenko, a software engineer and game developer.">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="prefetch stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Caesar+Dressing">
 	<link rel="stylesheet" type="text/css"
 		href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght,BNCE,INFM,SPAC@0,500,-100..100,0..100,0..100;1,500,-100..100,0..100,0..100&display=swap">
@@ -21,57 +21,62 @@
 
 <body>
 	<div class="wrapper">
-		<div class="intro">
-			<div class="profile">
+		<aside class="intro" aria-label="Profile">
+			<header class="profile">
 				<div class="photo">
-					<img src="/res/img/avatar.jpg" alt="avatar">
+					<img src="/res/img/avatar.jpg" alt="Oleksandr Danchenko" width="512" height="512">
 				</div>
 				<div class="bio">
 					<h1 class="name" id="profile_bio_name"></h1>
-					<h2 class="nick" id="profile_bio_nick"></h2>
+					<p class="nick" id="profile_bio_nick"></p>
 					<p class="profession" id="profile_bio_profession"></p>
 					<div class="location">
-						<i class="fas fa-map-marker-alt"></i>
+						<i class="fas fa-map-marker-alt" aria-hidden="true"></i>
 						<span id="profile_bio_location"></span>
 					</div>
 				</div>
-				<div class="languages">
-					<button type="button" class="fib fi-ua" id="language_uk"></button>
-					<button type="button" class="fib fi-gb" id="language_en"></button>
+				<div class="languages" role="group" aria-label="Вибір мови / Language selection">
+					<button type="button" class="fib fi-ua" id="language_uk" data-language="uk"
+						aria-label="Українська" aria-pressed="false" title="Українська"></button>
+					<button type="button" class="fib fi-gb" id="language_en" data-language="en"
+						aria-label="English" aria-pressed="false" title="English"></button>
 				</div>
-			</div>
+			</header>
 			<div class="intro-section about">
-				<h1 class="title" id="intro_about"></h1>
+				<h2 class="title" id="intro_about"></h2>
 				<p class="paragraph" id="intro_about_text"></p>
-				<p class="quote clickable" id="intro_quote">
-					<audio id="ambient" preload="metadata" loop>
-						<source src="/res/audio/ambient.ogg" type="audio/ogg">
-					</audio>
-				</p>
+				<blockquote class="quote">
+					<button type="button" class="quote-trigger" id="ambient_toggle" aria-pressed="false">
+						<span id="intro_quote"></span>
+					</button>
+				</blockquote>
+				<audio id="ambient" preload="metadata" loop>
+					<source src="/res/audio/ambient.ogg" type="audio/ogg">
+				</audio>
 			</div>
 			<div class="intro-section tech_stack">
-				<h1 class="title" id="intro_tech_stack"></h1>
+				<h2 class="title" id="intro_tech_stack"></h2>
 				<ul class="list">
-					<li><img src="https://skillicons.dev/icons?i=github" alt="Github" /></i></li>
-					<li><img src="https://skillicons.dev/icons?i=py" alt="Python" /></i></li>
-					<li><img src="https://skillicons.dev/icons?i=cs" alt="C#" /></i></li>
-					<li><img src="https://skillicons.dev/icons?i=cpp" alt="C++" /></i></li>
-					<li><img src="https://skillicons.dev/icons?i=js" alt="JavaScript" /></i></li>
-					<li><img src="https://skillicons.dev/icons?i=html" alt="HTML" /></i></li>
-					<li><img src="https://skillicons.dev/icons?i=css" alt="CSS" /></i></li>
-					<li><img src="https://go-skill-icons.vercel.app/api/icons?i=renpy" alt="Ren'Py" /></i></li>
-					<li><img src="https://skillicons.dev/icons?i=unreal" alt="Unreal Engine" /></i></li>
-					<li><img src="https://skillicons.dev/icons?i=unity" alt="Unity" /></i></li>
-					<li><img src="https://skillicons.dev/icons?i=pycharm" alt="Pycharm" /></i></li>
-					<li><img src="https://skillicons.dev/icons?i=visualstudio" alt="Visual Studio" /></i></li>
-					<li><img src="https://skillicons.dev/icons?i=vscode" alt="Visual Studio Code" /></i></li>
-					<li><img src="https://skillicons.dev/icons?i=ps" alt="Photoshop" /></i></li>
-					<li><img src="https://skillicons.dev/icons?i=ae" alt="After Effects" /></i></li>
-					<li><img src="https://skillicons.dev/icons?i=windows" alt="Windows" /></i></li>
+					<li><img src="https://skillicons.dev/icons?i=github" alt="GitHub"></li>
+					<li><img src="https://skillicons.dev/icons?i=py" alt="Python"></li>
+					<li><img src="https://skillicons.dev/icons?i=cs" alt="C#"></li>
+					<li><img src="https://skillicons.dev/icons?i=cpp" alt="C++"></li>
+					<li><img src="https://skillicons.dev/icons?i=js" alt="JavaScript"></li>
+					<li><img src="https://skillicons.dev/icons?i=html" alt="HTML"></li>
+					<li><img src="https://skillicons.dev/icons?i=css" alt="CSS"></li>
+					<li><img src="https://go-skill-icons.vercel.app/api/icons?i=renpy" alt="Ren'Py"></li>
+					<li><img src="https://skillicons.dev/icons?i=unreal" alt="Unreal Engine"></li>
+					<li><img src="https://skillicons.dev/icons?i=unity" alt="Unity"></li>
+					<li><img src="https://skillicons.dev/icons?i=pycharm" alt="PyCharm"></li>
+					<li><img src="https://skillicons.dev/icons?i=visualstudio" alt="Visual Studio"></li>
+					<li><img src="https://skillicons.dev/icons?i=vscode" alt="Visual Studio Code"></li>
+					<li><img src="https://skillicons.dev/icons?i=ps" alt="Photoshop"></li>
+					<li><img src="https://skillicons.dev/icons?i=ae" alt="After Effects"></li>
+					<li><img src="https://skillicons.dev/icons?i=windows" alt="Windows"></li>
 				</ul>
 			</div>
 			<div class="intro-section soft_skills">
-				<h1 class="title" id="intro_soft_skills"></h1>
+				<h2 class="title" id="intro_soft_skills"></h2>
 				<ul class="list">
 					<li id="intro_soft_skill_1"></li>
 					<li id="intro_soft_skill_2"></li>
@@ -86,39 +91,42 @@
 				</ul>
 			</div>
 			<div class="intro-section follow">
-				<h1 class="title" id="intro_follow"></h1>
+				<h2 class="title" id="intro_follow"></h2>
 				<div class="box">
-					<a class="github" href="https://github.com/ryuzak-i" target="_blank">
-						<i class="fab fa-github"></i>
+					<a class="github" href="https://github.com/ryuzak-i" target="_blank"
+						rel="noopener noreferrer" aria-label="GitHub">
+						<i class="fab fa-github" aria-hidden="true"></i>
 					</a>
-					<a class="telegram" href="https://t.me/ryu_zakl" target="_blank">
-						<i class="fab fa-telegram-plane"></i>
+					<a class="telegram" href="https://t.me/ryu_zakl" target="_blank"
+						rel="noopener noreferrer" aria-label="Telegram">
+						<i class="fab fa-telegram-plane" aria-hidden="true"></i>
 					</a>
-					<a class="linkedin" href="https://www.linkedin.com/in/ryu-zaki/" target="_blank">
-						<i class="fab fa-linkedin-in"></i>
+					<a class="linkedin" href="https://www.linkedin.com/in/ryu-zaki/" target="_blank"
+						rel="noopener noreferrer" aria-label="LinkedIn">
+						<i class="fab fa-linkedin-in" aria-hidden="true"></i>
 					</a>
 					<!-- https://www.mikemustaine.com/mmtools/files/mailTo.html -->
 					<a class="mail"
 						href="&#77;&#97;&#73;&#108;&#84;&#111;&#58;&#100;&#97;&#110;&#99;&#104;&#101;&#110;&#107;&#111;&#46;&#111;&#108;&#101;&#107;&#115;&#97;&#110;&#100;&#114;&#46;&#121;&#117;&#114;&#105;&#121;&#111;&#118;&#121;&#99;&#104;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"
-						target="_blank">
-						<i class="fas fa-envelope"></i>
+						aria-label="Email">
+						<i class="fas fa-envelope" aria-hidden="true"></i>
 					</a>
 				</div>
 			</div>
-		</div>
-		<div class="detail">
+		</aside>
+		<main class="detail">
 			<div class="detail-section work">
 				<div class="detail-title">
 					<div class="title-icon">
-						<i class="fas fa-briefcase"></i>
+						<i class="fas fa-briefcase" aria-hidden="true"></i>
 					</div>
-					<span id="detail_work"></span>
+					<h2 id="detail_work"></h2>
 				</div>
 				<div class="detail-content">
 					<div class="timeline-block">
 						<time id="detail_work_2_time"></time>
-						<h1 id="detail_work_2_title"></h1>
-						<a href="https://www.wonderland-games.com/" target="_blank">
+						<h3 id="detail_work_2_title"></h3>
+						<a href="https://www.wonderland-games.com/" target="_blank" rel="noopener noreferrer">
 							<p id="detail_work_2_subtitle_1"></p>
 						</a>
 						<p class="mid" id="detail_work_2_subtitle_2"></p>
@@ -149,42 +157,46 @@
 						<ul class="p_list">
 							<li>
 								<a href="https://www.wonderland-games.com/projects/the-dungeon-chronicles/"
-									target="_blank">
+									target="_blank" rel="noopener noreferrer">
 									<img src="/res/img/projects/wonderland games/dungeon.png"
-										alt="The Dungeon Chronicles" /></i>
+										alt="The Dungeon Chronicles" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 							<li>
-								<img src="/res/img/projects/wonderland games/mengine.png" alt="Camelot 3" /></i>
+								<img src="/res/img/projects/wonderland games/mengine.png" alt="Camelot 3"
+									width="256" height="256" loading="lazy" decoding="async">
 							</li>
 							<li>
 								<a href="https://www.wonderland-games.com/projects/christmas-adventure-candy-storm/"
-									target="_blank">
+									target="_blank" rel="noopener noreferrer">
 									<img src="/res/img/projects/wonderland games/christmas.png"
-										alt="Christmas Adventure: Candy Storm" /></i>
+										alt="Christmas Adventure: Candy Storm" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 							<li>
-								<a href="https://www.wonderland-games.com/projects/numberphile/" target="_blank">
+								<a href="https://www.wonderland-games.com/projects/numberphile/" target="_blank"
+									rel="noopener noreferrer">
 									<img src="/res/img/projects/wonderland games/numberphile.png"
-										alt="Numberphile" /></i>
+										alt="Numberphile" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 							<li>
-								<a href="https://www.wonderland-games.com/projects/the-wisbey-mystery/" target="_blank">
+								<a href="https://www.wonderland-games.com/projects/the-wisbey-mystery/" target="_blank"
+									rel="noopener noreferrer">
 									<img src="/res/img/projects/wonderland games/wisbey.png"
-										alt="The Wisbey Mystery" /></i>
+										alt="The Wisbey Mystery" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 							<li>
-								<img src="/res/img/projects/wonderland games/mengine.png" alt="Marjorie" /></i>
+								<img src="/res/img/projects/wonderland games/mengine.png" alt="Marjorie"
+									width="256" height="256" loading="lazy" decoding="async">
 							</li>
 						</ul>
 					</div>
 					<div class="timeline-block">
 						<time id="detail_work_1_time"></time>
-						<h1 id="detail_work_1_title"></h1>
-						<a href="https://www.wonderland-games.com/" target="_blank">
+						<h3 id="detail_work_1_title"></h3>
+						<a href="https://www.wonderland-games.com/" target="_blank" rel="noopener noreferrer">
 							<p id="detail_work_1_subtitle_1"></p>
 						</a>
 						<p class="mid" id="detail_work_1_subtitle_2"></p>
@@ -209,29 +221,30 @@
 						<ul class="p_list">
 							<li>
 								<a href="https://www.wonderland-games.com/projects/christmas-adventures-a-winter-nights-dream/"
-									target="_blank">
+									target="_blank" rel="noopener noreferrer">
 									<img src="/res/img/projects/wonderland games/christmas_2.png"
-										alt="Christmas Adventures: A Winter Night’s Dream" /></i>
+										alt="Christmas Adventures: A Winter Night’s Dream" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 							<li>
 								<a href="https://www.wonderland-games.com/projects/pride-and-prejudice-blood-ties/"
-									target="_blank">
+									target="_blank" rel="noopener noreferrer">
 									<img src="/res/img/projects/wonderland games/vampires.png"
-										alt="Pride and Prejudice: Blood Ties" /></i>
+										alt="Pride and Prejudice: Blood Ties" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 							<li>
-								<a href="https://www.wonderland-games.com/projects/camelot/" target="_blank">
+								<a href="https://www.wonderland-games.com/projects/camelot/" target="_blank"
+									rel="noopener noreferrer">
 									<img src="/res/img/projects/wonderland games/camelot.png"
-										alt="Camelot: Wrath of the Green Knight" /></i>
+										alt="Camelot: Wrath of the Green Knight" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 							<li>
 								<a href="https://www.wonderland-games.com/projects/camelot-2-the-holy-grail/"
-									target="_blank">
+									target="_blank" rel="noopener noreferrer">
 									<img src="/res/img/projects/wonderland games/camelot_2.png"
-										alt="Camelot 2: The Holy Grail" /></i>
+										alt="Camelot 2: The Holy Grail" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 						</ul>
@@ -241,15 +254,15 @@
 			<div class="detail-section edu">
 				<div class="detail-title">
 					<div class="title-icon">
-						<i class="fas fa-file-certificate"></i>
+						<i class="fas fa-file-certificate" aria-hidden="true"></i>
 					</div>
-					<span id="detail_education"></span>
+					<h2 id="detail_education"></h2>
 				</div>
 				<div class="detail-content">
 					<div class="timeline-block">
 						<time id="detail_education_3_time"></time>
-						<h1 id="detail_education_3_title"></h1>
-						<a href="https://nuft.edu.ua/" target="_blank">
+						<h3 id="detail_education_3_title"></h3>
+						<a href="https://nuft.edu.ua/" target="_blank" rel="noopener noreferrer">
 							<p id="detail_education_3_subtitle_1"></p>
 						</a>
 						<p class="mid" id="detail_education_3_subtitle_2"></p>
@@ -265,8 +278,8 @@
 					</div>
 					<div class="timeline-block">
 						<time id="detail_education_2_time"></time>
-						<h1 id="detail_education_2_title"></h1>
-						<a href="https://nuft.edu.ua/" target="_blank">
+						<h3 id="detail_education_2_title"></h3>
+						<a href="https://nuft.edu.ua/" target="_blank" rel="noopener noreferrer">
 							<p id="detail_education_2_subtitle_1"></p>
 						</a>
 						<p class="mid" id="detail_education_2_subtitle_2"></p>
@@ -284,8 +297,8 @@
 					</div>
 					<div class="timeline-block">
 						<time id="detail_education_1_time"></time>
-						<h1 id="detail_education_1_title"></h1>
-						<a href="https://www.stxt.com.ua/" target="_blank">
+						<h3 id="detail_education_1_title"></h3>
+						<a href="https://www.stxt.com.ua/" target="_blank" rel="noopener noreferrer">
 							<p id="detail_education_1_subtitle_1"></p>
 						</a>
 						<p class="mid" id="detail_education_1_subtitle_2"></p>
@@ -314,45 +327,41 @@
 			<div class="detail-section my_projects">
 				<div class="detail-title">
 					<div class="title-icon">
-						<i class="fas fa-star"></i>
+						<i class="fas fa-star" aria-hidden="true"></i>
 					</div>
-					<span id="detail_projects"></span>
+					<h2 id="detail_projects"></h2>
 				</div>
 				<div class="detail-content">
-					<table class="project">
-						<tr>
-							<td rowspan="2" class="project_image">
-								<a href="https://github.com/ryuzak-i/UE5_Labyrinth" target="_blank">
-									<img src="/res/img/projects/other/unreal_engine.png" alt="Labyrinth" /></i>
-								</a>
-							</td>
-							<td class="project_title" id="detail_projects_1_title"></td>
-						</tr>
-						<tr>
-							<td class="project_description" id="detail_projects_1_descr"></td>
-						</tr>
-					</table>
-					<table class="project">
-						<tr>
-							<td rowspan="2" class="project_image">
-								<a href="https://github.com/ryuzak-i/UE5_TicTacToe" target="_blank">
-									<img src="/res/img/projects/other/unreal_engine.png" alt="TicTacToe" /></i>
-								</a>
-							</td>
-							<td class="project_title" id="detail_projects_2_title"></td>
-						</tr>
-						<tr>
-							<td class="project_description" id="detail_projects_2_descr"></td>
-						</tr>
-					</table>
+					<article class="project">
+						<a class="project_image" href="https://github.com/ryuzak-i/UE5_Labyrinth" target="_blank"
+							rel="noopener noreferrer">
+							<img src="/res/img/projects/other/unreal_engine.png" alt="Labyrinth" width="256"
+								height="256" loading="lazy" decoding="async">
+						</a>
+						<div class="project_content">
+							<h3 class="project_title" id="detail_projects_1_title"></h3>
+							<p class="project_description" id="detail_projects_1_descr"></p>
+						</div>
+					</article>
+					<article class="project">
+						<a class="project_image" href="https://github.com/ryuzak-i/UE5_TicTacToe" target="_blank"
+							rel="noopener noreferrer">
+							<img src="/res/img/projects/other/unreal_engine.png" alt="Tic-tac-toe" width="256"
+								height="256" loading="lazy" decoding="async">
+						</a>
+						<div class="project_content">
+							<h3 class="project_title" id="detail_projects_2_title"></h3>
+							<p class="project_description" id="detail_projects_2_descr"></p>
+						</div>
+					</article>
 				</div>
 			</div>
 			<div class="detail-section pg-skill">
 				<div class="detail-title">
 					<div class="title-icon">
-						<i class="fas fa-code"></i>
+						<i class="fas fa-code" aria-hidden="true"></i>
 					</div>
-					<span id="detail_skills"></span>
+					<h2 id="detail_skills"></h2>
 				</div>
 				<div class="detail-content">
 					<ul class="pg-list">
@@ -472,42 +481,42 @@
 			<div class="detail-section interests">
 				<div class="detail-title">
 					<div class="title-icon">
-						<i class="fas fa-heart"></i>
+						<i class="fas fa-heart" aria-hidden="true"></i>
 					</div>
-					<span id="detail_interests"></span>
+					<h2 id="detail_interests"></h2>
 				</div>
 				<div class="detail-content">
 					<div class="outer-frame">
 						<ul class="favor-list">
 							<li>
-								<i class="fas fa-gamepad-alt"></i>
+								<i class="fas fa-gamepad-alt" aria-hidden="true"></i>
 								<span id="detail_interests_games"></span>
 							</li>
 							<li>
-								<i class="fas fa-laptop-code"></i>
+								<i class="fas fa-laptop-code" aria-hidden="true"></i>
 								<span id="detail_interests_coding"></span>
 							</li>
 							<li>
-								<i class="fas fa-film"></i>
+								<i class="fas fa-film" aria-hidden="true"></i>
 								<span id="detail_interests_movies"></span>
 							</li>
 							<li>
-								<i class="far fa-robot"></i>
+								<i class="far fa-robot" aria-hidden="true"></i>
 								<span id="detail_interests_technologies"></span>
 							</li>
 							<li>
-								<i class="fas fa-music"></i>
+								<i class="fas fa-music" aria-hidden="true"></i>
 								<span id="detail_interests_music"></span>
 							</li>
 							<li>
-								<i class="fas fa-palette"></i>
+								<i class="fas fa-palette" aria-hidden="true"></i>
 								<span id="detail_interests_art"></span>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
 	</div>
 	<script type="text/javascript" src="/res/scripts/texts.js"></script>
 	<script type="text/javascript" src="/res/scripts/ambient.js"></script>

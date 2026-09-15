@@ -1,26 +1,38 @@
-function playAudio() {
-    audio_state = false;
-    audio.play();
-};
+const ambientAudio = document.getElementById("ambient");
+const ambientToggle = document.getElementById("ambient_toggle");
 
-function pauseAudio() {
-    audio_state = true;
-    audio.pause();
-};
+if (ambientAudio && ambientToggle) {
+    const canPlayOgg = Boolean(
+        ambientAudio.canPlayType && ambientAudio.canPlayType('audio/ogg; codecs="vorbis"')
+    );
 
-function runState() {
-    if (audio_state === true) {
-        playAudio();
+    if (!canPlayOgg) {
+        ambientToggle.disabled = true;
+        ambientToggle.removeAttribute("aria-pressed");
     }
     else {
-        pauseAudio();
-    };
-};
+        const updateAudioControl = () => {
+            ambientToggle.setAttribute("aria-pressed", String(!ambientAudio.paused));
+        };
 
-var audio = document.getElementById("ambient");
-var can_play_ogg = !!audio.canPlayType && audio.canPlayType('audio/ogg; codecs="vorbis"') != "";
-var audio_state = can_play_ogg;
+        ambientToggle.addEventListener("click", async () => {
+            if (ambientAudio.paused) {
+                try {
+                    await ambientAudio.play();
+                }
+                catch (error) {
+                    console.error("Ambient audio could not be played.", error);
+                }
+            }
+            else {
+                ambientAudio.pause();
+            }
 
-if (can_play_ogg === true && audio != null) {
-    audio.parentNode.addEventListener("click", runState);
-};
+            updateAudioControl();
+        });
+
+        ambientAudio.addEventListener("play", updateAudioControl);
+        ambientAudio.addEventListener("pause", updateAudioControl);
+        updateAudioControl();
+    }
+}

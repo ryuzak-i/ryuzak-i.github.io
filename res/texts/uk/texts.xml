@@ -1,11 +1,13 @@
 <Texts>
+    <Text Id="title" Value="Ryuzaki — Інженер-програміст"/>
+
     <Text Id="profile_bio_name" Value="Олександр Данченко"/>
     <Text Id="profile_bio_nick" Value="«Ryuzaki» 👾"/>
     <Text Id="profile_bio_profession" Value="Інженер-програміст"/>
     <Text Id="profile_bio_location" Value="Сміла, Україна"/>
     
     <Text Id="intro_about" Value="Коротко про мене"/>
-    <Text Id="intro_about_text" Value="Вітаю! Я 24-річний розробник з пристрастю до комп'ютерних ігор. Я вдосконалюю свої навички розробки ігор та мрію створити власну гру."/>
+    <Text Id="intro_about_text" Value="Вітаю! Я розробник, захоплений комп'ютерними іграми. Постійно вдосконалюю навички у геймдеві та мрію створити власну гру."/>
     
     <Text Id="intro_quote" Value="“Цей меч є доказом того, що я жив„ - Ґатс, Берсерк"/>
     
