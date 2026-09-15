@@ -1,6 +1,6 @@
 if ("IntersectionObserver" in window) {
     const revealTargets = document.querySelectorAll([
-        ".intro-section",
+        ".intro-section:not(.about)",
         ".detail-title",
         ".project-grid",
         ".timeline-block"

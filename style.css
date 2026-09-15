@@ -5,7 +5,7 @@
     --surface-blue: #f0f4fa;
     --ink: #111827;
     --ink-soft: #334155;
-    --muted: #64748b;
+    --muted: #59687d;
     --line: #dfe6f0;
     --accent: #2254b5;
     --accent-dark: #183f8c;
@@ -127,6 +127,7 @@ button:focus-visible {
 }
 
 .bio .name {
+    min-height: 1.15em;
     margin: 1.5rem 0 0;
     font-size: clamp(1.8rem, 3vw, 2.25rem);
     line-height: 1.15;
@@ -134,6 +135,7 @@ button:focus-visible {
 }
 
 .bio .nick {
+    min-height: 1.4em;
     margin: 0.45rem 0 0;
     color: #cbd5e1;
     font-size: 1.15rem;
@@ -141,6 +143,7 @@ button:focus-visible {
 }
 
 .bio .profession {
+    min-height: 1.4em;
     margin: 1.15rem 0 0;
     color: #f8fafc;
     font-size: 1.08rem;
@@ -152,6 +155,7 @@ button:focus-visible {
     align-items: center;
     justify-content: center;
     gap: 0.45rem;
+    min-height: 1.4em;
     margin-top: 0.6rem;
     color: #94a3b8;
     font-size: 0.95rem;
@@ -211,6 +215,7 @@ button:focus-visible {
 }
 
 .hero-contact .title {
+    min-height: 1.25em;
     margin: 0 0 0.75rem;
     color: #cbd5e1;
     font-size: 0.8rem;
@@ -227,6 +232,7 @@ button:focus-visible {
 }
 
 .intro-section .title {
+    min-height: 1.25em;
     margin: 0 0 1rem;
     color: var(--ink);
     font-size: 1.05rem;
@@ -235,6 +241,7 @@ button:focus-visible {
 }
 
 .about .paragraph {
+    min-height: 7em;
     margin: 0;
     color: var(--ink-soft);
     font-size: 0.98rem;
@@ -258,6 +265,7 @@ button:focus-visible {
 
 .quote-trigger {
     width: 100%;
+    min-height: 2.9em;
     margin: 0;
     padding: 0;
     appearance: none;
@@ -281,6 +289,10 @@ button:focus-visible {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.intro-section.soft_skills .list {
+    min-height: 9.5rem;
 }
 
 .intro-section.tech_stack .list > li {
@@ -482,6 +494,7 @@ button:focus-visible {
     flex: 1;
     flex-direction: column;
     align-items: flex-start;
+    min-height: 14rem;
     padding: 1.25rem;
 }
 
@@ -740,7 +753,6 @@ button:focus-visible {
     will-change: auto;
 }
 
-.photo,
 .bio,
 .languages,
 .hero-contact {
@@ -976,7 +988,6 @@ button:focus-visible {
         scroll-behavior: auto;
     }
 
-    .photo,
     .bio,
     .languages,
     .hero-contact {
