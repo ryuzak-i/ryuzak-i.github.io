@@ -19,6 +19,11 @@
     --telegram: #229ed9;
     --linkedin: #0a66c2;
     --mail: #8b5e3c;
+    --motion-fast: 220ms;
+    --motion-base: 320ms;
+    --motion-slow: 720ms;
+    --ease-standard: cubic-bezier(0.2, 0.8, 0.2, 1);
+    --ease-emphasized: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 html {
@@ -181,7 +186,7 @@ button:focus-visible {
     opacity: 0.52;
     transform: scale(0.92);
     transform-origin: center;
-    transition: filter 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
+    transition: filter var(--motion-base) var(--ease-standard), opacity var(--motion-base) var(--ease-standard), transform var(--motion-base) var(--ease-standard);
 }
 
 .languages button:hover {
@@ -288,7 +293,7 @@ button:focus-visible {
     height: 46px;
     border-radius: 11px;
     transform-origin: center;
-    transition: transform 0.2s ease, filter 0.2s ease;
+    transition: transform var(--motion-fast) var(--ease-standard), filter var(--motion-fast) var(--ease-standard);
 }
 
 .intro-section.tech_stack .list img:hover {
@@ -305,7 +310,7 @@ button:focus-visible {
     font-size: 0.8rem;
     font-weight: 600;
     transform-origin: center;
-    transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    transition: border-color var(--motion-fast) var(--ease-standard), color var(--motion-fast) var(--ease-standard), transform var(--motion-fast) var(--ease-standard);
 }
 
 .intro-section.soft_skills .list > li:hover {
@@ -330,7 +335,7 @@ button:focus-visible {
     color: white;
     text-decoration: none;
     transform-origin: center;
-    transition: border-radius 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+    transition: border-radius var(--motion-base) var(--ease-standard), transform var(--motion-base) var(--ease-standard), box-shadow var(--motion-base) var(--ease-standard);
 }
 
 .hero-contact .box a:hover {
@@ -399,7 +404,7 @@ button:focus-visible {
     color: white;
     background: linear-gradient(145deg, #356bc0, var(--accent-dark));
     box-shadow: 0 9px 22px rgba(34, 84, 181, 0.2);
-    transition: border-radius 0.25s ease, transform 0.25s ease;
+    transition: border-radius var(--motion-base) var(--ease-standard), transform var(--motion-base) var(--ease-standard);
 }
 
 .detail-section:hover .title-icon {
@@ -433,7 +438,7 @@ button:focus-visible {
     text-decoration: none;
     box-shadow: 0 8px 28px rgba(15, 23, 42, 0.05);
     transform-origin: center;
-    transition: border-color 0.28s ease, box-shadow 0.28s ease, transform 0.28s ease;
+    transition: border-color var(--motion-base) var(--ease-standard), box-shadow var(--motion-base) var(--ease-standard), transform var(--motion-base) var(--ease-standard);
 }
 
 .project-card:hover {
@@ -465,7 +470,7 @@ button:focus-visible {
     border-radius: 22px;
     filter: drop-shadow(0 14px 18px rgba(0, 0, 0, 0.28));
     transform-origin: center;
-    transition: transform 0.3s ease;
+    transition: transform var(--motion-base) var(--ease-emphasized);
 }
 
 .project-card:hover .project-visual img {
@@ -518,7 +523,7 @@ button:focus-visible {
 
 .project-cta i {
     font-size: 0.72rem;
-    transition: transform 0.2s ease;
+    transition: transform var(--motion-fast) var(--ease-standard);
 }
 
 .project-card:hover .project-cta i {
@@ -552,7 +557,7 @@ button:focus-visible {
     border-radius: 50%;
     background: white;
     content: "";
-    transition: border-color 0.25s ease, transform 0.25s ease;
+    transition: border-color var(--motion-base) var(--ease-standard), transform var(--motion-base) var(--ease-standard);
 }
 
 .timeline-block:hover::before {
@@ -576,7 +581,7 @@ button:focus-visible {
     color: var(--ink);
     font-size: 1.35rem;
     line-height: 1.3;
-    transition: color 0.2s ease;
+    transition: color var(--motion-fast) var(--ease-standard);
 }
 
 .timeline-block:hover h3 {
@@ -632,7 +637,7 @@ button:focus-visible {
     font-size: 0.78rem;
     font-weight: 600;
     transform-origin: center;
-    transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    transition: border-color var(--motion-fast) var(--ease-standard), color var(--motion-fast) var(--ease-standard), transform var(--motion-fast) var(--ease-standard);
 }
 
 .timeline-block .list > li:hover {
@@ -663,7 +668,7 @@ button:focus-visible {
     border-radius: 25%;
     object-fit: cover;
     transform-origin: center;
-    transition: border-color 0.2s ease, border-radius 0.25s ease, box-shadow 0.2s ease, transform 0.25s ease;
+    transition: border-color var(--motion-fast) var(--ease-standard), border-radius var(--motion-base) var(--ease-standard), box-shadow var(--motion-fast) var(--ease-standard), transform var(--motion-base) var(--ease-emphasized);
 }
 
 .timeline-block .p_list img:hover {
@@ -694,7 +699,7 @@ button:focus-visible {
     color: var(--ink-soft);
     background: var(--surface-soft);
     transform-origin: center;
-    transition: border-color 0.22s ease, color 0.22s ease, transform 0.22s ease;
+    transition: border-color var(--motion-base) var(--ease-standard), color var(--motion-base) var(--ease-standard), transform var(--motion-base) var(--ease-standard);
 }
 
 .favor-list > li:hover {
@@ -721,6 +726,39 @@ button:focus-visible {
     font-weight: 700;
 }
 
+/* Page entrance and scroll reveal */
+.reveal-enabled .reveal-target {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity var(--motion-slow) var(--ease-emphasized), transform var(--motion-slow) var(--ease-emphasized);
+    will-change: opacity, transform;
+}
+
+.reveal-enabled .reveal-target.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    will-change: auto;
+}
+
+.photo,
+.bio,
+.languages,
+.hero-contact {
+    animation: hero-enter var(--motion-slow) var(--ease-emphasized) both;
+}
+
+.bio {
+    animation-delay: 120ms;
+}
+
+.languages {
+    animation-delay: 240ms;
+}
+
+.hero-contact {
+    animation-delay: 360ms;
+}
+
 @keyframes bg-anim {
     from {
         box-shadow: 0 0 42px rgba(34, 84, 181, 0.32);
@@ -728,6 +766,28 @@ button:focus-visible {
 
     to {
         box-shadow: 0 0 100px rgba(34, 84, 181, 0.56);
+    }
+}
+
+@keyframes hero-enter {
+    from {
+        opacity: 0;
+        transform: translateY(14px) scale(0.985);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes hero-fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
 
@@ -908,5 +968,25 @@ button:focus-visible {
 @media (max-width: 420px) {
     .favor-list {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .photo,
+    .bio,
+    .languages,
+    .hero-contact {
+        animation-name: hero-fade;
+        animation-duration: var(--motion-base);
+        animation-delay: 0ms;
+    }
+
+    .reveal-enabled .reveal-target {
+        transform: none;
+        transition: opacity var(--motion-base) linear;
     }
 }
