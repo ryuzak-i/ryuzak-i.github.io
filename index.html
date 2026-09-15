@@ -12,14 +12,14 @@
 	<link rel="preload" href="/res/texts/en/texts.xml" as="fetch" type="application/xml" crossorigin>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap">
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Caesar+Dressing">
-	<link rel="stylesheet" type="text/css"
-		href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght,BNCE,INFM,SPAC@0,500,-100..100,0..100,0..100;1,500,-100..100,0..100,0..100&display=swap">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Underdog&amp;display=swap">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
 	<link rel="stylesheet" href="/style.css">
+	<script src="/res/scripts/texts.js" async></script>
+	<script src="/res/scripts/ambient.js" defer></script>
+	<script src="/res/scripts/reveal.js" defer></script>
 </head>
 
 <body>
@@ -27,8 +27,10 @@
 		<aside class="intro" aria-label="Profile">
 			<header class="profile">
 				<div class="photo">
-					<img src="/res/img/avatar.jpg" alt="Oleksandr Danchenko" width="512" height="512"
-						fetchpriority="high">
+					<img src="/res/img/avatar.webp"
+						srcset="/res/img/avatar-320.webp 320w, /res/img/avatar.webp 512w"
+						sizes="(max-width: 680px) 150px, (max-width: 980px) 170px, 250px"
+						alt="Oleksandr Danchenko" width="512" height="512" fetchpriority="high">
 				</div>
 				<div class="bio">
 					<h1 class="name" id="profile_bio_name"></h1>
@@ -160,7 +162,7 @@
 						<a class="project-card" href="https://github.com/ryuzak-i/UE5_Labyrinth" target="_blank"
 							rel="noopener noreferrer" aria-label="Labyrinth on GitHub">
 							<div class="project-visual">
-								<img src="/res/img/projects/other/unreal_engine.png" alt="" width="256"
+								<img src="/res/img/projects/other/unreal_engine.webp" alt="" width="256"
 									height="256" decoding="async">
 							</div>
 							<div class="project-content">
@@ -175,7 +177,7 @@
 						<a class="project-card" href="https://github.com/ryuzak-i/UE5_TicTacToe" target="_blank"
 							rel="noopener noreferrer" aria-label="Tic-tac-toe on GitHub">
 							<div class="project-visual">
-								<img src="/res/img/projects/other/unreal_engine.png" alt="" width="256"
+								<img src="/res/img/projects/other/unreal_engine.webp" alt="" width="256"
 									height="256" loading="lazy" decoding="async">
 							</div>
 							<div class="project-content">
@@ -233,37 +235,37 @@
 							<li>
 								<a href="https://www.wonderland-games.com/projects/the-dungeon-chronicles/"
 									target="_blank" rel="noopener noreferrer">
-									<img src="/res/img/projects/wonderland games/dungeon.png"
+									<img src="/res/img/projects/wonderland games/dungeon.webp"
 										alt="The Dungeon Chronicles" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 							<li>
-								<img src="/res/img/projects/wonderland games/mengine.png" alt="Camelot 3"
+								<img src="/res/img/projects/wonderland games/mengine.webp" alt="Camelot 3"
 									width="256" height="256" loading="lazy" decoding="async">
 							</li>
 							<li>
 								<a href="https://www.wonderland-games.com/projects/christmas-adventure-candy-storm/"
 									target="_blank" rel="noopener noreferrer">
-									<img src="/res/img/projects/wonderland games/christmas.png"
+									<img src="/res/img/projects/wonderland games/christmas.webp"
 										alt="Christmas Adventure: Candy Storm" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 							<li>
 								<a href="https://www.wonderland-games.com/projects/numberphile/" target="_blank"
 									rel="noopener noreferrer">
-									<img src="/res/img/projects/wonderland games/numberphile.png"
+									<img src="/res/img/projects/wonderland games/numberphile.webp"
 										alt="Numberphile" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 							<li>
 								<a href="https://www.wonderland-games.com/projects/the-wisbey-mystery/" target="_blank"
 									rel="noopener noreferrer">
-									<img src="/res/img/projects/wonderland games/wisbey.png"
+									<img src="/res/img/projects/wonderland games/wisbey.webp"
 										alt="The Wisbey Mystery" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 							<li>
-								<img src="/res/img/projects/wonderland games/mengine.png" alt="Marjorie"
+								<img src="/res/img/projects/wonderland games/mengine.webp" alt="Marjorie"
 									width="256" height="256" loading="lazy" decoding="async">
 							</li>
 						</ul>
@@ -297,28 +299,28 @@
 							<li>
 								<a href="https://www.wonderland-games.com/projects/christmas-adventures-a-winter-nights-dream/"
 									target="_blank" rel="noopener noreferrer">
-									<img src="/res/img/projects/wonderland games/christmas_2.png"
+									<img src="/res/img/projects/wonderland games/christmas_2.webp"
 										alt="Christmas Adventures: A Winter Night’s Dream" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 							<li>
 								<a href="https://www.wonderland-games.com/projects/pride-and-prejudice-blood-ties/"
 									target="_blank" rel="noopener noreferrer">
-									<img src="/res/img/projects/wonderland games/vampires.png"
+									<img src="/res/img/projects/wonderland games/vampires.webp"
 										alt="Pride and Prejudice: Blood Ties" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 							<li>
 								<a href="https://www.wonderland-games.com/projects/camelot/" target="_blank"
 									rel="noopener noreferrer">
-									<img src="/res/img/projects/wonderland games/camelot.png"
+									<img src="/res/img/projects/wonderland games/camelot.webp"
 										alt="Camelot: Wrath of the Green Knight" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 							<li>
 								<a href="https://www.wonderland-games.com/projects/camelot-2-the-holy-grail/"
 									target="_blank" rel="noopener noreferrer">
-									<img src="/res/img/projects/wonderland games/camelot_2.png"
+									<img src="/res/img/projects/wonderland games/camelot_2.webp"
 										alt="Camelot 2: The Holy Grail" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
@@ -469,9 +471,6 @@
 			</div> -->
 		</main>
 	</div>
-	<script type="text/javascript" src="/res/scripts/texts.js"></script>
-	<script type="text/javascript" src="/res/scripts/ambient.js"></script>
-	<script type="text/javascript" src="/res/scripts/reveal.js"></script>
 </body>
 
 </html>

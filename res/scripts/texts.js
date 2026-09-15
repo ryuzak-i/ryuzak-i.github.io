@@ -25,6 +25,16 @@ function getInitialLanguage(supportedLanguages, defaultLanguage) {
     return defaultLanguage;
 }
 
+function waitForDocument() {
+    if (document.readyState !== "loading") {
+        return Promise.resolve();
+    }
+
+    return new Promise(resolve => {
+        document.addEventListener("DOMContentLoaded", resolve, { once: true });
+    });
+}
+
 async function fetchJson(path) {
     const response = await fetch(path);
 
@@ -143,10 +153,23 @@ async function initializeLocalization() {
     try {
         config = await fetchJson(CONFIG_PATH);
         const supportedLanguages = Object.keys(config.TEXTS.LANGUAGES);
+        const defaultLanguage = config.TEXTS.DEFAULT_LANGUAGE;
         const initialLanguage = getInitialLanguage(
             supportedLanguages,
-            config.TEXTS.DEFAULT_LANGUAGE
+            defaultLanguage
         );
+
+        const initialTranslationsPromise = Promise.all([
+            fetchTranslations(defaultLanguage),
+            initialLanguage === defaultLanguage
+                ? Promise.resolve()
+                : fetchTranslations(initialLanguage)
+        ]);
+
+        await Promise.all([
+            waitForDocument(),
+            initialTranslationsPromise
+        ]);
 
         for (const button of document.querySelectorAll("[data-language]")) {
             button.addEventListener("click", () => setLanguage(button.dataset.language));
@@ -155,7 +178,7 @@ async function initializeLocalization() {
         await setLanguage(initialLanguage);
     }
     catch (error) {
-        document.body.removeAttribute("aria-busy");
+        document.body?.removeAttribute("aria-busy");
         console.error("Localization initialization failed.", error);
     }
 }
