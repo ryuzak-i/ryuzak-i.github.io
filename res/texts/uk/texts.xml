@@ -1,5 +1,7 @@
 <Texts>
-    <Text Id="title" Value="Ryuzaki — Інженер-програміст"/>
+    <Text Id="title" Value="Олександр Данченко (Ryuzaki) — Інженер-програміст"/>
+    <Text Id="seo_description" Value="Портфоліо Олександра Данченка (Ryuzaki), інженера-програміста та розробника ігор, який працює з Python, JavaScript, Unity та Unreal Engine."/>
+    <Text Id="seo_image_alt" Value="Портфоліо Олександра Данченка — інженера-програміста"/>
 
     <Text Id="profile_bio_name" Value="Олександр Данченко"/>
     <Text Id="profile_bio_nick" Value="«Ryuzaki» 👾"/>

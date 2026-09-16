@@ -90,6 +90,42 @@ function applyTranslations(translations) {
     }
 }
 
+function updateSeoMetadata(translations, languageCode) {
+    const metadataTranslations = {
+        title: [
+            'meta[property="og:title"]',
+            'meta[name="twitter:title"]'
+        ],
+        seo_description: [
+            'meta[name="description"]',
+            'meta[property="og:description"]',
+            'meta[name="twitter:description"]'
+        ],
+        seo_image_alt: [
+            'meta[property="og:image:alt"]',
+            'meta[name="twitter:image:alt"]'
+        ]
+    };
+
+    for (const [translationId, selectors] of Object.entries(metadataTranslations)) {
+        const value = translations[translationId];
+
+        if (!value) {
+            continue;
+        }
+
+        for (const selector of selectors) {
+            document.querySelector(selector)?.setAttribute("content", value);
+        }
+    }
+
+    const locale = languageCode === "uk" ? "uk_UA" : "en_US";
+    const alternateLocale = languageCode === "uk" ? "en_US" : "uk_UA";
+    document.querySelector('meta[property="og:locale"]')?.setAttribute("content", locale);
+    document.querySelector('meta[property="og:locale:alternate"]')
+        ?.setAttribute("content", alternateLocale);
+}
+
 function updateLanguageControls(languageCode, isLoading = false) {
     for (const button of document.querySelectorAll("[data-language]")) {
         const isActive = button.dataset.language === languageCode;
@@ -129,7 +165,9 @@ async function setLanguage(languageCode) {
             return;
         }
 
-        applyTranslations({ ...defaultTranslations, ...selectedTranslations });
+        const translations = { ...defaultTranslations, ...selectedTranslations };
+        applyTranslations(translations);
+        updateSeoMetadata(translations, selectedLanguage);
         currentLanguageCode = selectedLanguage;
         document.documentElement.lang = selectedLanguage;
         updateLanguageControls(selectedLanguage);
