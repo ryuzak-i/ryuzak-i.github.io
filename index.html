@@ -12,10 +12,8 @@
 	<link rel="preload" href="/res/texts/en/texts.xml" as="fetch" type="application/xml" crossorigin>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css">
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Underdog&amp;display=swap">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
 	<link rel="stylesheet" href="/style.css">
 	<script src="/res/scripts/texts.js" async></script>
 	<script src="/res/scripts/ambient.js" defer></script>
@@ -37,36 +35,40 @@
 					<p class="nick" id="profile_bio_nick"></p>
 					<p class="profession" id="profile_bio_profession"></p>
 					<div class="location">
-						<i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#location"></use></svg>
 						<span id="profile_bio_location"></span>
 					</div>
 				</div>
 				<div class="languages" role="group" aria-label="Вибір мови / Language selection">
-					<button type="button" class="fib fi-ua" id="language_uk" data-language="uk"
-						aria-label="Українська" aria-pressed="false" title="Українська"></button>
-					<button type="button" class="fib fi-gb" id="language_en" data-language="en"
-						aria-label="English" aria-pressed="false" title="English"></button>
+					<button type="button" id="language_uk" data-language="uk"
+						aria-label="Українська" aria-pressed="false" title="Українська">
+						<img src="/res/icons/flags/ua.svg" alt="" width="48" height="34" aria-hidden="true">
+					</button>
+					<button type="button" id="language_en" data-language="en"
+						aria-label="English" aria-pressed="false" title="English">
+						<img src="/res/icons/flags/gb.svg" alt="" width="48" height="34" aria-hidden="true">
+					</button>
 				</div>
 				<nav class="hero-contact" id="contact" aria-labelledby="intro_follow">
 					<h2 class="title" id="intro_follow"></h2>
 					<div class="box">
 						<a class="github" href="https://github.com/ryuzak-i" target="_blank"
 							rel="noopener noreferrer" aria-label="GitHub">
-							<i class="fab fa-github" aria-hidden="true"></i>
+							<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#github"></use></svg>
 						</a>
 						<a class="telegram" href="https://t.me/ryu_zakl" target="_blank"
 							rel="noopener noreferrer" aria-label="Telegram">
-							<i class="fab fa-telegram-plane" aria-hidden="true"></i>
+							<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#telegram"></use></svg>
 						</a>
 						<a class="linkedin" href="https://www.linkedin.com/in/ryu-zaki/" target="_blank"
 							rel="noopener noreferrer" aria-label="LinkedIn">
-							<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+							<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#linkedin"></use></svg>
 						</a>
 						<!-- https://www.mikemustaine.com/mmtools/files/mailTo.html -->
 						<a class="mail"
 							href="&#77;&#97;&#73;&#108;&#84;&#111;&#58;&#100;&#97;&#110;&#99;&#104;&#101;&#110;&#107;&#111;&#46;&#111;&#108;&#101;&#107;&#115;&#97;&#110;&#100;&#114;&#46;&#121;&#117;&#114;&#105;&#121;&#111;&#118;&#121;&#99;&#104;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"
 							aria-label="Email">
-							<i class="fas fa-envelope" aria-hidden="true"></i>
+							<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#email"></use></svg>
 						</a>
 					</div>
 				</nav>
@@ -86,22 +88,22 @@
 			<div class="intro-section tech_stack">
 				<h2 class="title" id="intro_tech_stack"></h2>
 				<ul class="list">
-					<li><img src="https://skillicons.dev/icons?i=github" alt="GitHub"></li>
-					<li><img src="https://skillicons.dev/icons?i=py" alt="Python"></li>
-					<li><img src="https://skillicons.dev/icons?i=cs" alt="C#"></li>
-					<li><img src="https://skillicons.dev/icons?i=cpp" alt="C++"></li>
-					<li><img src="https://skillicons.dev/icons?i=js" alt="JavaScript"></li>
-					<li><img src="https://skillicons.dev/icons?i=html" alt="HTML"></li>
-					<li><img src="https://skillicons.dev/icons?i=css" alt="CSS"></li>
-					<li><img src="https://go-skill-icons.vercel.app/api/icons?i=renpy" alt="Ren'Py"></li>
-					<li><img src="https://skillicons.dev/icons?i=unreal" alt="Unreal Engine"></li>
-					<li><img src="https://skillicons.dev/icons?i=unity" alt="Unity"></li>
-					<li><img src="https://skillicons.dev/icons?i=pycharm" alt="PyCharm"></li>
-					<li><img src="https://skillicons.dev/icons?i=visualstudio" alt="Visual Studio"></li>
-					<li><img src="https://skillicons.dev/icons?i=vscode" alt="Visual Studio Code"></li>
-					<li><img src="https://skillicons.dev/icons?i=ps" alt="Photoshop"></li>
-					<li><img src="https://skillicons.dev/icons?i=ae" alt="After Effects"></li>
-					<li><img src="https://skillicons.dev/icons?i=windows" alt="Windows"></li>
+					<li><img src="/res/icons/technologies/github.svg" alt="GitHub"></li>
+					<li><img src="/res/icons/technologies/python.svg" alt="Python"></li>
+					<li><img src="/res/icons/technologies/csharp.svg" alt="C#"></li>
+					<li><img src="/res/icons/technologies/cpp.svg" alt="C++"></li>
+					<li><img src="/res/icons/technologies/javascript.svg" alt="JavaScript"></li>
+					<li><img src="/res/icons/technologies/html.svg" alt="HTML"></li>
+					<li><img src="/res/icons/technologies/css.svg" alt="CSS"></li>
+					<li><img src="/res/icons/technologies/renpy.svg" alt="Ren'Py"></li>
+					<li><img src="/res/icons/technologies/unreal-engine.svg" alt="Unreal Engine"></li>
+					<li><img src="/res/icons/technologies/unity.svg" alt="Unity"></li>
+					<li><img src="/res/icons/technologies/pycharm.svg" alt="PyCharm"></li>
+					<li><img src="/res/icons/technologies/visual-studio.svg" alt="Visual Studio"></li>
+					<li><img src="/res/icons/technologies/vscode.svg" alt="Visual Studio Code"></li>
+					<li><img src="/res/icons/technologies/photoshop.svg" alt="Photoshop"></li>
+					<li><img src="/res/icons/technologies/after-effects.svg" alt="After Effects"></li>
+					<li><img src="/res/icons/technologies/windows.svg" alt="Windows"></li>
 				</ul>
 			</div>
 			<div class="intro-section soft_skills">
@@ -123,27 +125,27 @@
 				<h2 class="title" id="detail_interests"></h2>
 				<ul class="favor-list">
 					<li>
-						<i class="fas fa-gamepad-alt" aria-hidden="true"></i>
+						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#games"></use></svg>
 						<span id="detail_interests_games"></span>
 					</li>
 					<li>
-						<i class="fas fa-laptop-code" aria-hidden="true"></i>
+						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#coding"></use></svg>
 						<span id="detail_interests_coding"></span>
 					</li>
 					<li>
-						<i class="fas fa-film" aria-hidden="true"></i>
+						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#movies"></use></svg>
 						<span id="detail_interests_movies"></span>
 					</li>
 					<li>
-						<i class="far fa-robot" aria-hidden="true"></i>
+						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#technology"></use></svg>
 						<span id="detail_interests_technologies"></span>
 					</li>
 					<li>
-						<i class="fas fa-music" aria-hidden="true"></i>
+						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#music"></use></svg>
 						<span id="detail_interests_music"></span>
 					</li>
 					<li>
-						<i class="fas fa-palette" aria-hidden="true"></i>
+						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#art"></use></svg>
 						<span id="detail_interests_art"></span>
 					</li>
 				</ul>
@@ -153,7 +155,7 @@
 			<section class="detail-section my_projects" aria-labelledby="detail_projects">
 				<div class="detail-title">
 					<div class="title-icon">
-						<i class="fas fa-star" aria-hidden="true"></i>
+						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#projects"></use></svg>
 					</div>
 					<h2 id="detail_projects"></h2>
 				</div>
@@ -169,7 +171,7 @@
 								<span class="project-stack" id="detail_projects_1_engine"></span>
 								<h3 class="project-title" id="detail_projects_1_title"></h3>
 								<p class="project-description" id="detail_projects_1_descr"></p>
-								<span class="project-cta"><span id="detail_projects_1_source"></span> <i class="fas fa-external-link-alt" aria-hidden="true"></i></span>
+								<span class="project-cta"><span id="detail_projects_1_source"></span> <svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#external-link"></use></svg></span>
 							</div>
 						</a>
 					</article>
@@ -184,7 +186,7 @@
 								<span class="project-stack" id="detail_projects_2_engine"></span>
 								<h3 class="project-title" id="detail_projects_2_title"></h3>
 								<p class="project-description" id="detail_projects_2_descr"></p>
-								<span class="project-cta"><span id="detail_projects_2_source"></span> <i class="fas fa-external-link-alt" aria-hidden="true"></i></span>
+								<span class="project-cta"><span id="detail_projects_2_source"></span> <svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#external-link"></use></svg></span>
 							</div>
 						</a>
 					</article>
@@ -193,7 +195,7 @@
 			<div class="detail-section work">
 				<div class="detail-title">
 					<div class="title-icon">
-						<i class="fas fa-briefcase" aria-hidden="true"></i>
+						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#work"></use></svg>
 					</div>
 					<h2 id="detail_work"></h2>
 				</div>
@@ -331,7 +333,7 @@
 			<div class="detail-section edu">
 				<div class="detail-title">
 					<div class="title-icon">
-						<i class="fas fa-file-certificate" aria-hidden="true"></i>
+						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#education"></use></svg>
 					</div>
 					<h2 id="detail_education"></h2>
 				</div>
@@ -404,7 +406,7 @@
 			<!-- <div class="detail-section tool-skill">
 				<div class="detail-title">
 					<div class="title-icon">
-						<i class="fas fa-tools"></i>
+						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#tools"></use></svg>
 					</div>
 					<span id="detail_tools"></span>
 				</div>

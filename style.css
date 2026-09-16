@@ -43,6 +43,15 @@ button {
     font: inherit;
 }
 
+.icon {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    vertical-align: -0.125em;
+}
+
 [hidden] {
     display: none !important;
 }
@@ -167,7 +176,7 @@ button:focus-visible {
     font-size: 0.95rem;
 }
 
-.bio .location i {
+.bio .location .icon {
     color: #6f96d3;
 }
 
@@ -188,15 +197,20 @@ button:focus-visible {
     border: 0;
     border-radius: 5px;
     background-color: transparent;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     cursor: pointer;
     filter: saturate(0.55);
     opacity: 0.52;
     transform: scale(0.92);
     transform-origin: center;
     transition: filter var(--motion-base) var(--ease-standard), opacity var(--motion-base) var(--ease-standard), transform var(--motion-base) var(--ease-standard);
+}
+
+.languages img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
 }
 
 .languages button:hover {
@@ -404,8 +418,9 @@ button:focus-visible {
     box-shadow: 0 10px 22px rgba(15, 23, 42, 0.18);
 }
 
-.hero-contact .box i {
-    font-size: 1.4rem;
+.hero-contact .box .icon {
+    width: 1.4rem;
+    height: 1.4rem;
 }
 
 .hero-contact .github {
@@ -464,12 +479,11 @@ button:focus-visible {
     color: white;
     background: linear-gradient(145deg, #356bc0, var(--accent-dark));
     box-shadow: 0 9px 22px rgba(34, 84, 181, 0.2);
-    transition: border-radius var(--motion-base) var(--ease-standard), transform var(--motion-base) var(--ease-standard);
+    transition: border-radius var(--motion-base) var(--ease-standard);
 }
 
 .detail-section:hover .title-icon {
     border-radius: 50%;
-    transform: rotate(-5deg) scale(1.04);
 }
 
 .detail-content {
@@ -582,12 +596,13 @@ button:focus-visible {
     font-weight: 700;
 }
 
-.project-cta i {
-    font-size: 0.72rem;
+.project-cta .icon {
+    width: 0.72rem;
+    height: 0.72rem;
     transition: transform var(--motion-fast) var(--ease-standard);
 }
 
-.project-card:hover .project-cta i {
+.project-card:hover .project-cta .icon {
     transform: translate(2px, -2px);
 }
 
@@ -769,13 +784,12 @@ button:focus-visible {
     transform: scale(1.035);
 }
 
-.favor-list i {
-    display: inline-flex;
+.favor-list .icon {
     flex: 0 0 28px;
-    align-items: center;
-    justify-content: center;
+    box-sizing: border-box;
     width: 28px;
     height: 28px;
+    padding: 6px;
     border-radius: 8px;
     color: var(--accent-dark);
     background: var(--accent-soft);
@@ -1076,12 +1090,12 @@ button:focus-visible {
         border-radius: 11px;
     }
 
-    .favor-list i {
+    .favor-list .icon {
         flex-basis: 24px;
         width: 24px;
         height: 24px;
+        padding: 5px;
         border-radius: 7px;
-        font-size: 0.8rem;
     }
 
     .favor-list span {
