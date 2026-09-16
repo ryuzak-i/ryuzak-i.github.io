@@ -1,16 +1,9 @@
 {
-    "TEXTS": {
-        "DEFAULT_LANGUAGE": "en",
-        "LANGUAGES": {
-            "en": {
-                "XML_DOCUMENT_PATH": "/res/texts/en/texts.xml"
-            },
-            "uk": {
-                "XML_DOCUMENT_PATH": "/res/texts/uk/texts.xml"
-            }
-        },
-        "XML_TAG_NAME": "Text",
-        "XML_ATTRIBUTE_ID_NAME": "Id",
-        "XML_ATTRIBUTE_VALUE_NAME": "Value"
+    "localization": {
+        "defaultLanguage": "en",
+        "languages": {
+            "en": "/res/texts/en/texts.xml",
+            "uk": "/res/texts/uk/texts.xml"
+        }
     }
 }

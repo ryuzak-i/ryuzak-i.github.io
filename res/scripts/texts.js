@@ -1,6 +1,9 @@
 const CONFIG_PATH = "/config.json";
+const XML_TEXT_TAG = "Text";
+const XML_ID_ATTRIBUTE = "Id";
+const XML_VALUE_ATTRIBUTE = "Value";
 
-let config;
+let localizationConfig;
 let currentLanguageCode = null;
 let latestLanguageRequest = 0;
 const translationsCache = new Map();
@@ -45,31 +48,66 @@ async function fetchJson(path) {
     return response.json();
 }
 
+function validateLocalizationConfig(config) {
+    const localization = config?.localization;
+
+    if (!localization || typeof localization !== "object") {
+        throw new Error("Localization configuration is missing.");
+    }
+
+    const { defaultLanguage, languages } = localization;
+
+    if (typeof defaultLanguage !== "string" || !defaultLanguage) {
+        throw new Error("Default language is not configured.");
+    }
+
+    if (!languages || typeof languages !== "object" || Array.isArray(languages)) {
+        throw new Error("Supported languages are not configured.");
+    }
+
+    if (!Object.prototype.hasOwnProperty.call(languages, defaultLanguage)) {
+        throw new Error(`Default language "${defaultLanguage}" is not supported.`);
+    }
+
+    for (const [languageCode, translationPath] of Object.entries(languages)) {
+        if (typeof translationPath !== "string" || !translationPath) {
+            throw new Error(`Translation path for "${languageCode}" is invalid.`);
+        }
+    }
+
+    return localization;
+}
+
 async function fetchTranslations(languageCode) {
     if (translationsCache.has(languageCode)) {
         return translationsCache.get(languageCode);
     }
 
-    const language = config.TEXTS.LANGUAGES[languageCode];
-    const response = await fetch(language.XML_DOCUMENT_PATH);
+    const translationPath = localizationConfig.languages[languageCode];
+
+    if (!translationPath) {
+        throw new Error(`Unsupported language: ${languageCode}`);
+    }
+
+    const response = await fetch(translationPath);
 
     if (!response.ok) {
-        throw new Error(`Could not load ${language.XML_DOCUMENT_PATH}: ${response.status}`);
+        throw new Error(`Could not load ${translationPath}: ${response.status}`);
     }
 
     const xmlString = await response.text();
     const xmlDocument = new DOMParser().parseFromString(xmlString, "text/xml");
 
     if (xmlDocument.querySelector("parsererror")) {
-        throw new Error(`Could not parse ${language.XML_DOCUMENT_PATH}`);
+        throw new Error(`Could not parse ${translationPath}`);
     }
 
     const translations = {};
-    const textElements = xmlDocument.getElementsByTagName(config.TEXTS.XML_TAG_NAME);
+    const textElements = xmlDocument.getElementsByTagName(XML_TEXT_TAG);
 
     for (const textElement of textElements) {
-        const id = textElement.getAttribute(config.TEXTS.XML_ATTRIBUTE_ID_NAME);
-        const value = textElement.getAttribute(config.TEXTS.XML_ATTRIBUTE_VALUE_NAME);
+        const id = textElement.getAttribute(XML_ID_ATTRIBUTE);
+        const value = textElement.getAttribute(XML_VALUE_ATTRIBUTE);
 
         if (id && value !== null) {
             translations[id] = value;
@@ -136,8 +174,8 @@ function updateLanguageControls(languageCode, isLoading = false) {
 }
 
 async function setLanguage(languageCode) {
-    const supportedLanguages = Object.keys(config.TEXTS.LANGUAGES);
-    const defaultLanguage = config.TEXTS.DEFAULT_LANGUAGE;
+    const supportedLanguages = Object.keys(localizationConfig.languages);
+    const defaultLanguage = localizationConfig.defaultLanguage;
     const normalizedLanguage = normalizeLanguageCode(languageCode);
     const selectedLanguage = supportedLanguages.includes(normalizedLanguage)
         ? normalizedLanguage
@@ -189,9 +227,10 @@ async function setLanguage(languageCode) {
 
 async function initializeLocalization() {
     try {
-        config = await fetchJson(CONFIG_PATH);
-        const supportedLanguages = Object.keys(config.TEXTS.LANGUAGES);
-        const defaultLanguage = config.TEXTS.DEFAULT_LANGUAGE;
+        const config = await fetchJson(CONFIG_PATH);
+        localizationConfig = validateLocalizationConfig(config);
+        const supportedLanguages = Object.keys(localizationConfig.languages);
+        const defaultLanguage = localizationConfig.defaultLanguage;
         const initialLanguage = getInitialLanguage(
             supportedLanguages,
             defaultLanguage
