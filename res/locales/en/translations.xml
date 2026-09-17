@@ -84,7 +84,7 @@
     <Text Id="experience.gameplayScripter.role" Value="Gameplay Scripter"/>
     <Text Id="experience.gameplayScripter.company" Value="Wonderland Games"/>
     <Text Id="experience.gameplayScripter.responsibilitiesHeading" Value="Key responsibilities"/>
-    <Text Id="experience.gameplayScripter.description" Value="Implemented scenario logic for player interactions and game progression. Prepared technical tasks for artists and animators, processed graphics in Photoshop, created basic animations in After Effects, and selected sound effects."/>
+    <Text Id="experience.gameplayScripter.description" Value="Implementation of scenario logic for player interactions and game progression. Preparation of technical tasks for artists and animators, graphics processing in Photoshop, creation of basic animations in After Effects, and selection of sound effects."/>
     <Text Id="experience.gameplayScripter.skillsHeading" Value="Technologies and skills"/>
     <Text Id="experience.gameplayScripter.skills.svn" Value="SVN"/>
     <Text Id="experience.gameplayScripter.skills.scenarioScripting" Value="Scenario scripting"/>
@@ -105,7 +105,7 @@
     <Text Id="experience.pythonDeveloper.role" Value="Python Developer"/>
     <Text Id="experience.pythonDeveloper.company" Value="Wonderland Games"/>
     <Text Id="experience.pythonDeveloper.responsibilitiesHeading" Value="Key responsibilities"/>
-    <Text Id="experience.pythonDeveloper.description" Value="Develop and maintain game mechanics in Python, improve legacy code, and participate in code review. I also implement server-side logic for mobile games in PlayFab using JavaScript and configure projects in Google Play Console."/>
+    <Text Id="experience.pythonDeveloper.description" Value="Development and maintenance of game mechanics in Python, improvement of legacy code, and participation in code reviews. Implementation of server-side logic for mobile games in PlayFab using JavaScript and configuration of projects in Google Play Console."/>
     <Text Id="experience.pythonDeveloper.skillsHeading" Value="Technologies and skills"/>
     <Text Id="experience.pythonDeveloper.skills.python" Value="Python"/>
     <Text Id="experience.pythonDeveloper.skills.pyCharm" Value="Pycharm"/>

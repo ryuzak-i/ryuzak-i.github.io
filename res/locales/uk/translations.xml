@@ -64,7 +64,7 @@
     <Text Id="experience.gameplayScripter.period" Value="Жовтень 2020 - Жовтень 2022"/>
     <Text Id="experience.gameplayScripter.role" Value="Скриптувальник ігрового процесу"/>
     <Text Id="experience.gameplayScripter.responsibilitiesHeading" Value="Основні завдання"/>
-    <Text Id="experience.gameplayScripter.description" Value="Реалізовував сценарну логіку взаємодії гравця з ігровими об'єктами та послідовність проходження гри. Готував технічні завдання для художників і аніматорів, опрацьовував графіку в Photoshop, створював базові анімації в After Effects та добирав звукові ефекти."/>
+    <Text Id="experience.gameplayScripter.description" Value="Реалізація сценарної логіки взаємодії гравця з ігровими об'єктами та послідовності проходження гри. Підготовка технічних завдань для художників і аніматорів, опрацювання графіки в Photoshop, створення базових анімацій в After Effects і добір звукових ефектів."/>
     <Text Id="experience.gameplayScripter.skillsHeading" Value="Технології та навички"/>
     <Text Id="experience.gameplayScripter.skills.scenarioScripting" Value="Скриптування сценарію"/>
     <Text Id="experience.gameplayScripter.skills.manualTesting" Value="Ручне тестування"/>
@@ -74,7 +74,7 @@
     <Text Id="experience.pythonDeveloper.period" Value="Жовтень 2022 - Дотепер"/>
     <Text Id="experience.pythonDeveloper.role" Value="Python розробник"/>
     <Text Id="experience.pythonDeveloper.responsibilitiesHeading" Value="Основні завдання"/>
-    <Text Id="experience.pythonDeveloper.description" Value="Розробляю та підтримую ігрові механіки на Python, покращую успадкований код і беру участь у перевірці змін. Також реалізую серверну логіку мобільних ігор у PlayFab на JavaScript та налаштовую проєкти в Google Play Console."/>
+    <Text Id="experience.pythonDeveloper.description" Value="Розробка та підтримка ігрових механік на Python, покращення успадкованого коду й участь у перевірці змін. Реалізація серверної логіки мобільних ігор у PlayFab на JavaScript та налаштування проєктів у Google Play Console."/>
     <Text Id="experience.pythonDeveloper.skillsHeading" Value="Технології та навички"/>
     <Text Id="experience.pythonDeveloper.skills.legacyCode" Value="Успадкований код"/>
     <Text Id="experience.pythonDeveloper.skills.localization" Value="Локалізація"/>
