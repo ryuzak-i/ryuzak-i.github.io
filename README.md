@@ -24,7 +24,7 @@ A responsive bilingual portfolio and online résumé built without a framework o
 
 ### XML-driven localization
 
-Available languages and translation paths are declared in `config.json`. At startup, `texts.js` reads the browser language preferences, loads the required XML files, merges the selected language with the English fallback, and updates both visible content and localized metadata.
+Available languages and translation paths are declared in `config.json`. At startup, `localization.js` reads the browser language preferences, loads the required XML files, merges the selected language with the English fallback, and updates both visible content and localized metadata.
 
 ```text
 config.json
@@ -72,10 +72,10 @@ Open Graph and Twitter Card tags provide a consistent preview when the direct li
     ├── audio                  # Optional ambient audio
     ├── icons                  # Site, flag, and technology SVG icons
     ├── img                    # Optimized images and social preview
-    ├── scripts                # Localization, reveal, and audio behavior
-    └── texts
-        ├── en/texts.xml       # English content
-        └── uk/texts.xml       # Ukrainian content
+    ├── scripts                # Localization, scroll reveal, and audio behavior
+    └── locales
+        ├── en/translations.xml # English content
+        └── uk/translations.xml # Ukrainian content
 ```
 
 ## Run Locally
@@ -92,7 +92,7 @@ Then open `http://localhost:8000/`. VS Code Live Server can be used as an altern
 
 ## Updating the Portfolio
 
-- Edit visible text in `res/texts/en/texts.xml` and `res/texts/uk/texts.xml`.
+- Edit visible text in `res/locales/en/translations.xml` and `res/locales/uk/translations.xml`.
 - Add or remove supported languages in `config.json`.
 - Change layout and visual behavior in `style.css`.
 - Update shared site icons in `res/icons/site-icons.svg`.

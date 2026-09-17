@@ -3,8 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title id="title">Oleksandr Danchenko (Ryuzaki) — Software Engineer</title>
-	<link rel="icon" type="image/png" href="/res/img/icon.png">
+	<title data-i18n="page.title">Oleksandr Danchenko (Ryuzaki) — Software Engineer</title>
+	<link rel="icon" type="image/png" href="/res/img/favicon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Portfolio of Oleksandr Danchenko (Ryuzaki), a software engineer and game developer working with Python, JavaScript, Unity, and Unreal Engine.">
 	<meta name="robots" content="noindex, nofollow">
@@ -32,63 +32,63 @@
 	<meta name="twitter:image:alt" content="Oleksandr Danchenko — Software Engineer portfolio">
 
 	<link rel="preload" href="/config.json" as="fetch" crossorigin>
-	<link rel="preload" href="/res/texts/en/texts.xml" as="fetch" type="application/xml" crossorigin>
+	<link rel="preload" href="/res/locales/en/translations.xml" as="fetch" type="application/xml" crossorigin>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Underdog&amp;display=swap">
 	<link rel="stylesheet" href="/style.css">
-	<script src="/res/scripts/texts.js" async></script>
-	<script src="/res/scripts/ambient.js" defer></script>
-	<script src="/res/scripts/reveal.js" defer></script>
+	<script src="/res/scripts/localization.js" async></script>
+	<script src="/res/scripts/ambient-audio.js" defer></script>
+	<script src="/res/scripts/scroll-reveal.js" defer></script>
 </head>
 
 <body>
-	<div class="wrapper">
-		<aside class="intro" aria-label="Profile">
-			<header class="profile">
-				<div class="photo">
+	<div class="portfolio-layout">
+		<aside class="profile-sidebar" aria-label="Profile">
+			<header class="profile-header">
+				<div class="profile-photo">
 					<img src="/res/img/avatar.webp"
 						srcset="/res/img/avatar-320.webp 320w, /res/img/avatar.webp 512w"
 						sizes="(max-width: 680px) 150px, (max-width: 980px) 170px, 250px"
 						alt="Oleksandr Danchenko" width="512" height="512" fetchpriority="high">
 				</div>
-				<div class="bio">
-					<h1 class="name" id="profile_bio_name"></h1>
-					<p class="nick" id="profile_bio_nick"></p>
-					<p class="profession" id="profile_bio_profession"></p>
-					<div class="location">
+				<div class="profile-details">
+					<h1 class="profile-name" data-i18n="profile.name"></h1>
+					<p class="profile-alias" data-i18n="profile.alias"></p>
+					<p class="profile-role" data-i18n="profile.role"></p>
+					<div class="profile-location">
 						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#location"></use></svg>
-						<span id="profile_bio_location"></span>
+						<span data-i18n="profile.location"></span>
 					</div>
 				</div>
-				<div class="languages" role="group" aria-label="Вибір мови / Language selection">
-					<button type="button" id="language_uk" data-language="uk"
+				<div class="language-switcher" role="group" aria-label="Вибір мови / Language selection">
+					<button type="button" class="language-switcher-button" data-language="uk"
 						aria-label="Українська" aria-pressed="false" title="Українська">
 						<img src="/res/icons/flags/ua.svg" alt="" width="48" height="34" aria-hidden="true">
 					</button>
-					<button type="button" id="language_en" data-language="en"
+					<button type="button" class="language-switcher-button" data-language="en"
 						aria-label="English" aria-pressed="false" title="English">
 						<img src="/res/icons/flags/gb.svg" alt="" width="48" height="34" aria-hidden="true">
 					</button>
 				</div>
-				<nav class="hero-contact" id="contact" aria-labelledby="intro_follow">
-					<h2 class="title" id="intro_follow"></h2>
-					<div class="box">
-						<a class="github" href="https://github.com/ryuzak-i" target="_blank"
+				<nav class="contact-section" aria-labelledby="contact-heading">
+					<h2 class="contact-heading" id="contact-heading" data-i18n="contact.heading"></h2>
+					<div class="contact-links">
+						<a class="contact-link contact-link--github" href="https://github.com/ryuzak-i" target="_blank"
 							rel="noopener noreferrer" aria-label="GitHub">
 							<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#github"></use></svg>
 						</a>
-						<a class="telegram" href="https://t.me/ryu_zakl" target="_blank"
+						<a class="contact-link contact-link--telegram" href="https://t.me/ryu_zakl" target="_blank"
 							rel="noopener noreferrer" aria-label="Telegram">
 							<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#telegram"></use></svg>
 						</a>
-						<a class="linkedin" href="https://www.linkedin.com/in/ryu-zaki/" target="_blank"
+						<a class="contact-link contact-link--linkedin" href="https://www.linkedin.com/in/ryu-zaki/" target="_blank"
 							rel="noopener noreferrer" aria-label="LinkedIn">
 							<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#linkedin"></use></svg>
 						</a>
 						<!-- https://www.mikemustaine.com/mmtools/files/mailTo.html -->
-						<a class="mail"
+						<a class="contact-link contact-link--email"
 							href="&#77;&#97;&#73;&#108;&#84;&#111;&#58;&#100;&#97;&#110;&#99;&#104;&#101;&#110;&#107;&#111;&#46;&#111;&#108;&#101;&#107;&#115;&#97;&#110;&#100;&#114;&#46;&#121;&#117;&#114;&#105;&#121;&#111;&#118;&#121;&#99;&#104;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"
 							aria-label="Email">
 							<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#email"></use></svg>
@@ -96,21 +96,21 @@
 					</div>
 				</nav>
 			</header>
-			<div class="intro-section about">
-				<h2 class="title" id="intro_about"></h2>
-				<p class="paragraph" id="intro_about_text"></p>
-				<blockquote class="quote">
-					<button type="button" class="quote-trigger" id="ambient_toggle" aria-pressed="false">
-						<span id="intro_quote"></span>
+			<section class="sidebar-section about-section">
+				<h2 class="sidebar-section-heading" data-i18n="about.heading"></h2>
+				<p class="about-description" data-i18n="about.description"></p>
+				<blockquote class="quote-card">
+					<button type="button" class="quote-audio-toggle" id="ambient-audio-toggle" aria-pressed="false">
+						<span data-i18n="about.quote"></span>
 					</button>
 				</blockquote>
-				<audio id="ambient" preload="none" loop>
+				<audio id="ambient-audio" preload="none" loop>
 					<source src="/res/audio/ambient.ogg" type="audio/ogg">
 				</audio>
-			</div>
-			<div class="intro-section tech_stack">
-				<h2 class="title" id="intro_tech_stack"></h2>
-				<ul class="list">
+			</section>
+			<section class="sidebar-section technologies-section">
+				<h2 class="sidebar-section-heading" data-i18n="technologies.heading"></h2>
+				<ul class="technology-list">
 					<li><img src="/res/icons/technologies/github.svg" alt="GitHub"></li>
 					<li><img src="/res/icons/technologies/python.svg" alt="Python"></li>
 					<li><img src="/res/icons/technologies/csharp.svg" alt="C#"></li>
@@ -128,372 +128,304 @@
 					<li><img src="/res/icons/technologies/after-effects.svg" alt="After Effects"></li>
 					<li><img src="/res/icons/technologies/windows.svg" alt="Windows"></li>
 				</ul>
-			</div>
-			<div class="intro-section soft_skills">
-				<h2 class="title" id="intro_soft_skills"></h2>
-				<ul class="list">
-					<li id="intro_soft_skill_1"></li>
-					<li id="intro_soft_skill_2"></li>
-					<li id="intro_soft_skill_3"></li>
-					<li id="intro_soft_skill_4"></li>
-					<li id="intro_soft_skill_5"></li>
-					<li id="intro_soft_skill_6"></li>
-					<li id="intro_soft_skill_7"></li>
-					<li id="intro_soft_skill_8"></li>
-					<li id="intro_soft_skill_9"></li>
-					<li id="intro_soft_skill_10"></li>
+			</section>
+			<section class="sidebar-section qualities-section">
+				<h2 class="sidebar-section-heading" data-i18n="qualities.heading"></h2>
+				<ul class="quality-list">
+					<li data-i18n="qualities.resourcefulness"></li>
+					<li data-i18n="qualities.independence"></li>
+					<li data-i18n="qualities.motivation"></li>
+					<li data-i18n="qualities.analyticalThinking"></li>
+					<li data-i18n="qualities.composure"></li>
+					<li data-i18n="qualities.goalOrientation"></li>
+					<li data-i18n="qualities.attentionToDetail"></li>
+					<li data-i18n="qualities.adaptability"></li>
+					<li data-i18n="qualities.resilience"></li>
+					<li data-i18n="qualities.responsibility"></li>
 				</ul>
-			</div>
-			<div class="intro-section interests">
-				<h2 class="title" id="detail_interests"></h2>
-				<ul class="favor-list">
+			</section>
+			<section class="sidebar-section interests-section">
+				<h2 class="sidebar-section-heading" data-i18n="interests.heading"></h2>
+				<ul class="interest-list">
 					<li>
 						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#games"></use></svg>
-						<span id="detail_interests_games"></span>
+						<span data-i18n="interests.games"></span>
 					</li>
 					<li>
 						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#coding"></use></svg>
-						<span id="detail_interests_coding"></span>
+						<span data-i18n="interests.coding"></span>
 					</li>
 					<li>
 						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#movies"></use></svg>
-						<span id="detail_interests_movies"></span>
+						<span data-i18n="interests.movies"></span>
 					</li>
 					<li>
-						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#technology"></use></svg>
-						<span id="detail_interests_technologies"></span>
+						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#automation"></use></svg>
+						<span data-i18n="interests.automation"></span>
 					</li>
 					<li>
 						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#music"></use></svg>
-						<span id="detail_interests_music"></span>
+						<span data-i18n="interests.music"></span>
 					</li>
 					<li>
 						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#art"></use></svg>
-						<span id="detail_interests_art"></span>
+						<span data-i18n="interests.art"></span>
 					</li>
 				</ul>
-			</div>
+			</section>
 		</aside>
-		<main class="detail">
-			<section class="detail-section my_projects" aria-labelledby="detail_projects">
-				<div class="detail-title">
-					<div class="title-icon">
+		<main class="portfolio-main">
+			<section class="content-section" aria-labelledby="projects-heading">
+				<div class="section-heading">
+					<div class="section-heading-icon">
 						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#projects"></use></svg>
 					</div>
-					<h2 id="detail_projects"></h2>
+					<h2 id="projects-heading" data-i18n="projects.heading"></h2>
 				</div>
-				<div class="detail-content project-grid">
-					<article class="project">
+				<div class="section-content project-grid">
+					<article class="project-item">
 						<a class="project-card" href="https://github.com/ryuzak-i/UE5_Labyrinth" target="_blank"
 							rel="noopener noreferrer" aria-label="Labyrinth on GitHub">
-							<div class="project-visual">
-								<img src="/res/img/projects/other/unreal_engine.webp" alt="" width="256"
+							<div class="project-thumbnail">
+								<img src="/res/img/projects/placeholders/unreal-engine.webp" alt="" width="256"
 									height="256" decoding="async">
 							</div>
-							<div class="project-content">
-								<span class="project-stack" id="detail_projects_1_engine"></span>
-								<h3 class="project-title" id="detail_projects_1_title"></h3>
-								<p class="project-description" id="detail_projects_1_descr"></p>
-								<span class="project-cta"><span id="detail_projects_1_source"></span> <svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#external-link"></use></svg></span>
+							<div class="project-details">
+								<span class="project-technology" data-i18n="projects.labyrinth.technology"></span>
+								<h3 class="project-title" data-i18n="projects.labyrinth.title"></h3>
+								<p class="project-description" data-i18n="projects.labyrinth.description"></p>
+								<span class="project-link-label"><span data-i18n="projects.labyrinth.sourceLabel"></span> <svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#external-link"></use></svg></span>
 							</div>
 						</a>
 					</article>
-					<article class="project">
+					<article class="project-item">
 						<a class="project-card" href="https://github.com/ryuzak-i/UE5_TicTacToe" target="_blank"
 							rel="noopener noreferrer" aria-label="Tic-tac-toe on GitHub">
-							<div class="project-visual">
-								<img src="/res/img/projects/other/unreal_engine.webp" alt="" width="256"
+							<div class="project-thumbnail">
+								<img src="/res/img/projects/placeholders/unreal-engine.webp" alt="" width="256"
 									height="256" loading="lazy" decoding="async">
 							</div>
-							<div class="project-content">
-								<span class="project-stack" id="detail_projects_2_engine"></span>
-								<h3 class="project-title" id="detail_projects_2_title"></h3>
-								<p class="project-description" id="detail_projects_2_descr"></p>
-								<span class="project-cta"><span id="detail_projects_2_source"></span> <svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#external-link"></use></svg></span>
+							<div class="project-details">
+								<span class="project-technology" data-i18n="projects.ticTacToe.technology"></span>
+								<h3 class="project-title" data-i18n="projects.ticTacToe.title"></h3>
+								<p class="project-description" data-i18n="projects.ticTacToe.description"></p>
+								<span class="project-link-label"><span data-i18n="projects.ticTacToe.sourceLabel"></span> <svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#external-link"></use></svg></span>
 							</div>
 						</a>
 					</article>
 				</div>
 			</section>
-			<div class="detail-section work">
-				<div class="detail-title">
-					<div class="title-icon">
-						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#work"></use></svg>
+			<section class="content-section experience-section" aria-labelledby="experience-heading">
+				<div class="section-heading">
+					<div class="section-heading-icon">
+						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#experience"></use></svg>
 					</div>
-					<h2 id="detail_work"></h2>
+					<h2 id="experience-heading" data-i18n="experience.heading"></h2>
 				</div>
-				<div class="detail-content">
-					<div class="timeline-block">
-						<time id="detail_work_2_time"></time>
-						<h3 id="detail_work_2_title"></h3>
+				<div class="section-content">
+					<article class="timeline-entry">
+						<time data-i18n="experience.pythonDeveloper.period"></time>
+						<h3 data-i18n="experience.pythonDeveloper.role"></h3>
 						<a href="https://www.wonderland-games.com/" target="_blank" rel="noopener noreferrer">
-							<p id="detail_work_2_subtitle_1"></p>
+							<p data-i18n="experience.pythonDeveloper.company"></p>
 						</a>
-						<p class="mid" id="detail_work_2_subtitle_2"></p>
-						<p class="mida" id="detail_work_2_about"></p>
-						<p class="mid" id="detail_work_2_subtitle_3"></p>
-						<ul class="list">
-							<li id="detail_work_2_skill_1"></li>
-							<li id="detail_work_2_skill_2"></li>
-							<li id="detail_work_2_skill_3"></li>
-							<li id="detail_work_2_skill_4"></li>
-							<li id="detail_work_2_skill_5"></li>
-							<li id="detail_work_2_skill_6"></li>
-							<li id="detail_work_2_skill_7"></li>
-							<li id="detail_work_2_skill_8"></li>
-							<li id="detail_work_2_skill_9"></li>
-							<li id="detail_work_2_skill_10"></li>
-							<li id="detail_work_2_skill_11"></li>
-							<li id="detail_work_2_skill_12"></li>
-							<li id="detail_work_2_skill_13"></li>
-							<li id="detail_work_2_skill_14"></li>
-							<li id="detail_work_2_skill_15"></li>
-							<li id="detail_work_2_skill_16"></li>
-							<li id="detail_work_2_skill_17"></li>
-							<li id="detail_work_2_skill_18"></li>
-							<li id="detail_work_2_skill_19"></li>
-							<li id="detail_work_2_skill_20"></li>
-							<li id="detail_work_2_skill_21"></li>
+						<p class="timeline-subheading" data-i18n="experience.pythonDeveloper.responsibilitiesHeading"></p>
+						<p class="timeline-description" data-i18n="experience.pythonDeveloper.description"></p>
+						<p class="timeline-subheading" data-i18n="experience.pythonDeveloper.skillsHeading"></p>
+						<ul class="skill-list">
+							<li data-i18n="experience.pythonDeveloper.skills.python"></li>
+							<li data-i18n="experience.pythonDeveloper.skills.pyCharm"></li>
+							<li data-i18n="experience.pythonDeveloper.skills.javascript"></li>
+							<li data-i18n="experience.pythonDeveloper.skills.github"></li>
+							<li data-i18n="experience.pythonDeveloper.skills.gitLfs"></li>
+							<li data-i18n="experience.pythonDeveloper.skills.fork"></li>
+							<li data-i18n="experience.pythonDeveloper.skills.unity"></li>
+							<li data-i18n="experience.pythonDeveloper.skills.legacyCode"></li>
+							<li data-i18n="experience.pythonDeveloper.skills.mvc"></li>
+							<li data-i18n="experience.pythonDeveloper.skills.api"></li>
+							<li data-i18n="experience.pythonDeveloper.skills.localization"></li>
+							<li data-i18n="experience.pythonDeveloper.skills.uiProgramming"></li>
+							<li data-i18n="experience.pythonDeveloper.skills.codeReview"></li>
+							<li data-i18n="experience.pythonDeveloper.skills.playFab"></li>
+							<li data-i18n="experience.pythonDeveloper.skills.chatGpt"></li>
+							<li data-i18n="experience.pythonDeveloper.skills.midjourney"></li>
+							<li data-i18n="experience.pythonDeveloper.skills.gameMechanics"></li>
+							<li data-i18n="experience.pythonDeveloper.skills.gameDevelopment"></li>
+							<li data-i18n="experience.pythonDeveloper.skills.googlePlayConsole"></li>
+							<li data-i18n="experience.pythonDeveloper.skills.codex"></li>
+							<li data-i18n="experience.pythonDeveloper.skills.visualStudioCode"></li>
 						</ul>
-						<p class="mid" id="detail_work_2_subtitle_4"></p>
-						<ul class="p_list">
+						<p class="timeline-subheading" data-i18n="experience.pythonDeveloper.projectsHeading"></p>
+						<ul class="experience-project-list">
 							<li>
 								<a href="https://www.wonderland-games.com/projects/the-dungeon-chronicles/"
 									target="_blank" rel="noopener noreferrer">
-									<img src="/res/img/projects/wonderland games/dungeon.webp"
+									<img src="/res/img/projects/wonderland-games/the-dungeon-chronicles.webp"
 										alt="The Dungeon Chronicles" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 							<li>
-								<img src="/res/img/projects/wonderland games/mengine.webp" alt="Camelot 3"
+								<img src="/res/img/projects/wonderland-games/mengine.webp" alt="Camelot 3"
 									width="256" height="256" loading="lazy" decoding="async">
 							</li>
 							<li>
 								<a href="https://www.wonderland-games.com/projects/christmas-adventure-candy-storm/"
 									target="_blank" rel="noopener noreferrer">
-									<img src="/res/img/projects/wonderland games/christmas.webp"
+									<img src="/res/img/projects/wonderland-games/christmas-adventure-candy-storm.webp"
 										alt="Christmas Adventure: Candy Storm" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 							<li>
 								<a href="https://www.wonderland-games.com/projects/numberphile/" target="_blank"
 									rel="noopener noreferrer">
-									<img src="/res/img/projects/wonderland games/numberphile.webp"
+									<img src="/res/img/projects/wonderland-games/numberphile.webp"
 										alt="Numberphile" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 							<li>
 								<a href="https://www.wonderland-games.com/projects/the-wisbey-mystery/" target="_blank"
 									rel="noopener noreferrer">
-									<img src="/res/img/projects/wonderland games/wisbey.webp"
+									<img src="/res/img/projects/wonderland-games/the-wisbey-mystery.webp"
 										alt="The Wisbey Mystery" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 							<li>
-								<img src="/res/img/projects/wonderland games/mengine.webp" alt="Marjorie"
+								<img src="/res/img/projects/wonderland-games/mengine.webp" alt="Marjorie"
 									width="256" height="256" loading="lazy" decoding="async">
 							</li>
 						</ul>
-					</div>
-					<div class="timeline-block">
-						<time id="detail_work_1_time"></time>
-						<h3 id="detail_work_1_title"></h3>
+					</article>
+					<article class="timeline-entry">
+						<time data-i18n="experience.gameplayScripter.period"></time>
+						<h3 data-i18n="experience.gameplayScripter.role"></h3>
 						<a href="https://www.wonderland-games.com/" target="_blank" rel="noopener noreferrer">
-							<p id="detail_work_1_subtitle_1"></p>
+							<p data-i18n="experience.gameplayScripter.company"></p>
 						</a>
-						<p class="mid" id="detail_work_1_subtitle_2"></p>
-						<p class="mida" id="detail_work_1_about"></p>
-						<p class="mid" id="detail_work_1_subtitle_3"></p>
-						<ul class="list">
-							<li id="detail_work_1_skill_1"></li>
-							<li id="detail_work_1_skill_2"></li>
-							<li id="detail_work_1_skill_3"></li>
-							<li id="detail_work_1_skill_4"></li>
-							<li id="detail_work_1_skill_5"></li>
-							<li id="detail_work_1_skill_6"></li>
-							<li id="detail_work_1_skill_7"></li>
-							<li id="detail_work_1_skill_8"></li>
-							<li id="detail_work_1_skill_9"></li>
-							<li id="detail_work_1_skill_10"></li>
-							<li id="detail_work_1_skill_11"></li>
-							<li id="detail_work_1_skill_12"></li>
-							<li id="detail_work_1_skill_13"></li>
+						<p class="timeline-subheading" data-i18n="experience.gameplayScripter.responsibilitiesHeading"></p>
+						<p class="timeline-description" data-i18n="experience.gameplayScripter.description"></p>
+						<p class="timeline-subheading" data-i18n="experience.gameplayScripter.skillsHeading"></p>
+						<ul class="skill-list">
+							<li data-i18n="experience.gameplayScripter.skills.svn"></li>
+							<li data-i18n="experience.gameplayScripter.skills.scenarioScripting"></li>
+							<li data-i18n="experience.gameplayScripter.skills.trello"></li>
+							<li data-i18n="experience.gameplayScripter.skills.jira"></li>
+							<li data-i18n="experience.gameplayScripter.skills.confluence"></li>
+							<li data-i18n="experience.gameplayScripter.skills.jenkins"></li>
+							<li data-i18n="experience.gameplayScripter.skills.particles"></li>
+							<li data-i18n="experience.gameplayScripter.skills.afterEffects"></li>
+							<li data-i18n="experience.gameplayScripter.skills.mediaEncoder"></li>
+							<li data-i18n="experience.gameplayScripter.skills.sfx"></li>
+							<li data-i18n="experience.gameplayScripter.skills.notepadPlusPlus"></li>
+							<li data-i18n="experience.gameplayScripter.skills.manualTesting"></li>
+							<li data-i18n="experience.gameplayScripter.skills.teamLeadership"></li>
 						</ul>
-						<p class="mid" id="detail_work_1_subtitle_4"></p>
-						<ul class="p_list">
+						<p class="timeline-subheading" data-i18n="experience.gameplayScripter.projectsHeading"></p>
+						<ul class="experience-project-list">
 							<li>
 								<a href="https://www.wonderland-games.com/projects/christmas-adventures-a-winter-nights-dream/"
 									target="_blank" rel="noopener noreferrer">
-									<img src="/res/img/projects/wonderland games/christmas_2.webp"
+									<img src="/res/img/projects/wonderland-games/christmas-adventures-winter-nights-dream.webp"
 										alt="Christmas Adventures: A Winter Night’s Dream" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 							<li>
 								<a href="https://www.wonderland-games.com/projects/pride-and-prejudice-blood-ties/"
 									target="_blank" rel="noopener noreferrer">
-									<img src="/res/img/projects/wonderland games/vampires.webp"
+									<img src="/res/img/projects/wonderland-games/pride-and-prejudice-blood-ties.webp"
 										alt="Pride and Prejudice: Blood Ties" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 							<li>
 								<a href="https://www.wonderland-games.com/projects/camelot/" target="_blank"
 									rel="noopener noreferrer">
-									<img src="/res/img/projects/wonderland games/camelot.webp"
+									<img src="/res/img/projects/wonderland-games/camelot-wrath-of-the-green-knight.webp"
 										alt="Camelot: Wrath of the Green Knight" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 							<li>
 								<a href="https://www.wonderland-games.com/projects/camelot-2-the-holy-grail/"
 									target="_blank" rel="noopener noreferrer">
-									<img src="/res/img/projects/wonderland games/camelot_2.webp"
+									<img src="/res/img/projects/wonderland-games/camelot-2-the-holy-grail.webp"
 										alt="Camelot 2: The Holy Grail" width="256" height="256" loading="lazy" decoding="async">
 								</a>
 							</li>
 						</ul>
-					</div>
+					</article>
 				</div>
-			</div>
-			<div class="detail-section edu">
-				<div class="detail-title">
-					<div class="title-icon">
+			</section>
+			<section class="content-section education-section" aria-labelledby="education-heading">
+				<div class="section-heading">
+					<div class="section-heading-icon">
 						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#education"></use></svg>
 					</div>
-					<h2 id="detail_education"></h2>
+					<h2 id="education-heading" data-i18n="education.heading"></h2>
 				</div>
-				<div class="detail-content">
-					<div class="timeline-block">
-						<time id="detail_education_3_time"></time>
-						<h3 id="detail_education_3_title"></h3>
+				<div class="section-content">
+					<article class="timeline-entry">
+						<time data-i18n="education.master.period"></time>
+						<h3 data-i18n="education.master.degree"></h3>
 						<a href="https://nuft.edu.ua/" target="_blank" rel="noopener noreferrer">
-							<p id="detail_education_3_subtitle_1"></p>
+							<p data-i18n="education.master.institution"></p>
 						</a>
-						<p class="mid" id="detail_education_3_subtitle_2"></p>
-						<ul class="list">
-							<li id="detail_education_3_skill_1"></li>
-							<li id="detail_education_3_skill_2"></li>
-							<li id="detail_education_3_skill_3"></li>
-							<li id="detail_education_3_skill_4"></li>
-							<li id="detail_education_3_skill_5"></li>
-							<li id="detail_education_3_skill_6"></li>
-							<li id="detail_education_3_skill_7"></li>
+						<p class="timeline-subheading" data-i18n="education.master.skillsHeading"></p>
+						<ul class="skill-list">
+							<li data-i18n="education.master.skills.clientServer"></li>
+							<li data-i18n="education.master.skills.cloudTechnologies"></li>
+							<li data-i18n="education.master.skills.innovativeProjects"></li>
+							<li data-i18n="education.master.skills.systemsModeling"></li>
+							<li data-i18n="education.master.skills.businessProcesses"></li>
+							<li data-i18n="education.master.skills.teamBuilding"></li>
+							<li data-i18n="education.master.skills.professionalCommunication"></li>
 						</ul>
-					</div>
-					<div class="timeline-block">
-						<time id="detail_education_2_time"></time>
-						<h3 id="detail_education_2_title"></h3>
+					</article>
+					<article class="timeline-entry">
+						<time data-i18n="education.bachelor.period"></time>
+						<h3 data-i18n="education.bachelor.degree"></h3>
 						<a href="https://nuft.edu.ua/" target="_blank" rel="noopener noreferrer">
-							<p id="detail_education_2_subtitle_1"></p>
+							<p data-i18n="education.bachelor.institution"></p>
 						</a>
-						<p class="mid" id="detail_education_2_subtitle_2"></p>
-						<ul class="list">
-							<li id="detail_education_2_skill_1"></li>
-							<li id="detail_education_2_skill_2"></li>
-							<li id="detail_education_2_skill_3"></li>
-							<li id="detail_education_2_skill_4"></li>
-							<li id="detail_education_2_skill_5"></li>
-							<li id="detail_education_2_skill_6"></li>
-							<li id="detail_education_2_skill_7"></li>
-							<li id="detail_education_2_skill_8"></li>
-							<li id="detail_education_2_skill_9"></li>
+						<p class="timeline-subheading" data-i18n="education.bachelor.skillsHeading"></p>
+						<ul class="skill-list">
+							<li data-i18n="education.bachelor.skills.csharp"></li>
+							<li data-i18n="education.bachelor.skills.css"></li>
+							<li data-i18n="education.bachelor.skills.visualStudio"></li>
+							<li data-i18n="education.bachelor.skills.projectManagement"></li>
+							<li data-i18n="education.bachelor.skills.crossPlatformProgramming"></li>
+							<li data-i18n="education.bachelor.skills.arduino"></li>
+							<li data-i18n="education.bachelor.skills.parallelComputing"></li>
+							<li data-i18n="education.bachelor.skills.informationSystems"></li>
+							<li data-i18n="education.bachelor.skills.webTechnologies"></li>
 						</ul>
-					</div>
-					<div class="timeline-block">
-						<time id="detail_education_1_time"></time>
-						<h3 id="detail_education_1_title"></h3>
+					</article>
+					<article class="timeline-entry">
+						<time data-i18n="education.juniorSpecialist.period"></time>
+						<h3 data-i18n="education.juniorSpecialist.degree"></h3>
 						<a href="https://www.stxt.com.ua/" target="_blank" rel="noopener noreferrer">
-							<p id="detail_education_1_subtitle_1"></p>
+							<p data-i18n="education.juniorSpecialist.institution"></p>
 						</a>
-						<p class="mid" id="detail_education_1_subtitle_2"></p>
-						<ul class="list">
-							<li id="detail_education_1_skill_1"></li>
-							<li id="detail_education_1_skill_2"></li>
-							<li id="detail_education_1_skill_3"></li>
-							<li id="detail_education_1_skill_4"></li>
-							<li id="detail_education_1_skill_5"></li>
-							<li id="detail_education_1_skill_6"></li>
-							<li id="detail_education_1_skill_7"></li>
-							<li id="detail_education_1_skill_8"></li>
-							<li id="detail_education_1_skill_9"></li>
-							<li id="detail_education_1_skill_10"></li>
-							<li id="detail_education_1_skill_11"></li>
-							<li id="detail_education_1_skill_12"></li>
-							<li id="detail_education_1_skill_13"></li>
-							<li id="detail_education_1_skill_14"></li>
-							<li id="detail_education_1_skill_15"></li>
-							<li id="detail_education_1_skill_16"></li>
-							<li id="detail_education_1_skill_17"></li>
+						<p class="timeline-subheading" data-i18n="education.juniorSpecialist.skillsHeading"></p>
+						<ul class="skill-list">
+							<li data-i18n="education.juniorSpecialist.skills.oop"></li>
+							<li data-i18n="education.juniorSpecialist.skills.pascal"></li>
+							<li data-i18n="education.juniorSpecialist.skills.c"></li>
+							<li data-i18n="education.juniorSpecialist.skills.cpp"></li>
+							<li data-i18n="education.juniorSpecialist.skills.sql"></li>
+							<li data-i18n="education.juniorSpecialist.skills.html"></li>
+							<li data-i18n="education.juniorSpecialist.skills.delphi"></li>
+							<li data-i18n="education.juniorSpecialist.skills.windows"></li>
+							<li data-i18n="education.juniorSpecialist.skills.linux"></li>
+							<li data-i18n="education.juniorSpecialist.skills.virtualBox"></li>
+							<li data-i18n="education.juniorSpecialist.skills.algorithmization"></li>
+							<li data-i18n="education.juniorSpecialist.skills.photoshop"></li>
+							<li data-i18n="education.juniorSpecialist.skills.flash"></li>
+							<li data-i18n="education.juniorSpecialist.skills.word"></li>
+							<li data-i18n="education.juniorSpecialist.skills.excel"></li>
+							<li data-i18n="education.juniorSpecialist.skills.access"></li>
+							<li data-i18n="education.juniorSpecialist.skills.corelDraw"></li>
 						</ul>
-					</div>
+					</article>
 				</div>
-			</div>
-			<!-- <div class="detail-section tool-skill">
-				<div class="detail-title">
-					<div class="title-icon">
-						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#tools"></use></svg>
-					</div>
-					<span id="detail_tools"></span>
-				</div>
-				<div class="detail-content">
-					<ul class="tool-list">
-						<li>
-							<svg viewbox="0 0 100 100">
-								<circle cx="50" cy="50" r="45"></circle>
-								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.90"></circle>
-							</svg>
-							<span class="tl-name" id="detail_tools_github"></span>
-						</li>
-						<li>
-							<svg viewbox="0 0 100 100">
-								<circle cx="50" cy="50" r="45"></circle>
-								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.85"></circle>
-							</svg>
-							<span class="tl-name" id="detail_tools_svn"></span>
-						</li>
-						<li>
-							<svg viewbox="0 0 100 100">
-								<circle cx="50" cy="50" r="45"></circle>
-								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.85"></circle>
-							</svg>
-							<span class="tl-name" id="detail_tools_photoshop"></span>
-						</li>
-						<li>
-							<svg viewbox="0 0 100 100">
-								<circle cx="50" cy="50" r="45"></circle>
-								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.90"></circle>
-							</svg>
-							<span class="tl-name" id="detail_tools_aftereffects"></span>
-						</li>
-						<li>
-							<svg viewbox="0 0 100 100">
-								<circle cx="50" cy="50" r="45"></circle>
-								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.85"></circle>
-							</svg>
-							<span class="tl-name" id="detail_tools_jira"></span>
-						</li>
-						<li>
-							<svg viewbox="0 0 100 100">
-								<circle cx="50" cy="50" r="45"></circle>
-								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.80"></circle>
-							</svg>
-							<span class="tl-name" id="detail_tools_confluence"></span>
-						</li>
-						<li>
-							<svg viewbox="0 0 100 100">
-								<circle cx="50" cy="50" r="45"></circle>
-								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.70"></circle>
-							</svg>
-							<span class="tl-name" id="detail_tools_jenkins"></span>
-						</li>
-						<li>
-							<svg viewbox="0 0 100 100">
-								<circle cx="50" cy="50" r="45"></circle>
-								<circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.85"></circle>
-							</svg>
-							<span class="tl-name" id="detail_tools_playfab"></span>
-						</li>
-					</ul>
-				</div>
-			</div> -->
+			</section>
 		</main>
 	</div>
 </body>

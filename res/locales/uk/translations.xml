@@ -1,0 +1,105 @@
+<Texts>
+    <Text Id="page.title" Value="Олександр Данченко (Ryuzaki) — Інженер-програміст"/>
+    <Text Id="seo.description" Value="Портфоліо Олександра Данченка (Ryuzaki), інженера-програміста та розробника ігор, який працює з Python, JavaScript, Unity та Unreal Engine."/>
+    <Text Id="seo.imageAlt" Value="Портфоліо Олександра Данченка — інженера-програміста"/>
+
+    <Text Id="profile.name" Value="Олександр Данченко"/>
+    <Text Id="profile.alias" Value="«Ryuzaki» 👾"/>
+    <Text Id="profile.role" Value="Інженер-програміст"/>
+    <Text Id="profile.location" Value="Сміла, Україна"/>
+
+    <Text Id="about.heading" Value="Коротко про мене"/>
+    <Text Id="about.description" Value="Вітаю! Я розробник, захоплений комп'ютерними іграми. Постійно вдосконалюю навички у геймдеві та мрію створити власну гру."/>
+
+    <Text Id="about.quote" Value="“Цей меч є доказом того, що я жив„ - Ґатс, Берсерк"/>
+
+    <Text Id="qualities.heading" Value="Особисті якості"/>
+    <Text Id="qualities.resourcefulness" Value="Винахідливість"/>
+    <Text Id="qualities.independence" Value="Самостійність"/>
+    <Text Id="qualities.motivation" Value="Мотивація"/>
+    <Text Id="qualities.analyticalThinking" Value="Аналітичне мислення"/>
+    <Text Id="qualities.composure" Value="Виваженість"/>
+    <Text Id="qualities.goalOrientation" Value="Цілеспрямованість"/>
+    <Text Id="qualities.attentionToDetail" Value="Уважність до деталей"/>
+    <Text Id="qualities.adaptability" Value="Адаптивність"/>
+    <Text Id="qualities.resilience" Value="Стресостійкість"/>
+    <Text Id="qualities.responsibility" Value="Відповідальність"/>
+
+    <Text Id="contact.heading" Value="Зв'язок зі мною"/>
+    <Text Id="technologies.heading" Value="Технології та інструменти"/>
+
+    <Text Id="education.heading" Value="Освіта"/>
+
+    <Text Id="education.juniorSpecialist.period" Value="Вересень 2015 - Червень 2019"/>
+    <Text Id="education.juniorSpecialist.degree" Value="Молодший спеціаліст, Обслуговування програмних систем і комплексів"/>
+    <Text Id="education.juniorSpecialist.institution" Value="Смілянський коледж харчових технологій Національного університету харчових технологій, Україна"/>
+    <Text Id="education.juniorSpecialist.skillsHeading" Value="Набуті знання та вміння"/>
+    <Text Id="education.juniorSpecialist.skills.oop" Value="ООП"/>
+    <Text Id="education.juniorSpecialist.skills.algorithmization" Value="Алгоритмізація"/>
+
+    <Text Id="education.bachelor.period" Value="Вересень 2019 - Червень 2021"/>
+    <Text Id="education.bachelor.degree" Value="Бакалавр, Комп'ютерні науки"/>
+    <Text Id="education.bachelor.institution" Value="Національний університет харчових технологій, Україна"/>
+    <Text Id="education.bachelor.skillsHeading" Value="Набуті знання та вміння"/>
+    <Text Id="education.bachelor.skills.projectManagement" Value="Управління проєктами"/>
+    <Text Id="education.bachelor.skills.crossPlatformProgramming" Value="Крос-платформне програмування"/>
+    <Text Id="education.bachelor.skills.parallelComputing" Value="Паралельні обчислення"/>
+    <Text Id="education.bachelor.skills.informationSystems" Value="Інформаційні системи"/>
+    <Text Id="education.bachelor.skills.webTechnologies" Value="Веб-технології"/>
+
+    <Text Id="education.master.period" Value="Вересень 2021 - Лютий 2023"/>
+    <Text Id="education.master.degree" Value="Магістр, Інформаційні управляючі системи та технології"/>
+    <Text Id="education.master.institution" Value="Національний університет харчових технологій, Україна"/>
+    <Text Id="education.master.skillsHeading" Value="Набуті знання та вміння"/>
+    <Text Id="education.master.skills.clientServer" Value="Клієнт–сервер"/>
+    <Text Id="education.master.skills.cloudTechnologies" Value="Хмарні технології"/>
+    <Text Id="education.master.skills.innovativeProjects" Value="Інноваційні проекти"/>
+    <Text Id="education.master.skills.systemsModeling" Value="Моделювання систем"/>
+    <Text Id="education.master.skills.businessProcesses" Value="Бізнес процеси"/>
+    <Text Id="education.master.skills.teamBuilding" Value="Командоутворення"/>
+    <Text Id="education.master.skills.professionalCommunication" Value="Професійне спілкування"/>
+
+    <Text Id="experience.heading" Value="Досвід в ІТ"/>
+
+    <Text Id="experience.gameplayScripter.period" Value="Жовтень 2020 - Жовтень 2022"/>
+    <Text Id="experience.gameplayScripter.role" Value="Скриптувальник ігрового процесу"/>
+    <Text Id="experience.gameplayScripter.responsibilitiesHeading" Value="Основні завдання"/>
+    <Text Id="experience.gameplayScripter.description" Value="Реалізовував сценарну логіку взаємодії гравця з ігровими об'єктами та послідовність проходження гри. Готував технічні завдання для художників і аніматорів, опрацьовував графіку в Photoshop, створював базові анімації в After Effects та добирав звукові ефекти."/>
+    <Text Id="experience.gameplayScripter.skillsHeading" Value="Технології та навички"/>
+    <Text Id="experience.gameplayScripter.skills.scenarioScripting" Value="Скриптування сценарію"/>
+    <Text Id="experience.gameplayScripter.skills.manualTesting" Value="Ручне тестування"/>
+    <Text Id="experience.gameplayScripter.skills.teamLeadership" Value="Керування командою"/>
+    <Text Id="experience.gameplayScripter.projectsHeading" Value="Проєкти"/>
+
+    <Text Id="experience.pythonDeveloper.period" Value="Жовтень 2022 - Дотепер"/>
+    <Text Id="experience.pythonDeveloper.role" Value="Python розробник"/>
+    <Text Id="experience.pythonDeveloper.responsibilitiesHeading" Value="Основні завдання"/>
+    <Text Id="experience.pythonDeveloper.description" Value="Розробляю та підтримую ігрові механіки на Python, покращую успадкований код і беру участь у перевірці змін. Також реалізую серверну логіку мобільних ігор у PlayFab на JavaScript та налаштовую проєкти в Google Play Console."/>
+    <Text Id="experience.pythonDeveloper.skillsHeading" Value="Технології та навички"/>
+    <Text Id="experience.pythonDeveloper.skills.legacyCode" Value="Успадкований код"/>
+    <Text Id="experience.pythonDeveloper.skills.localization" Value="Локалізація"/>
+    <Text Id="experience.pythonDeveloper.skills.uiProgramming" Value="Програмування UI"/>
+    <Text Id="experience.pythonDeveloper.skills.codeReview" Value="Перевірка коду"/>
+    <Text Id="experience.pythonDeveloper.skills.gameMechanics" Value="Ігрові механіки"/>
+    <Text Id="experience.pythonDeveloper.skills.gameDevelopment" Value="Розробка гри"/>
+    <Text Id="experience.pythonDeveloper.skills.codex" Value="Codex"/>
+    <Text Id="experience.pythonDeveloper.skills.visualStudioCode" Value="Visual Studio Code"/>
+    <Text Id="experience.pythonDeveloper.projectsHeading" Value="Проєкти"/>
+
+    <Text Id="projects.heading" Value="Мої проєкти"/>
+    <Text Id="projects.labyrinth.title" Value="Лабіринт"/>
+    <Text Id="projects.labyrinth.description" Value="Прототип гри-лабіринту із заблокованими маршрутами, переслідуванням і поведінкою ШІ-ворога."/>
+    <Text Id="projects.labyrinth.technology" Value="Unreal Engine 5"/>
+    <Text Id="projects.labyrinth.sourceLabel" Value="GitHub"/>
+    <Text Id="projects.ticTacToe.title" Value="Хрестики-нулики"/>
+    <Text Id="projects.ticTacToe.description" Value="Гнучка реалізація хрестиків-нуликів із налаштовуваним розміром поля та умовою перемоги."/>
+    <Text Id="projects.ticTacToe.technology" Value="Unreal Engine 5"/>
+    <Text Id="projects.ticTacToe.sourceLabel" Value="GitHub"/>
+    <Text Id="interests.heading" Value="Особисті інтереси"/>
+    <Text Id="interests.coding" Value="Кодування"/>
+    <Text Id="interests.games" Value="Ігри"/>
+    <Text Id="interests.movies" Value="Фільми"/>
+    <Text Id="interests.automation" Value="Автоматизація"/>
+    <Text Id="interests.music" Value="Музика"/>
+    <Text Id="interests.art" Value="Мистецтво"/>
+</Texts>

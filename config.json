@@ -2,8 +2,14 @@
     "localization": {
         "defaultLanguage": "en",
         "languages": {
-            "en": "/res/texts/en/texts.xml",
-            "uk": "/res/texts/uk/texts.xml"
+            "en": {
+                "translationPath": "/res/locales/en/translations.xml",
+                "openGraphLocale": "en_US"
+            },
+            "uk": {
+                "translationPath": "/res/locales/uk/translations.xml",
+                "openGraphLocale": "uk_UA"
+            }
         }
     }
 }
