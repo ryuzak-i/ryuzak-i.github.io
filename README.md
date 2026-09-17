@@ -98,4 +98,8 @@ Then open `http://localhost:8000/`. VS Code Live Server can be used as an altern
 - Update shared site icons in `res/icons/site-icons.svg`.
 - Edit `res/img/seo/portfolio-preview.svg` and regenerate the PNG when the social card changes.
 
-Third-party icon attribution and license information is stored next to the corresponding assets in `res/icons`.
+## Copyright and Third-Party Assets
+
+Copyright © 2026 Oleksandr Danchenko. All rights reserved.
+
+Third-party icons and assets are subject to their respective licenses included with the corresponding files.
