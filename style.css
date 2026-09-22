@@ -13,6 +13,7 @@
     --color-profile-background: #101722;
     --color-profile-background-light: #1c2737;
     --color-accent-glow: rgba(34, 84, 181, 0.48);
+    --color-scrollbar-thumb: #466b9f;
     --color-quote-background: #fff4f2;
     --color-github: #171717;
     --color-telegram: #229ed9;
@@ -27,11 +28,44 @@
 
 html {
     scroll-behavior: smooth;
+    scrollbar-color: var(--color-scrollbar-thumb) var(--color-page-background);
     -webkit-text-size-adjust: 100%;
     font-family: "Manrope", "Segoe UI", sans-serif;
     line-height: 1.15;
     color: var(--color-text-primary);
     background: var(--color-page-background);
+}
+
+/* Older browsers use native scrollbar pseudo-elements instead. */
+@supports not (scrollbar-color: auto) {
+    @media (forced-colors: none) {
+        html::-webkit-scrollbar {
+            width: 14px;
+            height: 14px;
+        }
+
+        html::-webkit-scrollbar-track,
+        html::-webkit-scrollbar-corner {
+            background: var(--color-page-background);
+        }
+
+        html::-webkit-scrollbar-thumb {
+            border: 3px solid var(--color-page-background);
+            border-radius: 999px;
+            background: var(--color-scrollbar-thumb);
+            background-clip: padding-box;
+        }
+
+        html::-webkit-scrollbar-thumb:hover {
+            background-color: #5b83c2;
+        }
+    }
+}
+
+@media (forced-colors: active) {
+    html {
+        scrollbar-color: auto;
+    }
 }
 
 * {
@@ -311,6 +345,12 @@ button:focus-visible {
     touch-action: manipulation;
     transition: filter var(--duration-fast) var(--ease-standard), transform var(--duration-fast) var(--ease-standard);
     animation: quote-flame-flicker 1.15s ease-in-out infinite alternate;
+}
+
+@media (any-hover: hover) and (any-pointer: fine) and (forced-colors: none) {
+    .quote-audio-toggle:not(:disabled) {
+        cursor: url("/res/icons/cursors/sword.svg") 3 3, pointer;
+    }
 }
 
 .quote-audio-toggle::before {
