@@ -27,6 +27,7 @@
 }
 
 html {
+    cursor: var(--cursor-default, auto);
     scroll-behavior: smooth;
     scrollbar-color: var(--color-scrollbar-thumb) var(--color-page-background);
     -webkit-text-size-adjust: 100%;
@@ -74,6 +75,36 @@ html {
 
 button {
     font: inherit;
+}
+
+/* Keep native cursor meanings and use themed assets only for mouse-like input. */
+@media (any-hover: hover) and (any-pointer: fine) and (forced-colors: none) {
+    :root {
+        --cursor-default: url("/res/icons/cursors/arrow.svg") 2 2, default;
+        --cursor-pointer: url("/res/icons/cursors/pointer.svg") 9 2, pointer;
+        --cursor-text: url("/res/icons/cursors/text.svg") 9 12, text;
+        --cursor-wait: url("/res/icons/cursors/wait.svg") 12 12, wait;
+        --cursor-unavailable: url("/res/icons/cursors/unavailable.svg") 2 2, not-allowed;
+        --cursor-quote: url("/res/icons/cursors/sword.svg") 3 3, pointer;
+    }
+}
+
+:where(p, h1, h2, h3, h4, h5, h6, li, dt, dd, figcaption, time, [data-i18n]) {
+    cursor: var(--cursor-text, text);
+}
+
+:where(a[href], button, [role="button"]) {
+    cursor: var(--cursor-pointer, pointer);
+}
+
+/* Text and icons inside a control share its cursor, including disabled states. */
+:where(a[href], button, [role="button"]) * {
+    cursor: inherit;
+}
+
+button:disabled,
+[aria-disabled="true"] {
+    cursor: var(--cursor-unavailable, not-allowed);
 }
 
 .icon {
@@ -230,7 +261,7 @@ button:focus-visible {
     border: 0;
     border-radius: 5px;
     background-color: transparent;
-    cursor: pointer;
+    cursor: var(--cursor-pointer, pointer);
     filter: saturate(0.55);
     opacity: 0.52;
     transform: scale(0.92);
@@ -261,7 +292,7 @@ button:focus-visible {
 }
 
 .language-switcher-button:disabled {
-    cursor: wait;
+    cursor: var(--cursor-wait, wait);
 }
 
 .contact-section {
@@ -337,7 +368,7 @@ button:focus-visible {
     border-radius: 10px;
     color: inherit;
     background: none;
-    cursor: pointer;
+    cursor: var(--cursor-quote, pointer);
     font: inherit;
     line-height: inherit;
     text-align: inherit;
@@ -345,12 +376,6 @@ button:focus-visible {
     touch-action: manipulation;
     transition: filter var(--duration-fast) var(--ease-standard), transform var(--duration-fast) var(--ease-standard);
     animation: quote-flame-flicker 1.15s ease-in-out infinite alternate;
-}
-
-@media (any-hover: hover) and (any-pointer: fine) and (forced-colors: none) {
-    .quote-audio-toggle:not(:disabled) {
-        cursor: url("/res/icons/cursors/sword.svg") 3 3, pointer;
-    }
 }
 
 .quote-audio-toggle::before {
