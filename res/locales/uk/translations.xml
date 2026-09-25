@@ -102,4 +102,43 @@
     <Text Id="interests.automation" Value="Автоматизація"/>
     <Text Id="interests.music" Value="Музика"/>
     <Text Id="interests.art" Value="Мистецтво"/>
+
+    <!-- Інтерфейс портфоліо -->
+    <Text Id="portfolio.navigation" Value="Навігація сторінкою"/>
+    <Text Id="portfolio.skip" Value="Перейти до вмісту"/>
+    <Text Id="portfolio.hero.eyebrow" Value="Розробка ПЗ / Розробка ігор"/>
+    <Text Id="portfolio.projects.intro" Value="Маленькі експерименти. Світи у процесі створення."/>
+    <Text Id="portfolio.experience.intro" Value="Від ігрових сценаріїв до систем, що за ними стоять."/>
+    <Text Id="portfolio.tools.intro" Value="Інструменти, з якими працюю."/>
+    <Text Id="portfolio.personal.heading" Value="Поза межами коду"/>
+    <Text Id="portfolio.personal.intro" Value="Допитливість не закінчується у редакторі."/>
+    <Text Id="portfolio.footer.copyright" Value="© 2026 Олександр Данченко (Ryuzaki)"/>
+    <Text Id="portfolio.email" Value="Електронна пошта"/>
+    <Text Id="portfolio.explorer" Value="Навігація"/>
+    <Text Id="portfolio.file.profile" Value="профіль.md"/>
+    <Text Id="portfolio.file.projects" Value="проєкти/"/>
+    <Text Id="portfolio.file.experience" Value="досвід.md"/>
+    <Text Id="portfolio.file.tools" Value="інструменти.json"/>
+    <Text Id="portfolio.file.about" Value="про-мене.md"/>
+    <Text Id="portfolio.source" Value="Переглянути на GitHub"/>
+    <Text Id="portfolio.tool.github" Value="GitHub"/>
+    <Text Id="portfolio.tool.python" Value="Python"/>
+    <Text Id="portfolio.tool.csharp" Value="C#"/>
+    <Text Id="portfolio.tool.cpp" Value="C++"/>
+    <Text Id="portfolio.tool.javascript" Value="JavaScript"/>
+    <Text Id="portfolio.tool.html" Value="HTML"/>
+    <Text Id="portfolio.tool.css" Value="CSS"/>
+    <Text Id="portfolio.tool.renpy" Value="Ren'Py"/>
+    <Text Id="portfolio.tool.unreal-engine" Value="Unreal Engine"/>
+    <Text Id="portfolio.tool.unity" Value="Unity"/>
+    <Text Id="portfolio.tool.pycharm" Value="PyCharm"/>
+    <Text Id="portfolio.tool.visual-studio" Value="Visual Studio"/>
+    <Text Id="portfolio.tool.vscode" Value="Visual Studio Code"/>
+    <Text Id="portfolio.tool.photoshop" Value="Photoshop"/>
+    <Text Id="portfolio.tool.after-effects" Value="After Effects"/>
+    <Text Id="portfolio.tool.windows" Value="Windows"/>
+    <Text Id="portfolio.quote" Value="Цитата"/>
+    <Text Id="portfolio.contact.telegram" Value="Telegram"/>
+    <Text Id="portfolio.contact.linkedin" Value="LinkedIn"/>
+    <Text Id="portfolio.file.education" Value="освіта.md"/>
 </Texts>

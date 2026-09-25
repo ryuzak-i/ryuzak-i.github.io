@@ -8,13 +8,14 @@
 
 # Personal Portfolio
 
-A responsive bilingual portfolio and online résumé built without a framework or build step. The project focuses on clear presentation, lightweight assets, accessible interactions, and a custom XML-driven localization system.
+A responsive bilingual portfolio and online résumé built without a framework or build step. Its editor-inspired interface combines a section explorer, project cards, a scrolling technology strip, and a custom XML-driven localization system.
 
 ## Highlights
 
 - English and Ukrainian interfaces with automatic browser-language detection.
 - XML translation files with an English fallback and in-memory caching.
-- Responsive layouts for desktop, tablet, and mobile screens.
+- A single-page layout with section navigation on desktop and mobile.
+- Project cards, a continuously scrolling technology strip, and a compact education timeline.
 - Semantic HTML, keyboard-friendly controls, and reduced-motion support.
 - Local SVG icon sets and optimized WebP images.
 - Open Graph and Twitter Card metadata with a custom social preview.
@@ -40,7 +41,7 @@ Translation responses are cached in memory, so changing languages does not repea
 
 ### Interface and motion
 
-The page uses CSS transitions and an `IntersectionObserver`-based reveal system. Motion remains decorative rather than essential, and the `prefers-reduced-motion` media query disables non-essential effects for visitors who request a calmer experience.
+The page uses CSS transitions, a scrolling technology strip, and an `IntersectionObserver`-based reveal system. Motion remains decorative rather than essential, and the `prefers-reduced-motion` media query disables non-essential effects for visitors who request a calmer experience.
 
 ### Assets and performance
 
@@ -66,13 +67,13 @@ Open Graph and Twitter Card tags provide a consistent preview when the direct li
 ```text
 .
 ├── index.html                 # Page markup and static social metadata
-├── style.css                 # Layout, themes, responsive rules, animations
+├── style.css                 # Layout, responsive rules, animations
 ├── config.json               # Localization configuration
 └── res
     ├── audio                  # Optional ambient audio
     ├── icons                  # Site, flag, and technology SVG icons
     ├── img                    # Optimized images and social preview
-    ├── scripts                # Localization, scroll reveal, and audio behavior
+    ├── scripts                # Localization, page interactions, technology strip, audio
     └── locales
         ├── en/translations.xml # English content
         └── uk/translations.xml # Ukrainian content

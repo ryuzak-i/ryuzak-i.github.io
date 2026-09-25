@@ -146,4 +146,43 @@
     <Text Id="interests.automation" Value="Automation"/>
     <Text Id="interests.music" Value="Music"/>
     <Text Id="interests.art" Value="Art"/>
+
+    <!-- Portfolio interface -->
+    <Text Id="portfolio.navigation" Value="Page navigation"/>
+    <Text Id="portfolio.skip" Value="Skip to content"/>
+    <Text Id="portfolio.hero.eyebrow" Value="Software engineering / Game development"/>
+    <Text Id="portfolio.projects.intro" Value="Small experiments. Worlds in the making."/>
+    <Text Id="portfolio.experience.intro" Value="From game scenarios to the systems behind them."/>
+    <Text Id="portfolio.tools.intro" Value="The tools behind the work."/>
+    <Text Id="portfolio.personal.heading" Value="Beyond the code"/>
+    <Text Id="portfolio.personal.intro" Value="Curiosity doesn't stop at the editor."/>
+    <Text Id="portfolio.footer.copyright" Value="© 2026 Oleksandr Danchenko (Ryuzaki)"/>
+    <Text Id="portfolio.email" Value="Email"/>
+    <Text Id="portfolio.explorer" Value="Explorer"/>
+    <Text Id="portfolio.file.profile" Value="profile.md"/>
+    <Text Id="portfolio.file.projects" Value="projects/"/>
+    <Text Id="portfolio.file.experience" Value="experience.md"/>
+    <Text Id="portfolio.file.tools" Value="toolkit.json"/>
+    <Text Id="portfolio.file.about" Value="about.md"/>
+    <Text Id="portfolio.source" Value="View on GitHub"/>
+    <Text Id="portfolio.tool.github" Value="GitHub"/>
+    <Text Id="portfolio.tool.python" Value="Python"/>
+    <Text Id="portfolio.tool.csharp" Value="C#"/>
+    <Text Id="portfolio.tool.cpp" Value="C++"/>
+    <Text Id="portfolio.tool.javascript" Value="JavaScript"/>
+    <Text Id="portfolio.tool.html" Value="HTML"/>
+    <Text Id="portfolio.tool.css" Value="CSS"/>
+    <Text Id="portfolio.tool.renpy" Value="Ren'Py"/>
+    <Text Id="portfolio.tool.unreal-engine" Value="Unreal Engine"/>
+    <Text Id="portfolio.tool.unity" Value="Unity"/>
+    <Text Id="portfolio.tool.pycharm" Value="PyCharm"/>
+    <Text Id="portfolio.tool.visual-studio" Value="Visual Studio"/>
+    <Text Id="portfolio.tool.vscode" Value="Visual Studio Code"/>
+    <Text Id="portfolio.tool.photoshop" Value="Photoshop"/>
+    <Text Id="portfolio.tool.after-effects" Value="After Effects"/>
+    <Text Id="portfolio.tool.windows" Value="Windows"/>
+    <Text Id="portfolio.quote" Value="Quote"/>
+    <Text Id="portfolio.contact.telegram" Value="Telegram"/>
+    <Text Id="portfolio.contact.linkedin" Value="LinkedIn"/>
+    <Text Id="portfolio.file.education" Value="education.md"/>
 </Texts>
