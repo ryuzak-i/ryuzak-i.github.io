@@ -32,7 +32,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Underdog&amp;display=swap">
+		href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&amp;family=Manrope:wght@400;500;600;700&amp;family=Underdog&amp;display=swap">
 		<link rel="stylesheet" href="/style.css">
 		<script src="/res/scripts/localization.js" async></script>
 		<script src="/res/scripts/ambient-audio.js" defer></script>
@@ -48,7 +48,7 @@
 				<h2 id="explorer-heading" data-i18n="portfolio.explorer">Explorer</h2>
 				<nav aria-label="Page navigation" data-i18n-label="portfolio.navigation">
 					<a href="#profile">
-						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#coding"></use></svg>
+						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#profile"></use></svg>
 						<span data-i18n="portfolio.file.profile">profile.md</span>
 					</a>
 					<a href="#projects">
@@ -68,7 +68,7 @@
 						<span data-i18n="portfolio.file.education">education.md</span>
 					</a>
 					<a href="#about">
-						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#games"></use></svg>
+						<svg class="icon" aria-hidden="true" focusable="false"><use href="/res/icons/site-icons.svg#about"></use></svg>
 						<span data-i18n="portfolio.file.about">about.md</span>
 					</a>
 				</nav>
@@ -85,7 +85,7 @@
 				<p class="sidebar-copyright" data-i18n="portfolio.footer.copyright">© 2026 Oleksandr Danchenko (Ryuzaki)</p>
 			</aside>
 			<main id="main-content" tabindex="-1">
-				<section class="hero" id="profile" aria-labelledby="profile-name" data-reveal>
+				<section class="hero" id="profile" aria-labelledby="profile-name">
 					<div class="hero-copy">
 						<p class="eyebrow" data-i18n="portfolio.hero.eyebrow">Software engineering / Game development</p>
 						<h1 id="profile-name" data-i18n="profile.name">Oleksandr Danchenko</h1>
@@ -162,6 +162,7 @@
 									<svg class="maze-art" viewBox="0 0 420 240" fill="none" aria-hidden="true">
 										<path d="M30 190V40H130V95H80V145H175V40H230V190H285V100H335V40H390V190H340M30 190H125V195M80 40V10M175 145H200M285 40V10M285 145H310M390 100H420"/>
 										<path class="maze-route" d="M8 215H150V120H205V215H260V75H360V215H415"/>
+										<path class="maze-route-trace" d="M8 215H150V120H205V215H260V75H360V215H415"/>
 									</svg>
 									<div class="engine-mark">
 										<img src="/res/img/projects/placeholders/unreal-engine.webp" alt="" width="256"

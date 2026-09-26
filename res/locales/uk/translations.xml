@@ -114,7 +114,7 @@
     <Text Id="portfolio.personal.intro" Value="Допитливість не закінчується у редакторі."/>
     <Text Id="portfolio.footer.copyright" Value="© 2026 Олександр Данченко (Ryuzaki)"/>
     <Text Id="portfolio.email" Value="Електронна пошта"/>
-    <Text Id="portfolio.explorer" Value="Навігація"/>
+    <Text Id="portfolio.explorer" Value="Провідник"/>
     <Text Id="portfolio.file.profile" Value="профіль.md"/>
     <Text Id="portfolio.file.projects" Value="проєкти/"/>
     <Text Id="portfolio.file.experience" Value="досвід.md"/>
