@@ -15,6 +15,17 @@
     scrollbar-color: #466b9f var(--page);
 }
 
+html.is-localizing body { visibility: hidden; }
+html.is-localizing .hero-heading > *,
+html.is-localizing .hero-details > *,
+html.is-localizing .hero-portrait,
+html.is-localizing .portrait-frame::before { animation-play-state: paused; }
+html.use-fallback-fonts {
+    --mono: "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+    font-family: "Segoe UI", sans-serif;
+}
+html.use-fallback-fonts .quote-audio-toggle { font-family: Georgia, serif; }
+
 * { box-sizing: border-box; }
 body { margin: 0; padding: 0 32px 100px; cursor: var(--cursor-default, auto); }
 button, a { -webkit-tap-highlight-color: transparent; }
@@ -52,8 +63,9 @@ main:focus { outline: none; }
 main { min-width: 0; }
 
 /* Identity and portrait */
-.hero { display: grid; grid-template-columns: 1.25fr 0.85fr; align-items: center; gap: clamp(40px, 7vw, 110px); padding: 74px 0 90px; }
-.hero-copy { min-width: 0; }
+.hero { display: grid; grid-template-columns: 1.25fr 0.85fr; grid-template-areas: "heading portrait" "details portrait"; align-content: center; align-items: center; gap: clamp(40px, 7vw, 110px); row-gap: 0; padding: 74px 0 90px; }
+.hero-heading { grid-area: heading; align-self: end; min-width: 0; }
+.hero-details { grid-area: details; align-self: start; min-width: 0; }
 .eyebrow { color: var(--accent); font: 11px/1.7 var(--mono); text-transform: uppercase; letter-spacing: 0.1em; margin: 0 0 22px; }
 h1 { font-size: clamp(44px, 5.5vw, 76px); line-height: 1.07; letter-spacing: -0.065em; font-weight: 700; max-width: 11ch; margin: 0; }
 .hero-role { margin: 22px 0 0; color: var(--accent); font: 16px/1.6 var(--mono); }
@@ -64,7 +76,7 @@ h1 { font-size: clamp(44px, 5.5vw, 76px); line-height: 1.07; letter-spacing: -0.
 .contact-link:hover { color: var(--accent); }
 .hero-signature { display: flex; align-items: center; gap: 12px; margin-top: 30px; font: 11px var(--mono); color: var(--muted); }
 .hero-signature > span:first-child { color: var(--accent); font-size: 20px; }
-.hero-portrait { position: relative; margin: 0 14px 0 0; }
+.hero-portrait { grid-area: portrait; align-self: center; position: relative; margin: 0 14px 0 0; }
 .portrait-frame { position: relative; overflow: hidden; border-radius: 10px; background: var(--surface); aspect-ratio: 1 / 1.08; }
 .portrait-frame img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
 .portrait-frame::after { content: ""; position: absolute; inset: 55% 0 0; background: linear-gradient(transparent, #0d111855); pointer-events: none; }
@@ -84,20 +96,20 @@ h1 { font-size: clamp(44px, 5.5vw, 76px); line-height: 1.07; letter-spacing: -0.
     to { transform: none; }
 }
 
-.hero-copy > .eyebrow,
-.hero-copy > h1,
-.hero-copy > .hero-signature,
-.hero-copy > .hero-role,
-.hero-copy > .hero-description,
-.hero-copy > .contact-section,
+.hero-heading > .eyebrow,
+.hero-heading > h1,
+.hero-heading > .hero-signature,
+.hero-details > .hero-role,
+.hero-details > .hero-description,
+.hero-details > .contact-section,
 .hero-portrait {
     animation: hero-enter 760ms var(--ease) both;
 }
-.hero-copy > h1 { animation-name: hero-title-enter; animation-delay: 90ms; }
-.hero-copy > .hero-signature { animation-delay: 170ms; }
-.hero-copy > .hero-role { animation-delay: 220ms; }
-.hero-copy > .hero-description { animation-delay: 300ms; }
-.hero-copy > .contact-section { animation-delay: 390ms; }
+.hero-heading > h1 { animation-name: hero-title-enter; animation-delay: 90ms; }
+.hero-heading > .hero-signature { animation-delay: 170ms; }
+.hero-details > .hero-role { animation-delay: 220ms; }
+.hero-details > .hero-description { animation-delay: 300ms; }
+.hero-details > .contact-section { animation-delay: 390ms; }
 .hero-portrait { animation-name: hero-photo-enter; animation-delay: 210ms; }
 
 /* A consistent rhythm, without wrapping every section in a card. */
@@ -191,7 +203,7 @@ h1 { font-size: clamp(44px, 5.5vw, 76px); line-height: 1.07; letter-spacing: -0.
 .workspace-explorer a { display: flex; align-items: center; gap: 10px; padding: 11px 12px; border-radius: 5px; font: 11px var(--mono); color: var(--muted); transition: color 340ms var(--ease), background-color 340ms var(--ease); }
 .workspace-explorer a:hover, .workspace-explorer a[aria-current="location"] { color: var(--ink); background: #243146; }
 .theme-workspace main { border-left: 1px solid var(--line); }
-.theme-workspace .hero { margin: 0; padding: 48px 36px; gap: 30px; grid-template-columns: 1.2fr 0.8fr; }
+.theme-workspace .hero { margin: 0; padding: 48px 36px; gap: 30px; row-gap: 0; grid-template-columns: 1.2fr 0.8fr; }
 .theme-workspace .eyebrow { font-size: 10px; letter-spacing: 0; color: #82b8a2; }
 .theme-workspace .eyebrow::before { content: "// "; }
 .theme-workspace h1 { font: 600 clamp(32px, 3.7vw, 52px)/1.16 var(--mono); letter-spacing: -0.07em; }
@@ -240,7 +252,7 @@ h1 { font-size: clamp(44px, 5.5vw, 76px); line-height: 1.07; letter-spacing: -0.
     .hero { gap: 45px; }
     .theme-workspace .portfolio-layout { grid-template-columns: 195px minmax(0, 1fr); }
     .theme-workspace .workspace-explorer { padding: 25px 10px; }
-    .theme-workspace .hero { grid-template-columns: 1fr 0.7fr; padding: 32px 24px; gap: 24px; }
+    .theme-workspace .hero { grid-template-columns: 1fr 0.7fr; padding: 32px 24px; gap: 24px; row-gap: 0; }
     .theme-workspace .content-section { padding: 32px 24px; }
     .theme-workspace .section-heading { display: block; }
     .theme-workspace .section-intro { margin-top: 10px; max-width: none; }
@@ -285,7 +297,7 @@ h1 { font-size: clamp(44px, 5.5vw, 76px); line-height: 1.07; letter-spacing: -0.
 @media (max-width: 540px) {
     body { padding-inline: 20px; }
     .language-switcher { margin-left: auto; }
-    .hero { grid-template-columns: 1fr; gap: 30px; padding-top: 38px; }
+    .hero { grid-template-columns: 1fr; grid-template-areas: "heading" "portrait" "details"; gap: 30px; padding-top: 38px; }
     h1 { font-size: clamp(40px, 11.5vw, 60px); max-width: 12ch; }
     .eyebrow { margin-bottom: 16px; }
     .hero-description { max-width: none; }
@@ -900,7 +912,8 @@ html.workspace-root {
     .theme-workspace h1 { font-size: 32px; }
     .theme-workspace .portrait-frame { box-shadow: none; }
     .theme-workspace .portrait-frame::before { display: none; }
-    .hero-copy > *, .hero-portrait { animation: none !important; }
+    .hero, .theme-workspace .hero { grid-template-areas: "heading portrait" "details portrait"; row-gap: 0; }
+    .hero-heading > *, .hero-details > *, .hero-portrait { animation: none !important; }
     .technology-strip .technology-strip-viewport { overflow: visible !important; mask-image: none !important; }
     .technology-strip .technology-strip-track { display: block !important; width: auto !important; animation: none !important; transform: none !important; }
     .technology-strip .technology-list:not(.technology-list--copy) { display: grid !important; padding: 0 !important; gap: 20px !important; }

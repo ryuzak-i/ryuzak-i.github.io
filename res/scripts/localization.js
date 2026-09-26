@@ -2,6 +2,9 @@ const LOCALIZATION_CONFIG_PATH = "/config.json";
 const TRANSLATION_ELEMENT_NAME = "Text";
 const TRANSLATION_KEY_ATTRIBUTE = "Id";
 const TRANSLATION_VALUE_ATTRIBUTE = "Value";
+const INITIAL_FONT_WAIT_MS = 1600;
+
+document.documentElement.classList.add("is-localizing");
 
 let localizationSettings;
 let activeLanguageCode = null;
@@ -13,6 +16,14 @@ function normalizeLanguageCode(languageCode) {
 }
 
 function selectInitialLanguage(supportedLanguageCodes, defaultLanguageCode) {
+    const requestedLanguageCode = normalizeLanguageCode(
+        new URLSearchParams(location.search).get("lang")
+    );
+
+    if (supportedLanguageCodes.includes(requestedLanguageCode)) {
+        return requestedLanguageCode;
+    }
+
     const preferredBrowserLanguages = navigator.languages?.length
         ? navigator.languages
         : [navigator.language];
@@ -36,6 +47,37 @@ function waitForDocumentReady() {
     return new Promise(resolve => {
         document.addEventListener("DOMContentLoaded", resolve, { once: true });
     });
+}
+
+async function prepareInitialFonts() {
+    if (!document.fonts?.load) {
+        return;
+    }
+
+    const fontSamples = [
+        ['400 16px "Manrope"', "AaАа"],
+        ['600 16px "JetBrains Mono"', "AaАа"],
+        ['400 16px "Underdog"', "AaАа"]
+    ];
+    const fontLoading = Promise.all(fontSamples.map(
+        ([font, sample]) => document.fonts.load(font, sample)
+    )).then(async loadedFaces => {
+        await document.fonts.ready;
+        return loadedFaces.every(faces => faces.length > 0);
+    }).catch(() => false);
+
+    let timeoutId;
+    const fontsLoaded = await Promise.race([
+        fontLoading,
+        new Promise(resolve => {
+            timeoutId = setTimeout(() => resolve(false), INITIAL_FONT_WAIT_MS);
+        })
+    ]);
+    clearTimeout(timeoutId);
+
+    if (!fontsLoaded) {
+        document.documentElement.classList.add("use-fallback-fonts");
+    }
 }
 
 async function fetchJsonResource(resourcePath) {
@@ -348,10 +390,14 @@ async function initializeLocalization() {
         }
 
         await changeLanguage(initialLanguageCode);
+        await prepareInitialFonts();
     }
     catch (error) {
         document.body?.removeAttribute("aria-busy");
         console.error("Localization initialization failed.", error);
+    }
+    finally {
+        document.documentElement.classList.remove("is-localizing");
     }
 }
 

@@ -10,18 +10,7 @@
         }
     }
 
-    const requestedLanguage = new URLSearchParams(location.search).get("lang");
-    let hasAppliedRequestedLanguage = false;
-
     function onLanguageChange(languageCode) {
-        if (!hasAppliedRequestedLanguage) {
-            hasAppliedRequestedLanguage = true;
-            if (requestedLanguage && Object.hasOwn(localizationSettings.languageSettingsByCode, requestedLanguage)
-                && requestedLanguage !== languageCode) {
-                changeLanguage(requestedLanguage);
-                return;
-            }
-        }
         synchronizePageLabels(languageCode).catch(error => {
             console.error("Page labels could not be updated.", error);
         });
