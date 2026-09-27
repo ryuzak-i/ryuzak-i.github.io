@@ -60,12 +60,71 @@
         });
     }
 
-    const navigationLinks = document.querySelectorAll('.workspace-explorer nav a');
+    const navigationElement = document.querySelector('.workspace-explorer nav');
+    const navigationLinks = navigationElement?.querySelectorAll("a") ?? [];
     const sections = ["profile", "projects", "experience", "tools", "education", "about"]
         .map(id => document.getElementById(id))
         .filter(Boolean);
     if (navigationLinks.length && sections.length) {
         let updateScheduled = false;
+        let activeSectionId = null;
+        let requestedSectionId = null;
+        let navigationSettleTimeoutId;
+
+        function revealActiveNavigationLink(activeLink, useSmoothScroll) {
+            if (navigationElement.scrollWidth <= navigationElement.clientWidth) {
+                return;
+            }
+
+            const navigationBounds = navigationElement.getBoundingClientRect();
+            const linkBounds = activeLink.getBoundingClientRect();
+            const centeredScrollPosition = navigationElement.scrollLeft
+                + linkBounds.left
+                - navigationBounds.left
+                - (navigationElement.clientWidth - linkBounds.width) / 2;
+
+            navigationElement.scrollTo({
+                left: centeredScrollPosition,
+                behavior: useSmoothScroll && !reducedMotion.matches
+                    ? "smooth"
+                    : "auto"
+            });
+        }
+
+        function setActiveNavigationLink(activeLink, useSmoothScroll) {
+            const nextSectionId = activeLink.hash.slice(1);
+            const hasActiveSectionChanged = nextSectionId !== activeSectionId;
+
+            for (const link of navigationLinks) {
+                if (link === activeLink) link.setAttribute("aria-current", "location");
+                else link.removeAttribute("aria-current");
+            }
+
+            if (hasActiveSectionChanged) {
+                revealActiveNavigationLink(activeLink, useSmoothScroll);
+                activeSectionId = nextSectionId;
+            }
+        }
+
+        function finishRequestedNavigation() {
+            clearTimeout(navigationSettleTimeoutId);
+            requestedSectionId = null;
+            activeSectionId = null;
+            scheduleNavigationUpdate();
+        }
+
+        function cancelRequestedNavigation() {
+            if (!requestedSectionId) return;
+            finishRequestedNavigation();
+        }
+
+        function scheduleRequestedNavigationFinish(delay = 160) {
+            clearTimeout(navigationSettleTimeoutId);
+            navigationSettleTimeoutId = setTimeout(
+                finishRequestedNavigation,
+                delay
+            );
+        }
 
         function updateCurrentSection() {
             updateScheduled = false;
@@ -80,9 +139,19 @@
             if (scrollY + innerHeight >= document.documentElement.scrollHeight - 2) {
                 activeSection = sections.at(-1);
             }
-            for (const link of navigationLinks) {
-                if (link.hash === `#${activeSection.id}`) link.setAttribute("aria-current", "location");
-                else link.removeAttribute("aria-current");
+
+            if (requestedSectionId) {
+                activeSection = sections.find(
+                    section => section.id === requestedSectionId
+                ) ?? activeSection;
+            }
+
+            const activeLink = [...navigationLinks].find(
+                link => link.hash === `#${activeSection.id}`
+            );
+
+            if (activeLink) {
+                setActiveNavigationLink(activeLink, activeSectionId !== null);
             }
         }
 
@@ -92,10 +161,30 @@
             requestAnimationFrame(updateCurrentSection);
         }
 
-        addEventListener("scroll", scheduleNavigationUpdate, { passive: true });
-        addEventListener("resize", scheduleNavigationUpdate);
+        for (const link of navigationLinks) {
+            link.addEventListener("click", () => {
+                requestedSectionId = link.hash.slice(1);
+                setActiveNavigationLink(link, true);
+                scheduleRequestedNavigationFinish(350);
+            });
+        }
+
+        addEventListener("scroll", () => {
+            if (requestedSectionId) scheduleRequestedNavigationFinish();
+            scheduleNavigationUpdate();
+        }, { passive: true });
+        addEventListener("wheel", cancelRequestedNavigation, { passive: true });
+        addEventListener("touchstart", cancelRequestedNavigation, { passive: true });
+        addEventListener("pointerdown", cancelRequestedNavigation, { passive: true });
+        addEventListener("resize", () => {
+            activeSectionId = null;
+            scheduleNavigationUpdate();
+        });
         addEventListener("load", scheduleNavigationUpdate, { once: true });
-        document.addEventListener("languagechange", scheduleNavigationUpdate);
+        document.addEventListener("languagechange", () => {
+            activeSectionId = null;
+            scheduleNavigationUpdate();
+        });
         scheduleNavigationUpdate();
     }
 })();
