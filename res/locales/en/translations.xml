@@ -156,7 +156,7 @@
     <Text Id="portfolio.tools.intro" Value="The tools behind the work."/>
     <Text Id="portfolio.personal.heading" Value="Beyond the code"/>
     <Text Id="portfolio.personal.intro" Value="Curiosity doesn't stop at the editor."/>
-    <Text Id="portfolio.footer.copyright" Value="© 2026 Oleksandr Danchenko (Ryuzaki)"/>
+    <Text Id="portfolio.footer.copyright" Value="© {currentYear} Oleksandr Danchenko (Ryuzaki)"/>
     <Text Id="portfolio.email" Value="Email"/>
     <Text Id="portfolio.explorer" Value="Explorer"/>
     <Text Id="portfolio.file.profile" Value="profile.md"/>

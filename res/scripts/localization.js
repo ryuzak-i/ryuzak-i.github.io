@@ -3,6 +3,9 @@ const TRANSLATION_ELEMENT_NAME = "Text";
 const TRANSLATION_KEY_ATTRIBUTE = "Id";
 const TRANSLATION_VALUE_ATTRIBUTE = "Value";
 const INITIAL_FONT_WAIT_MS = 1600;
+const TRANSLATION_VARIABLES = {
+    currentYear: String(new Date().getFullYear())
+};
 
 document.documentElement.classList.add("is-localizing");
 
@@ -13,6 +16,17 @@ const translationCache = new Map();
 
 function normalizeLanguageCode(languageCode) {
     return String(languageCode || "").toLowerCase().split("-")[0];
+}
+
+function resolveTranslationVariables(translatedText) {
+    return translatedText.replace(/\{([A-Za-z][A-Za-z0-9]*)\}/g,
+        (placeholder, variableName) => Object.prototype.hasOwnProperty.call(
+            TRANSLATION_VARIABLES,
+            variableName
+        )
+            ? TRANSLATION_VARIABLES[variableName]
+            : placeholder
+    );
 }
 
 function selectInitialLanguage(supportedLanguageCodes, defaultLanguageCode) {
@@ -196,7 +210,8 @@ async function loadTranslations(languageCode) {
         );
 
         if (translationKey && translatedText !== null) {
-            translationDictionary[translationKey] = translatedText;
+            translationDictionary[translationKey] =
+                resolveTranslationVariables(translatedText);
         }
     }
 
