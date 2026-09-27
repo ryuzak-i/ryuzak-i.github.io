@@ -37,7 +37,7 @@
 
     function synchronizeMode() {
         const mode = reducedMotion.matches ? "static"
-            : desktopPointer.matches ? "animated" : "manual";
+            : desktopPointer.matches && !hasFocus ? "animated" : "manual";
         if (strip.dataset.mode !== mode) {
             strip.dataset.mode = mode;
             viewport.scrollLeft = 0;
@@ -57,11 +57,11 @@
     });
     viewport.addEventListener("focusin", () => {
         hasFocus = true;
-        synchronizePlayback();
+        synchronizeMode();
     });
     viewport.addEventListener("focusout", event => {
         hasFocus = viewport.contains(event.relatedTarget);
-        synchronizePlayback();
+        synchronizeMode();
     });
     document.addEventListener("visibilitychange", synchronizePlayback);
     document.addEventListener("languagechange", refreshVisualCopy);

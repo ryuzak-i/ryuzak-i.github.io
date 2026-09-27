@@ -101,7 +101,8 @@
             }
 
             if (hasActiveSectionChanged) {
-                revealActiveNavigationLink(activeLink, useSmoothScroll);
+                const focusedLink = navigationElement.querySelector("a:focus-visible");
+                revealActiveNavigationLink(focusedLink ?? activeLink, useSmoothScroll);
                 activeSectionId = nextSectionId;
             }
         }
@@ -162,6 +163,9 @@
         }
 
         for (const link of navigationLinks) {
+            link.addEventListener("focus", () => {
+                if (link.matches(":focus-visible")) revealActiveNavigationLink(link, false);
+            });
             link.addEventListener("click", () => {
                 requestedSectionId = link.hash.slice(1);
                 setActiveNavigationLink(link, true);
@@ -176,6 +180,11 @@
         addEventListener("wheel", cancelRequestedNavigation, { passive: true });
         addEventListener("touchstart", cancelRequestedNavigation, { passive: true });
         addEventListener("pointerdown", cancelRequestedNavigation, { passive: true });
+        addEventListener("keydown", event => {
+            if (["ArrowUp", "ArrowDown", "PageUp", "PageDown", "Home", "End", " "].includes(event.key)) {
+                cancelRequestedNavigation();
+            }
+        });
         addEventListener("resize", () => {
             activeSectionId = null;
             scheduleNavigationUpdate();

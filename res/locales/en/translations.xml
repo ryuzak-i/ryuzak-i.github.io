@@ -8,10 +8,10 @@
     <Text Id="profile.role" Value="Software Engineer"/>
     <Text Id="profile.location" Value="Smila, Ukraine"/>
 
-    <Text Id="about.heading" Value="Briefly about me"/>
-    <Text Id="about.description" Value="Hello there! I'm a developer with a passion for video games, continually improving my game development skills and working toward creating a game of my own."/>
+    <Text Id="about.heading" Value="About me"/>
+    <Text Id="about.description" Value="Hi! I'm a developer with a passion for video games. I'm building my game development skills and working toward creating a game of my own."/>
 
-    <Text Id="about.quote" Value="“This sword Is the proof that I have lived„ - Guts, Berserk"/>
+    <Text Id="about.quote" Value="“This sword is proof that I have lived.” — Guts, Berserk"/>
 
     <Text Id="qualities.heading" Value="Personal qualities"/>
     <Text Id="qualities.resourcefulness" Value="Resourcefulness"/>
@@ -31,9 +31,9 @@
     <Text Id="education.heading" Value="Education"/>
 
     <Text Id="education.juniorSpecialist.period" Value="Sep. 2015 - Jun. 2019"/>
-    <Text Id="education.juniorSpecialist.degree" Value="Junior Specialist, Maintenance of programmed systems and complexes"/>
-    <Text Id="education.juniorSpecialist.institution" Value="Smila College of Food Technologies of National University of Food Technologies, Ukraine"/>
-    <Text Id="education.juniorSpecialist.skillsHeading" Value="Acquired knowledge and skills"/>
+    <Text Id="education.juniorSpecialist.degree" Value="Junior Specialist in Software Systems Maintenance"/>
+    <Text Id="education.juniorSpecialist.institution" Value="Smila College of Food Technologies, National University of Food Technologies, Ukraine"/>
+    <Text Id="education.juniorSpecialist.skillsHeading" Value="Knowledge and skills"/>
     <Text Id="education.juniorSpecialist.skills.oop" Value="OOP"/>
     <Text Id="education.juniorSpecialist.skills.pascal" Value="Pascal"/>
     <Text Id="education.juniorSpecialist.skills.c" Value="C"/>
@@ -44,7 +44,7 @@
     <Text Id="education.juniorSpecialist.skills.windows" Value="Windows"/>
     <Text Id="education.juniorSpecialist.skills.linux" Value="Linux"/>
     <Text Id="education.juniorSpecialist.skills.virtualBox" Value="VirtualBox"/>
-    <Text Id="education.juniorSpecialist.skills.algorithmization" Value="Algorithmization"/>
+    <Text Id="education.juniorSpecialist.skills.algorithmization" Value="Algorithm design"/>
     <Text Id="education.juniorSpecialist.skills.photoshop" Value="Photoshop"/>
     <Text Id="education.juniorSpecialist.skills.flash" Value="Flash"/>
     <Text Id="education.juniorSpecialist.skills.word" Value="Word"/>
@@ -53,9 +53,9 @@
     <Text Id="education.juniorSpecialist.skills.corelDraw" Value="CorelDraw"/>
 
     <Text Id="education.bachelor.period" Value="Sep. 2019 - Jun. 2021"/>
-    <Text Id="education.bachelor.degree" Value="Bachelor, Computer Sciences"/>
+    <Text Id="education.bachelor.degree" Value="Bachelor’s degree in Computer Science"/>
     <Text Id="education.bachelor.institution" Value="National University of Food Technologies, Ukraine"/>
-    <Text Id="education.bachelor.skillsHeading" Value="Acquired knowledge and skills"/>
+    <Text Id="education.bachelor.skillsHeading" Value="Knowledge and skills"/>
     <Text Id="education.bachelor.skills.csharp" Value="C#"/>
     <Text Id="education.bachelor.skills.css" Value="CSS"/>
     <Text Id="education.bachelor.skills.visualStudio" Value="Visual Studio"/>
@@ -67,10 +67,10 @@
     <Text Id="education.bachelor.skills.webTechnologies" Value="Web technologies"/>
 
     <Text Id="education.master.period" Value="Sep. 2021 - Feb. 2023"/>
-    <Text Id="education.master.degree" Value="Master, Information Management Systems and Technologies"/>
+    <Text Id="education.master.degree" Value="Master’s degree in Information Management Systems and Technologies"/>
     <Text Id="education.master.institution" Value="National University of Food Technologies, Ukraine"/>
-    <Text Id="education.master.skillsHeading" Value="Acquired knowledge and skills"/>
-    <Text Id="education.master.skills.clientServer" Value="Client–server"/>
+    <Text Id="education.master.skillsHeading" Value="Knowledge and skills"/>
+    <Text Id="education.master.skills.clientServer" Value="Client–server architecture"/>
     <Text Id="education.master.skills.cloudTechnologies" Value="Cloud technologies"/>
     <Text Id="education.master.skills.innovativeProjects" Value="Innovative projects"/>
     <Text Id="education.master.skills.systemsModeling" Value="Systems modeling"/>
@@ -78,13 +78,13 @@
     <Text Id="education.master.skills.teamBuilding" Value="Team building"/>
     <Text Id="education.master.skills.professionalCommunication" Value="Professional communication"/>
 
-    <Text Id="experience.heading" Value="Experience in IT"/>
+    <Text Id="experience.heading" Value="Professional experience"/>
 
     <Text Id="experience.gameplayScripter.period" Value="Oct. 2020 - Oct. 2022"/>
     <Text Id="experience.gameplayScripter.role" Value="Gameplay Scripter"/>
     <Text Id="experience.gameplayScripter.company" Value="Wonderland Games"/>
     <Text Id="experience.gameplayScripter.responsibilitiesHeading" Value="Key responsibilities"/>
-    <Text Id="experience.gameplayScripter.description" Value="Implementation of scenario logic for player interactions and game progression. Preparation of technical tasks for artists and animators, graphics processing in Photoshop, creation of basic animations in After Effects, and selection of sound effects."/>
+    <Text Id="experience.gameplayScripter.description" Value="Gameplay scripting for player interactions and game progression. Technical briefs for artists and animators, image editing in Photoshop, basic animation in After Effects, and sound effect selection."/>
     <Text Id="experience.gameplayScripter.skillsHeading" Value="Technologies and skills"/>
     <Text Id="experience.gameplayScripter.skills.svn" Value="SVN"/>
     <Text Id="experience.gameplayScripter.skills.scenarioScripting" Value="Scenario scripting"/>
@@ -98,26 +98,26 @@
     <Text Id="experience.gameplayScripter.skills.sfx" Value="SFX"/>
     <Text Id="experience.gameplayScripter.skills.notepadPlusPlus" Value="Notepad++"/>
     <Text Id="experience.gameplayScripter.skills.manualTesting" Value="Manual testing"/>
-    <Text Id="experience.gameplayScripter.skills.teamLeadership" Value="Team leading"/>
+    <Text Id="experience.gameplayScripter.skills.teamLeadership" Value="Team leadership"/>
     <Text Id="experience.gameplayScripter.projectsHeading" Value="Projects"/>
 
     <Text Id="experience.pythonDeveloper.period" Value="Oct. 2022 - Present"/>
     <Text Id="experience.pythonDeveloper.role" Value="Python Developer"/>
     <Text Id="experience.pythonDeveloper.company" Value="Wonderland Games"/>
     <Text Id="experience.pythonDeveloper.responsibilitiesHeading" Value="Key responsibilities"/>
-    <Text Id="experience.pythonDeveloper.description" Value="Development and maintenance of game mechanics in Python, improvement of legacy code, and participation in code reviews. Implementation of server-side logic for mobile games in PlayFab using JavaScript and configuration of projects in Google Play Console."/>
+    <Text Id="experience.pythonDeveloper.description" Value="Development and maintenance of Python game mechanics, legacy code improvements, and code reviews. Server-side JavaScript development for mobile games in PlayFab and project configuration in Google Play Console."/>
     <Text Id="experience.pythonDeveloper.skillsHeading" Value="Technologies and skills"/>
     <Text Id="experience.pythonDeveloper.skills.python" Value="Python"/>
-    <Text Id="experience.pythonDeveloper.skills.pyCharm" Value="Pycharm"/>
+    <Text Id="experience.pythonDeveloper.skills.pyCharm" Value="PyCharm"/>
     <Text Id="experience.pythonDeveloper.skills.javascript" Value="JavaScript"/>
-    <Text Id="experience.pythonDeveloper.skills.github" Value="Github"/>
+    <Text Id="experience.pythonDeveloper.skills.github" Value="GitHub"/>
     <Text Id="experience.pythonDeveloper.skills.gitLfs" Value="Git LFS"/>
     <Text Id="experience.pythonDeveloper.skills.fork" Value="Fork"/>
     <Text Id="experience.pythonDeveloper.skills.unity" Value="Unity"/>
     <Text Id="experience.pythonDeveloper.skills.legacyCode" Value="Legacy code"/>
     <Text Id="experience.pythonDeveloper.skills.mvc" Value="MVC"/>
     <Text Id="experience.pythonDeveloper.skills.api" Value="API"/>
-    <Text Id="experience.pythonDeveloper.skills.localization" Value="Localisation"/>
+    <Text Id="experience.pythonDeveloper.skills.localization" Value="Localization"/>
     <Text Id="experience.pythonDeveloper.skills.uiProgramming" Value="UI programming"/>
     <Text Id="experience.pythonDeveloper.skills.codeReview" Value="Code review"/>
     <Text Id="experience.pythonDeveloper.skills.playFab" Value="PlayFab"/>
@@ -132,11 +132,11 @@
 
     <Text Id="projects.heading" Value="My projects"/>
     <Text Id="projects.labyrinth.title" Value="Labyrinth"/>
-    <Text Id="projects.labyrinth.description" Value="A maze-game prototype featuring blocked routes, chase mechanics, and AI enemy behavior."/>
+    <Text Id="projects.labyrinth.description" Value="A maze game prototype with blocked paths, chase mechanics, and enemy AI."/>
     <Text Id="projects.labyrinth.technology" Value="Unreal Engine 5"/>
     <Text Id="projects.labyrinth.sourceLabel" Value="GitHub"/>
     <Text Id="projects.ticTacToe.title" Value="Tic-tac-toe"/>
-    <Text Id="projects.ticTacToe.description" Value="A flexible tic-tac-toe implementation with configurable grid size and win conditions."/>
+    <Text Id="projects.ticTacToe.description" Value="A tic-tac-toe prototype with configurable board sizes and win conditions."/>
     <Text Id="projects.ticTacToe.technology" Value="Unreal Engine 5"/>
     <Text Id="projects.ticTacToe.sourceLabel" Value="GitHub"/>
     <Text Id="interests.heading" Value="Personal interests"/>
@@ -185,4 +185,8 @@
     <Text Id="portfolio.contact.telegram" Value="Telegram"/>
     <Text Id="portfolio.contact.linkedin" Value="LinkedIn"/>
     <Text Id="portfolio.file.education" Value="education.md"/>
+    <Text Id="error.title" Value="404 — Page not found | Ryuzaki"/>
+    <Text Id="error.heading" Value="Page not found"/>
+    <Text Id="error.description" Value="This page may have moved, or the address may be incorrect."/>
+    <Text Id="error.home" Value="Back to portfolio"/>
 </Texts>

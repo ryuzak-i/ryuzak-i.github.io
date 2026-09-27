@@ -202,6 +202,7 @@ h1 { font-size: clamp(44px, 5.5vw, 76px); line-height: 1.07; letter-spacing: -0.
 .workspace-explorer nav { display: flex; flex-direction: column; gap: 6px; }
 .workspace-explorer a { display: flex; align-items: center; gap: 10px; padding: 11px 12px; border-radius: 5px; font: 11px var(--mono); color: var(--muted); transition: color 340ms var(--ease), background-color 340ms var(--ease); }
 .workspace-explorer a[aria-current="location"] { color: var(--ink); background: #243146; }
+.workspace-explorer a:focus-visible { outline-offset: -3px; }
 .theme-workspace main { border-left: 1px solid var(--line); }
 .theme-workspace .hero { margin: 0; padding: 48px 36px; gap: 30px; row-gap: 0; grid-template-columns: 1.2fr 0.8fr; }
 .theme-workspace .eyebrow { font-size: 10px; letter-spacing: 0; color: #82b8a2; }
